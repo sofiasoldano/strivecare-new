@@ -1,0 +1,18 @@
+.btn {
+    width: 245px;
+    line-height: 45px;
+    border-radius: 75px;
+    color: $white;
+    font-size: 17px;
+    font-family: $bold;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    
+    &.green{
+        background-color: $green;
+    }
+    
+     &.purple{
+        background-color: $purple;
+    }
+}

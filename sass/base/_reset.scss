@@ -1,0 +1,30 @@
+html, body{
+	background: $white;
+	font-family: $base-font-family;
+	font-weight: $base-font-weight;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+    color: $gray;
+}
+body {
+    overflow-x: hidden;
+}
+a {
+	color: $gray;
+	text-decoration: none;
+    transition: all 0.5s;
+    
+    &:hover{
+        color: $gray;
+        text-decoration: none;
+    }
+}
+img {
+	margin: auto;
+}
+.right{
+    float: right !important;
+}
+#mfPreviewBar{
+    display: none !important;
+}

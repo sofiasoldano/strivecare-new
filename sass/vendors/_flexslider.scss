@@ -1,0 +1,18 @@
+.flexslider {
+	background: none;
+	border: none;
+	margin-bottom: 0px;
+
+	.slides {
+		
+		img {
+			
+			@include respond-to('medium') {
+				width: auto;
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,41 @@
+.title{
+    font-size: 32px;
+    line-height: 1.34;
+    letter-spacing: 4.7px;
+    text-transform: uppercase;
+    
+    &.center{
+        text-align: center;
+    }
+    
+    b{
+        font-family: $bold;
+        font-weight: normal;
+    }
+    
+    .green{
+        color: $green;
+    }
+    
+    .purple{
+        color: $purple;
+    }
+    
+}
+
+.subtitle{
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.54;
+    letter-spacing: 4.1px;
+    text-transform: uppercase;
+    
+    .green{
+        color: $green;
+    }
+    
+    .purple{
+        color: $purple;
+    }
+    
+}
