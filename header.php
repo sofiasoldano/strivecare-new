@@ -33,12 +33,12 @@
             </div>
             <div class="col-md-10">
                 <ul class="main-nav right">
-                    <li><a href="page-home.php">HOME</a></li>
-                    <li><a href="page-about-us.php">ABOUT US</a></li>
-                    <li><a href="page-training-programes.php">TRAINING PROGRAMS</a></li>
-                    <li><a href="page-faqs.php">FAQs</a></li>
-                    <li><a href="index.php">BLOG</a></li>
-                    <li><a href="page-contact-us.php">CONTACT US</a></li>
+                    <li class="<?php if ($page_name=="home") echo 'active'; ?>"><a href="page-home.php">HOME</a></li>
+                    <li class="<?php if ($page_name=="about-us") echo 'active'; ?>"><a href="page-about-us.php">ABOUT US</a></li>
+                    <li class="<?php if ($page_name=="training-programs") echo 'active'; ?>"><a href="page-training-programs.php">TRAINING PROGRAMS</a></li>
+                    <li class="<?php if ($page_name=="faqs") echo 'active'; ?>"><a href="page-faqs.php">FAQs</a></li>
+                    <li class="<?php if ($page_name=="informacion-administrativa") echo 'active'; ?>"><a href="index.php">BLOG</a></li>
+                    <li class="<?php if ($page_name=="contact-us") echo 'active'; ?>"><a href="page-contact-us.php">CONTACT US</a></li>
                 </ul>
             </div>
         </div>

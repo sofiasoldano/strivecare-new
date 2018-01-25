@@ -1,13 +1,22 @@
 header{
-    padding: 30px 52px 0;
+    padding: 30px 52px;
     max-width: 1420px;
     margin: 0 auto;
     
     .main-nav{
         list-style: none;
+        margin: 0;
         
         li{
             display: inline-block;
+            
+            &.active{
+                
+                a{
+                    color: $purple;
+                }
+                
+            }
             
             a{
                 font-size: 13px;
@@ -17,7 +26,9 @@ header{
                 display: block;
                 margin: 0 22px;
             }
+            
         }
+        
     }
 
 }

@@ -9,7 +9,7 @@
                     <ul class="navigate">
                         <li><a href="page-home.php">HOME</a></li>
                         <li><a href="page-about-us.php">ABOUT US</a></li>
-                        <li><a href="page-training-programes.php">TRAINING PROGRAMS</a></li>
+                        <li><a href="page-training-programs.php">TRAINING PROGRAMS</a></li>
                         <li><a href="page-faqs.php">FAQs</a></li>
                         <li><a href="index.php">BLOG</a></li>
                         <li><a href="page-contact-us.php">CONTACT US</a></li>

@@ -1,0 +1,49 @@
+ .white-box{
+    border-radius: 31px;
+    border-top-right-radius: 0;
+    background-color: $white;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+    width: 90%;
+    padding: 35px 45px;
+     
+    p{
+        font-size: 17px;
+        line-height: 1.41;
+        letter-spacing: 2.5px;
+    }
+     
+
+    .item{
+        padding-left: 140px;
+        margin-bottom: 30px;
+
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+
+    }
+     
+     .bottom{
+        background-color: #fbfbfb;
+        margin: 27px -45px -35px;
+        padding: 35px 45px;
+        border-bottom-left-radius: 31px;
+        border-bottom-right-radius: 31px;
+         
+         p{
+             margin-bottom: 30px;
+             padding-right: 100px;
+             
+             &:last-of-type{
+                 margin-bottom: 0;
+             }
+         }
+         
+         &.green{
+             background-color: $green;
+             color: $white;
+             padding: 20px 45px;
+         }
+     }
+
+}

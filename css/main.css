@@ -44,7 +44,7 @@ img {
 /* line 1, ../sass/modules/_buttons.scss */
 .btn {
   width: 245px;
-  line-height: 45px;
+  padding: 15px 0;
   border-radius: 75px;
   color: #FFFFFF;
   font-size: 17px;
@@ -89,35 +89,121 @@ img {
 /* line 26, ../sass/modules/_titles.scss */
 .subtitle {
   font-size: 28px;
-  font-weight: bold;
   line-height: 1.54;
   letter-spacing: 4.1px;
   text-transform: uppercase;
 }
-/* line 33, ../sass/modules/_titles.scss */
+/* line 32, ../sass/modules/_titles.scss */
+.subtitle b {
+  font-weight: bold;
+}
+/* line 36, ../sass/modules/_titles.scss */
 .subtitle .green {
   color: #50c7ba;
 }
-/* line 37, ../sass/modules/_titles.scss */
+/* line 40, ../sass/modules/_titles.scss */
 .subtitle .purple {
   color: #914691;
 }
 
+/* line 46, ../sass/modules/_titles.scss */
+.small-subtitle {
+  font-size: 15px;
+  font-family: "Brandon Text Bold";
+  line-height: 1.6;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+/* line 54, ../sass/modules/_titles.scss */
+.small-subtitle.green {
+  color: #50c7ba;
+}
+/* line 58, ../sass/modules/_titles.scss */
+.small-subtitle.purple {
+  color: #914691;
+}
+/* line 62, ../sass/modules/_titles.scss */
+.small-subtitle.center {
+  text-align: center;
+}
+
+/* line 67, ../sass/modules/_titles.scss */
+.section-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 2.2px;
+  padding-right: 125px;
+}
+
+/* line 1, ../sass/modules/_white-box.scss */
+.white-box {
+  border-radius: 31px;
+  border-top-right-radius: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+  width: 90%;
+  padding: 35px 45px;
+}
+/* line 9, ../sass/modules/_white-box.scss */
+.white-box p {
+  font-size: 17px;
+  line-height: 1.41;
+  letter-spacing: 2.5px;
+}
+/* line 16, ../sass/modules/_white-box.scss */
+.white-box .item {
+  padding-left: 140px;
+  margin-bottom: 30px;
+}
+/* line 20, ../sass/modules/_white-box.scss */
+.white-box .item:last-of-type {
+  margin-bottom: 0;
+}
+/* line 26, ../sass/modules/_white-box.scss */
+.white-box .bottom {
+  background-color: #fbfbfb;
+  margin: 27px -45px -35px;
+  padding: 35px 45px;
+  border-bottom-left-radius: 31px;
+  border-bottom-right-radius: 31px;
+}
+/* line 33, ../sass/modules/_white-box.scss */
+.white-box .bottom p {
+  margin-bottom: 30px;
+  padding-right: 100px;
+}
+/* line 37, ../sass/modules/_white-box.scss */
+.white-box .bottom p:last-of-type {
+  margin-bottom: 0;
+}
+/* line 42, ../sass/modules/_white-box.scss */
+.white-box .bottom.green {
+  background-color: #50c7ba;
+  color: #FFFFFF;
+  padding: 20px 45px;
+}
+
 /* line 1, ../sass/partials/_header.scss */
 header {
-  padding: 30px 52px 0;
+  padding: 30px 52px;
   max-width: 1420px;
   margin: 0 auto;
 }
 /* line 6, ../sass/partials/_header.scss */
 header .main-nav {
   list-style: none;
+  margin: 0;
 }
-/* line 9, ../sass/partials/_header.scss */
+/* line 10, ../sass/partials/_header.scss */
 header .main-nav li {
   display: inline-block;
 }
-/* line 12, ../sass/partials/_header.scss */
+/* line 15, ../sass/partials/_header.scss */
+header .main-nav li.active a {
+  color: #914691;
+}
+/* line 21, ../sass/partials/_header.scss */
 header .main-nav li a {
   font-size: 13px;
   font-weight: bold;
@@ -187,11 +273,12 @@ footer .copyright {
   margin-top: 50px;
 }
 
-/* line 2, ../sass/partials/_hero.scss */
+/* line 3, ../sass/partials/_hero.scss */
 .hero .main {
   padding: 50px 0;
+  min-height: 570px;
 }
-/* line 5, ../sass/partials/_hero.scss */
+/* line 7, ../sass/partials/_hero.scss */
 .hero .main .hero-title {
   font-size: 40px;
   font-weight: bold;
@@ -200,30 +287,72 @@ footer .copyright {
   letter-spacing: 0.9px;
   margin-bottom: 40px;
 }
-/* line 13, ../sass/partials/_hero.scss */
+/* line 15, ../sass/partials/_hero.scss */
 .hero .main .hero-text {
   font-size: 27px;
   line-height: 1.44;
   letter-spacing: 0.9px;
 }
-/* line 19, ../sass/partials/_hero.scss */
+/* line 21, ../sass/partials/_hero.scss */
 .hero .main .btn {
   margin: 40px 0;
 }
-/* line 24, ../sass/partials/_hero.scss */
+/* line 26, ../sass/partials/_hero.scss */
 .hero .bottom {
   background-color: #914691;
   min-height: 5px;
   text-align: center;
-  padding: 25px 0;
 }
-/* line 30, ../sass/partials/_hero.scss */
+/* line 31, ../sass/partials/_hero.scss */
 .hero .bottom p {
   font-size: 31px;
   font-weight: bold;
   line-height: 1.55;
   letter-spacing: 0.7px;
   color: #FFFFFF;
+  padding: 25px 0;
+}
+
+/* line 1, ../sass/partials/_lets-talk.scss */
+.lets-talk {
+  padding: 80px 0 130px;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* line 5, ../sass/partials/_lets-talk.scss */
+.lets-talk .title {
+  color: #0055a1;
+  margin-bottom: 50px;
+}
+/* line 10, ../sass/partials/_lets-talk.scss */
+.lets-talk .extra-info {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.79;
+  letter-spacing: 4.7px;
+}
+/* line 19, ../sass/partials/_lets-talk.scss */
+.lets-talk form .form-control {
+  width: 100%;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  border: solid 1px #d5d5d5;
+  margin-bottom: 15px;
+  padding: 33px 28px;
+  font-size: 15px;
+  letter-spacing: 2.2px;
+  color: #6b7175;
+  box-shadow: none;
+}
+/* line 31, ../sass/partials/_lets-talk.scss */
+.lets-talk form .form-control::placeholder {
+  font-size: 15px;
+  letter-spacing: 2.2px;
+  color: #6b7175;
+}
+/* line 39, ../sass/partials/_lets-talk.scss */
+.lets-talk form textarea.form-control {
+  height: 230px;
+  margin-bottom: 40px;
 }
 
 /*!
@@ -234,8 +363,8 @@ footer .copyright {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  src: url("vendors/fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("vendors/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("vendors/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("vendors/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("vendors/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("vendors/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -4034,63 +4163,30 @@ footer .copyright {
 .page-home .description {
   padding: 80px 0;
 }
-/* line 54, ../sass/pages/_home.scss */
-.page-home .description .box {
-  float: right;
-  border-radius: 31px;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
-  width: 90%;
-  padding: 35px 45px;
-}
-/* line 62, ../sass/pages/_home.scss */
-.page-home .description .box .item {
-  padding-left: 140px;
-  margin-bottom: 30px;
-}
-/* line 66, ../sass/pages/_home.scss */
-.page-home .description .box .item:last-of-type {
-  margin-bottom: 0;
-}
-/* line 70, ../sass/pages/_home.scss */
-.page-home .description .box .item .heading {
-  font-family: "Brandon Text Bold";
-  line-height: 1.6;
-  letter-spacing: 2.2px;
-  color: #50c7ba;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-/* line 79, ../sass/pages/_home.scss */
-.page-home .description .box .item p {
-  font-size: 17px;
-  line-height: 1.41;
-  letter-spacing: 2.5px;
-}
-/* line 91, ../sass/pages/_home.scss */
+/* line 56, ../sass/pages/_home.scss */
 .page-home .training-programs {
   padding: 80px 0 130px;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 95, ../sass/pages/_home.scss */
+/* line 60, ../sass/pages/_home.scss */
 .page-home .training-programs .item {
   margin-top: 120px;
 }
-/* line 98, ../sass/pages/_home.scss */
+/* line 63, ../sass/pages/_home.scss */
 .page-home .training-programs .item .img-container {
   position: relative;
 }
-/* line 101, ../sass/pages/_home.scss */
+/* line 66, ../sass/pages/_home.scss */
 .page-home .training-programs .item .img-container img {
   border-radius: 30px;
   border-top-left-radius: 0;
   width: 100%;
 }
-/* line 106, ../sass/pages/_home.scss */
+/* line 71, ../sass/pages/_home.scss */
 .page-home .training-programs .item .img-container img.border-right {
   border-top-right-radius: 0;
 }
-/* line 111, ../sass/pages/_home.scss */
+/* line 76, ../sass/pages/_home.scss */
 .page-home .training-programs .item .img-container .info-box {
   position: absolute;
   width: 95%;
@@ -4106,53 +4202,46 @@ footer .copyright {
   bottom: 35px;
   right: -22%;
 }
-/* line 131, ../sass/pages/_home.scss */
+/* line 96, ../sass/pages/_home.scss */
 .page-home .training-programs .item .program-info .subtitle {
   margin: 15px 0;
 }
-/* line 135, ../sass/pages/_home.scss */
+/* line 100, ../sass/pages/_home.scss */
 .page-home .training-programs .item .program-info p {
   font-size: 15px;
   letter-spacing: 2.2px;
   padding-right: 190px;
   margin: 25px 0 40px;
 }
-/* line 143, ../sass/pages/_home.scss */
+/* line 108, ../sass/pages/_home.scss */
 .page-home .training-programs .item .program-info.text-right p {
   padding-right: 0;
   padding-left: 190px;
 }
-/* line 155, ../sass/pages/_home.scss */
+/* line 120, ../sass/pages/_home.scss */
 .page-home .good-company {
   padding: 80px 0 130px;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 159, ../sass/pages/_home.scss */
+/* line 124, ../sass/pages/_home.scss */
 .page-home .good-company .title {
   margin-bottom: 30px;
 }
-/* line 163, ../sass/pages/_home.scss */
-.page-home .good-company p {
-  font-size: 15px;
-  line-height: 1.6;
-  letter-spacing: 2.2px;
-  padding-right: 125px;
-}
-/* line 172, ../sass/pages/_home.scss */
+/* line 130, ../sass/pages/_home.scss */
 .page-home .good-company .partners-images img {
   float: left;
   margin: 0 15px;
 }
-/* line 181, ../sass/pages/_home.scss */
+/* line 139, ../sass/pages/_home.scss */
 .page-home .testimonials {
   padding: 150px 0 80px;
 }
-/* line 185, ../sass/pages/_home.scss */
+/* line 143, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .slide {
   overflow: hidden;
   margin-bottom: 20px;
 }
-/* line 189, ../sass/pages/_home.scss */
+/* line 147, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .slide .quote {
   font-size: 16px;
   line-height: 1.5;
@@ -4161,7 +4250,7 @@ footer .copyright {
   height: 185px;
   padding: 35px 45px;
 }
-/* line 197, ../sass/pages/_home.scss */
+/* line 155, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .slide .quote:before {
   content: "";
   position: absolute;
@@ -4173,7 +4262,7 @@ footer .copyright {
   border: solid 2.5px #914691;
   z-index: -1;
 }
-/* line 210, ../sass/pages/_home.scss */
+/* line 168, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .slide .author {
   margin-top: 25px;
   font-size: 18px;
@@ -4182,53 +4271,146 @@ footer .copyright {
   letter-spacing: 0.7px;
   text-align: center;
 }
-/* line 222, ../sass/pages/_home.scss */
+/* line 180, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .flex-control-nav a {
   background: #d5d5d5;
   box-shadow: none;
 }
-/* line 226, ../sass/pages/_home.scss */
+/* line 184, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .flex-control-nav a.flex-active {
   background: #914691;
 }
-/* line 238, ../sass/pages/_home.scss */
-.page-home .lets-talk {
+/* line 197, ../sass/pages/_home.scss */
+.page-home .blog-posts {
+  padding: 80px 0 130px;
+}
+/* line 200, ../sass/pages/_home.scss */
+.page-home .blog-posts .section-desc {
+  margin: 30px 0 40px;
+}
+/* line 206, ../sass/pages/_home.scss */
+.page-home .blog-posts .posts .box {
+  width: 255px;
+  overflow: hidden;
+  margin-left: 50px;
+  float: right;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+}
+/* line 216, ../sass/pages/_home.scss */
+.page-home .blog-posts .posts .box .inner-text {
+  padding: 20px 30px;
+  min-height: 160px;
+}
+/* line 220, ../sass/pages/_home.scss */
+.page-home .blog-posts .posts .box .inner-text .heading {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.57;
+  letter-spacing: 2px;
+  color: #50c7ba;
+  margin-bottom: 20px;
+}
+/* line 229, ../sass/pages/_home.scss */
+.page-home .blog-posts .posts .box .inner-text .date {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 1.8px;
+  color: #6b7175;
+}
+/* line 235, ../sass/pages/_home.scss */
+.page-home .blog-posts .posts .box .inner-text .date i {
+  font-size: 17px;
+  vertical-align: text-top;
+  padding-right: 5px;
+  color: #8d9295;
+}
+/* line 244, ../sass/pages/_home.scss */
+.page-home .blog-posts .posts .box .btn {
+  width: 100%;
+  border-radius: 0;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  padding: 12px 0;
+}
+
+/* line 3, ../sass/pages/_training-programs.scss */
+.page-training-programs .hero .hero-title {
+  margin-top: 20px;
+}
+/* line 8, ../sass/pages/_training-programs.scss */
+.page-training-programs .option {
   padding: 80px 0 130px;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 242, ../sass/pages/_home.scss */
-.page-home .lets-talk .title {
-  color: #0055a1;
+/* line 12, ../sass/pages/_training-programs.scss */
+.page-training-programs .option .title {
   margin-bottom: 50px;
 }
-/* line 247, ../sass/pages/_home.scss */
-.page-home .lets-talk .extra-info {
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 1.79;
-  letter-spacing: 4.7px;
+/* line 15, ../sass/pages/_training-programs.scss */
+.page-training-programs .option .title.center {
+  margin-bottom: 70px;
 }
-/* line 256, ../sass/pages/_home.scss */
-.page-home .lets-talk form .form-control {
-  width: 100%;
-  border-radius: 4px;
-  background-color: #FFFFFF;
-  border: solid 1px #d5d5d5;
-  margin-bottom: 15px;
-  padding: 33px 28px;
-  font-size: 15px;
-  letter-spacing: 2.2px;
-  color: #6b7175;
-  box-shadow: none;
+/* line 19, ../sass/pages/_training-programs.scss */
+.page-training-programs .option .subtitle {
+  margin: 60px 0;
 }
-/* line 268, ../sass/pages/_home.scss */
-.page-home .lets-talk form .form-control::placeholder {
-  font-size: 15px;
-  letter-spacing: 2.2px;
-  color: #6b7175;
+/* line 23, ../sass/pages/_training-programs.scss */
+.page-training-programs .option .benefit {
+  margin-bottom: 50px;
+  width: 90%;
 }
-/* line 276, ../sass/pages/_home.scss */
-.page-home .lets-talk form textarea.form-control {
-  height: 230px;
-  margin-bottom: 40px;
+/* line 27, ../sass/pages/_training-programs.scss */
+.page-training-programs .option .benefit p {
+  font-size: 17px;
+  line-height: 1.41;
+  letter-spacing: 1.2px;
+  padding-right: 20px;
+}
+/* line 34, ../sass/pages/_training-programs.scss */
+.page-training-programs .option .benefit:last-of-type {
+  margin-bottom: 0;
+}
+/* line 40, ../sass/pages/_training-programs.scss */
+.page-training-programs .option .offer {
+  margin-top: 100px;
+}
+/* line 43, ../sass/pages/_training-programs.scss */
+.page-training-programs .option .offer .subtitle {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+/* line 48, ../sass/pages/_training-programs.scss */
+.page-training-programs .option .offer .section-desc {
+  padding-right: 0;
+  padding-left: 80px;
+  margin-bottom: 30px;
+}
+/* line 58, ../sass/pages/_training-programs.scss */
+.page-training-programs .challenges {
+  padding: 80px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* line 62, ../sass/pages/_training-programs.scss */
+.page-training-programs .challenges .title {
+  margin-bottom: 80px;
+}
+/* line 66, ../sass/pages/_training-programs.scss */
+.page-training-programs .challenges .challenge {
+  margin-bottom: 30px;
+  width: 90%;
+}
+/* line 70, ../sass/pages/_training-programs.scss */
+.page-training-programs .challenges .challenge p {
+  font-size: 17px;
+  line-height: 1.41;
+  letter-spacing: 1.2px;
+  padding-right: 40px;
+}
+/* line 79, ../sass/pages/_training-programs.scss */
+.page-training-programs .challenges .btn {
+  margin-top: 45px;
 }

@@ -8,7 +8,10 @@
                 <div class="col-md-5">
                     <p class="hero-text"><b>The FastTrack NVQ:</b></p>
                     <div class="hero-title">A Training Solution Revolution</div>
-                    <p class="hero-text">Nationally recognised Healthy and Social Care NVQ Diplomas...at no cost.</p>
+                    <ul class="hero-text">
+                        <li>Nationally recognised</li>
+                        <li>No cost</li>
+                    </ul>
                     <a class="btn green">Find out more</a>
                 </div>
             </div>
@@ -72,17 +75,17 @@
                 <div class="title"><b>Drive up</b><br> your cqc rating with outstanding training</div>
             </div>
             <div class="col-md-7">
-                <div class="box">
+                <div class="white-box right">
                     <div class="item">
-                        <div class="heading">Your team gets qualified sooner</div>
+                        <div class="small-subtitle green">Your team gets qualified sooner</div>
                         <p> A nationally recognised NVQ Diploma in as little as three months.</p>
                     </div>
                     <div class="item">
-                        <div class="heading">Minimal disruption</div>
+                        <div class="small-subtitle green">Minimal disruption</div>
                         <p> Keep your staff doing what they need to do.</p>
                     </div>
                     <div class="item">
-                        <div class="heading">Free training</div>
+                        <div class="small-subtitle green">Free training</div>
                         <p> For a limited time you can train as many staff as you want… <b>for free.</b></p>
                     </div>
                 </div>
@@ -107,7 +110,7 @@
             </div>
             <div class="col-md-6">
                 <div class="program-info text-right">
-                    <div class="subtitle"><span class="green"> Fasttrack nvq diploma in health and social care</span></div>
+                    <div class="subtitle"><b class="green"> Fasttrack nvq diploma in health and social care</b></div>
                     <p>New and exclusive! Learners achieve an NVQ qualification in Health and Social Care in as little as three months.</p>
                     <a class="btn green">Find out more</a>
                 </div>
@@ -116,7 +119,7 @@
         <div class="row item">
             <div class="col-md-6">
                 <div class="program-info">
-                    <div class="subtitle"><span class="green"> Health and social care apprenticeship</span></div>
+                    <div class="subtitle"><b class="green"> Health and social care apprenticeship</b></div>
                     <p>Comprehensive work-based training programme that lasts up to 18 months.</p>
                     <a class="btn green">Find out more</a>
                 </div>
@@ -135,7 +138,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="title">You're in<br> <b class="purple">good company</b></div>
-                <p>Working with carehomes nationwide, StriveCare has empowered thousands of learners with the practical knowledge, relevant skills, greater confidence and motivation to succeed.</p>
+                <p class="section-desc">Working with carehomes nationwide, StriveCare has empowered thousands of learners with the practical knowledge, relevant skills, greater confidence and motivation to succeed.</p>
             </div>
             <div class="col-md-6">
                 <div class="partners-images">
@@ -218,6 +221,37 @@
                     <textarea type="textarea" class="form-control" name="message" placeholder="Message"></textarea>
                      <button type="submit" value="submit" name="submit" class="btn purple right">Send message</button>
                 </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blog-posts">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="title"><b>Some</b> of our<br><b class="purple">blog posts</b></div>
+                <p class="section-desc">Exploring Best Practice in UK Health and Social Cares.</p>
+                <a class="btn green">View blog</a>
+            </div>
+            <div class="col-md-7 posts">
+                   <div class="box">
+                    <img src="http://via.placeholder.com/255x173" class="img-responsive">
+                    <div class="inner-text">
+                        <div class="heading">The Digital Era Transforms Health and Social Care</div>
+                        <p class="date"><i class="fa fa-clock-o" aria-hidden="true"></i> 4th December 2017</p>
+                    </div>
+                       <a class="btn green">Read more</a>
+                </div>
+                <div class="box">
+                    <img src="http://via.placeholder.com/255x173" class="img-responsive">
+                    <div class="inner-text">
+                        <div class="heading">Sensory Rooms: A Beginners Guide for your Care Home</div>
+                        <p class="date"><i class="fa fa-clock-o" aria-hidden="true"></i> 4th December 2017</p>
+                    </div>
+                    <a class="btn green">Read more</a>
+                </div>
+             
             </div>
         </div>
     </div>

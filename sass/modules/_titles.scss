@@ -25,10 +25,13 @@
 
 .subtitle{
     font-size: 28px;
-    font-weight: bold;
     line-height: 1.54;
     letter-spacing: 4.1px;
     text-transform: uppercase;
+    
+    b{
+        font-weight: bold;
+    }
     
     .green{
         color: $green;
@@ -38,4 +41,32 @@
         color: $purple;
     }
     
+}
+
+.small-subtitle{
+    font-size: 15px;
+    font-family: $bold;
+    line-height: 1.6;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    
+    &.green{
+        color: $green;
+    }
+    
+    &.purple{
+        color: $purple;
+    }
+    
+    &.center{
+        text-align: center;
+    }
+}
+
+.section-desc{
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 2.2px;
+    padding-right: 125px;
 }

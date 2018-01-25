@@ -1,0 +1,46 @@
+.lets-talk{
+    padding: 80px 0 130px;
+    border-bottom: 1px solid #e0e0e0;
+
+    .title{
+        color: #0055a1;
+        margin-bottom: 50px;
+    }
+
+    .extra-info{
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.79;
+        letter-spacing: 4.7px;
+    }
+
+    form{
+
+        .form-control{
+            width: 100%;
+            border-radius: 4px;
+            background-color: $white;
+            border: solid 1px #d5d5d5;
+            margin-bottom: 15px;
+            padding: 33px 28px;
+            font-size: 15px;
+            letter-spacing: 2.2px;
+            color: $gray;
+            box-shadow: none;
+
+            &::placeholder{
+                font-size: 15px;
+                letter-spacing: 2.2px;
+                color: $gray;
+            }
+
+        }
+
+        textarea.form-control{
+            height: 230px;
+            margin-bottom: 40px;
+        }
+
+    }
+
+}

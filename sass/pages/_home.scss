@@ -51,41 +51,6 @@
     .description{
         padding: 80px 0;
         
-        .box{
-            float: right;
-            border-radius: 31px;
-            background-color: $white;
-            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
-            width: 90%;
-            padding: 35px 45px;
-            
-            .item{
-                padding-left: 140px;
-                margin-bottom: 30px;
-                
-                &:last-of-type{
-                    margin-bottom: 0;
-                }
-                
-                .heading{
-                    font-family: $bold;
-                    line-height: 1.6;
-                    letter-spacing: 2.2px;
-                    color: $green;
-                    text-transform: uppercase;
-                    margin-bottom: 12px;
-                }
-                
-                p{
-                    font-size: 17px;
-                    line-height: 1.41;
-                    letter-spacing: 2.5px;
-                }
-                
-            }
-            
-        }
-        
     }
     
     .training-programs{
@@ -160,13 +125,6 @@
             margin-bottom: 30px;
         }
         
-        p{
-            font-size: 15px;
-            line-height: 1.6;
-            letter-spacing: 2.2px;
-            padding-right: 125px;
-        }
-        
         .partners-images{
             
             img{
@@ -235,47 +193,63 @@
         
     }
     
-    .lets-talk{
+    
+    .blog-posts{
         padding: 80px 0 130px;
-        border-bottom: 1px solid #e0e0e0;
         
-        .title{
-            color: #0055a1;
-            margin-bottom: 50px;
+        .section-desc{
+            margin: 30px 0 40px;
         }
         
-        .extra-info{
-            font-size: 24px;
-            font-weight: bold;
-            line-height: 1.79;
-            letter-spacing: 4.7px;
-        }
-        
-        form{
+        .posts{
             
-            .form-control{
-                width: 100%;
-                border-radius: 4px;
+            .box{
+                width: 255px;
+                overflow: hidden;
+                margin-left: 50px;
+                float: right;
+                border-radius: 30px;
+                border-top-right-radius: 0;
                 background-color: $white;
-                border: solid 1px #d5d5d5;
-                margin-bottom: 15px;
-                padding: 33px 28px;
-                font-size: 15px;
-                letter-spacing: 2.2px;
-                color: $gray;
-                box-shadow: none;
-
-                &::placeholder{
-                    font-size: 15px;
-                    letter-spacing: 2.2px;
-                    color: $gray;
+                box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+                
+                .inner-text{
+                    padding: 20px 30px;
+                    min-height: 160px;
+                    
+                    .heading{
+                        font-size: 14px;
+                        font-weight: bold;
+                        line-height: 1.57;
+                        letter-spacing: 2px;
+                        color: $green;
+                        margin-bottom: 20px;
+                    }
+                    
+                    .date{
+                        font-size: 12px;
+                        line-height: 2;
+                        letter-spacing: 1.8px;
+                        color: #6b7175;
+                        
+                        i{
+                            font-size: 17px;
+                            vertical-align: text-top;
+                            padding-right: 5px;
+                            color: #8d9295;
+                        }
+                    }
                 }
-
-            }
-            
-            textarea.form-control{
-                height: 230px;
-                margin-bottom: 40px;
+                
+                .btn{
+                    width: 100%;
+                    border-radius: 0;
+                    font-size: 14px;
+                    letter-spacing: 2px;
+                    color: $white;
+                    padding: 12px 0;
+                }
+                
             }
             
         }
