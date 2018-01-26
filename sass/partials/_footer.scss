@@ -44,9 +44,21 @@ footer {
             font-size: 13px;
             line-height: 1.5;
             letter-spacing: 0.5px;
-            padding-left: 40px;
+            padding-left: 50px;
             padding-bottom: 25px;
             font-weight: bold;
+            
+            &.dir{
+                background: url(img/location-icon.png) top left no-repeat;
+            }
+            
+             &.mail{
+                background: url(img/tel-icon.png) top left no-repeat;
+            }
+            
+             &.tel{
+                background: url(img/email-icon.png) top left no-repeat;
+            }
         }
     }
     

@@ -9,6 +9,9 @@
                     <div class="hero-title">A Training Approach for every Care Home</div>
                     <p class="hero-text">Training approaches, duration and styles to meet all needs in health and social care. Each with individual, bespoke funding options and direct assesor support.</p>
                 </div>
+                <div class="col-md-7">
+                    <img class="img-responsive hero-img" src="images/hero-training.png">
+                </div>
             </div>
         </div>
     </div>
@@ -16,7 +19,7 @@
     </div>
 </section>
 
-<section class="option">
+<section class="option bg-2">
      <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -29,6 +32,7 @@
                  <a class="btn green">find out more</a>
              </div>
              <div class="col-md-7">
+                 <img class="white-box-bg" src="images/white-box-bg-2.png"> 
                  <div class="white-box right">
                     <p><b>Accelerated learning with internally and externally-verified quality tuition to achieve the nationally recognised ualification in Health and Social Care. Equipping every learner with the skills and knowledge they need to work in all areas of health and social care.</b></p>
                     <div class="bottom">
@@ -69,6 +73,7 @@
         </div>
          <div class="row offer">
              <div class="col-md-7">
+                 <img class="white-box-bg bg-right" src="images/white-box-bg-2.png"> 
                 <div class="white-box">
                     <div class="item">
                         <div class="small-subtitle green">FREE Health and Social Care trainingr</div>
@@ -94,7 +99,7 @@
     </div>
 </section>
 
-<section class="option">
+<section class="option bg-3">
      <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -107,6 +112,7 @@
                  <a class="btn green">find out more</a>
              </div>
              <div class="col-md-7">
+                 <img class="white-box-bg" src="images/white-box-bg-2.png"> 
                  <div class="white-box right">
                     <p><b>The Health and Social Care Apprenticeship is a comprehensive work-based training programme that provides learners with the skills and knowledge they need to work in all aspects of health and social care.</b></p>
                     <div class="bottom">
@@ -144,7 +150,7 @@
     </div>
 </section>
 
-<section class="challenges">
+<section class="challenges bg-4">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

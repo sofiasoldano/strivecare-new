@@ -11,8 +11,12 @@
                     <ul class="hero-text">
                         <li>Nationally recognised</li>
                         <li>No cost</li>
+                        <li>Loved by CQC!</li>
                     </ul>
                     <a class="btn green">Find out more</a>
+                </div>
+                <div class="col-md-7">
+                    <img class="img-responsive hero-img" src="images/hero-home.png" width="485">
                 </div>
             </div>
         </div>
@@ -38,29 +42,39 @@
                  <div class="flexslider partners-slider">
                     <ul class="slides">
                       <li class="slide">
-                        <img src="http://via.placeholder.com/140x140" title="slide" alt="slide">
+                        <img src="images/partners/partner1.png" class="img-responsive" title="slide" alt="slide">
                       </li>
                       <li class="slide">
-                        <img src="http://via.placeholder.com/140x140" title="slide" alt="slide">
+                        <img src="images/partners/partner2.png" class="img-responsive" title="slide" alt="slide">
                       </li>
                       <li class="slide">
-                        <img src="http://via.placeholder.com/140x140" title="slide" alt="slide">
+                        <img src="images/partners/partner3.png" class="img-responsive" title="slide" alt="slide">
                       </li>
                       <li class="slide">
-                        <img src="http://via.placeholder.com/140x140" title="slide" alt="slide">
+                       <img src="images/partners/partner4.png" class="img-responsive" title="slide" alt="slide">
                       </li>
                         <li class="slide">
-                        <img src="http://via.placeholder.com/140x140" title="slide" alt="slide">
+                       <img src="images/partners/partner5.png" class="img-responsive" title="slide" alt="slide">
                       </li>
                       <li class="slide">
-                        <img src="http://via.placeholder.com/140x140" title="slide" alt="slide">
+                        <img src="images/partners/partner6.png" class="img-responsive" title="slide" alt="slide">
                       </li>
                       <li class="slide">
-                        <img src="http://via.placeholder.com/140x140" title="slide" alt="slide">
+                        <img src="images/partners/partner7.png" class="img-responsive" title="slide" alt="slide">
                       </li>
                       <li class="slide">
-                        <img src="http://via.placeholder.com/140x140" title="slide" alt="slide">
+                        <img src="images/partners/partner8.png" class="img-responsive" title="slide" alt="slide">
                       </li>
+                        <li class="slide">
+                        <img src="images/partners/partner9.png" class="img-responsive" title="slide" alt="slide">
+                      </li>
+                        <li class="slide">
+                        <img src="images/partners/partner10.png" class="img-responsive" title="slide" alt="slide">
+                      </li>
+                        <li class="slide">
+                        <img src="images/partners/partner11.png" class="img-responsive" title="slide" alt="slide">
+                      </li>
+    
                     </ul>
                 </div>
             </div>
@@ -75,6 +89,7 @@
                 <div class="title"><b>Drive up</b><br> your cqc rating with outstanding training</div>
             </div>
             <div class="col-md-7">
+                <img class="white-box-bg" src="images/white-box-bg.png"> 
                 <div class="white-box right">
                     <div class="item">
                         <div class="small-subtitle green">Your team gets qualified sooner</div>
@@ -94,7 +109,7 @@
     </div>
 </section>
 
-<section class="training-programs">
+<section class="training-programs bg-2">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -104,7 +119,7 @@
         <div class="row item">
             <div class="col-md-6">
                 <div class="img-container">
-                    <img class="img-responsive border-right" src="http://via.placeholder.com/539x387">
+                    <img class="img-responsive border-right" src="images/training-1.png">
                     <div class="info-box">SPECIAL LIMITED OFFER: <br>Free training for an unlimited amount of learners.</div>
                 </div>
             </div>
@@ -126,7 +141,7 @@
             </div>
             <div class="col-md-6">
                 <div class="img-container">
-                    <img class="img-responsive" src="http://via.placeholder.com/539x387">
+                    <img class="img-responsive" src="images/training-2.png">
                 </div>
             </div>
         </div>
@@ -142,17 +157,18 @@
             </div>
             <div class="col-md-6">
                 <div class="partners-images">
-                    <img class="img-responsive" src="http://via.placeholder.com/140x140">
-                    <img class="img-responsive" src="http://via.placeholder.com/140x140">
-                    <img class="img-responsive" src="http://via.placeholder.com/140x140">
-                    <img class="img-responsive" src="http://via.placeholder.com/140x140">
-                    <img class="img-responsive" src="http://via.placeholder.com/140x140">
+                    <img class="img-responsive" src="images/partners/partner1.png">
+                    <img class="img-responsive" src="images/partners/partner2.png">
+                    <img class="img-responsive" src="images/partners/partner3.png">
+                    <img class="img-responsive" src="images/partners/partner4.png">
+                    <img class="img-responsive" src="images/partners/partner5.png">
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<div class="bg-1">
 <section class="testimonials"> 
     <div class="container">
         <div class="row">
@@ -225,6 +241,7 @@
         </div>
     </div>
 </section>
+</div>
 
 <section class="blog-posts">
     <div class="container">
@@ -235,8 +252,9 @@
                 <a class="btn green">View blog</a>
             </div>
             <div class="col-md-7 posts">
+                <img class="white-box-bg" src="images/white-box-bg.png"> 
                    <div class="box">
-                    <img src="http://via.placeholder.com/255x173" class="img-responsive">
+                    <img src="images/post-2.jpg" class="img-responsive">
                     <div class="inner-text">
                         <div class="heading">The Digital Era Transforms Health and Social Care</div>
                         <p class="date"><i class="fa fa-clock-o" aria-hidden="true"></i> 4th December 2017</p>
@@ -244,10 +262,10 @@
                        <a class="btn green">Read more</a>
                 </div>
                 <div class="box">
-                    <img src="http://via.placeholder.com/255x173" class="img-responsive">
+                    <img src="images/post-1.png" class="img-responsive">
                     <div class="inner-text">
                         <div class="heading">Sensory Rooms: A Beginners Guide for your Care Home</div>
-                        <p class="date"><i class="fa fa-clock-o" aria-hidden="true"></i> 4th December 2017</p>
+                        <p class="d0ate"><i class="fa fa-clock-o" aria-hidden="true"></i> 4th December 2017</p>
                     </div>
                     <a class="btn green">Read more</a>
                 </div>

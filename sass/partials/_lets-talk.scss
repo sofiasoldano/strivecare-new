@@ -13,6 +13,27 @@
         line-height: 1.79;
         letter-spacing: 4.7px;
     }
+    
+    .info-bottom{
+        position: absolute;
+        bottom: -420px;
+        
+        .heading{
+            font-size: 30px;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+        
+        p{
+            color: #0055a1;
+            letter-spacing: 1px; 
+            margin-bottom: 10px;
+        }
+        
+        a{
+            width: 280px;
+        }
+    }
 
     form{
 

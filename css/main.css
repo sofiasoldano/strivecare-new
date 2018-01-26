@@ -140,27 +140,28 @@ img {
 .white-box {
   border-radius: 31px;
   border-top-right-radius: 0;
-  background-color: #FFFFFF;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
   width: 90%;
   padding: 35px 45px;
+  position: relative;
+  background-color: #FFFFFF;
 }
-/* line 9, ../sass/modules/_white-box.scss */
+/* line 10, ../sass/modules/_white-box.scss */
 .white-box p {
   font-size: 17px;
   line-height: 1.41;
   letter-spacing: 2.5px;
 }
-/* line 16, ../sass/modules/_white-box.scss */
+/* line 17, ../sass/modules/_white-box.scss */
 .white-box .item {
   padding-left: 140px;
   margin-bottom: 30px;
 }
-/* line 20, ../sass/modules/_white-box.scss */
+/* line 21, ../sass/modules/_white-box.scss */
 .white-box .item:last-of-type {
   margin-bottom: 0;
 }
-/* line 26, ../sass/modules/_white-box.scss */
+/* line 27, ../sass/modules/_white-box.scss */
 .white-box .bottom {
   background-color: #fbfbfb;
   margin: 27px -45px -35px;
@@ -168,20 +169,53 @@ img {
   border-bottom-left-radius: 31px;
   border-bottom-right-radius: 31px;
 }
-/* line 33, ../sass/modules/_white-box.scss */
+/* line 34, ../sass/modules/_white-box.scss */
 .white-box .bottom p {
   margin-bottom: 30px;
   padding-right: 100px;
 }
-/* line 37, ../sass/modules/_white-box.scss */
+/* line 38, ../sass/modules/_white-box.scss */
 .white-box .bottom p:last-of-type {
   margin-bottom: 0;
 }
-/* line 42, ../sass/modules/_white-box.scss */
+/* line 43, ../sass/modules/_white-box.scss */
 .white-box .bottom.green {
   background-color: #50c7ba;
   color: #FFFFFF;
   padding: 20px 45px;
+}
+
+/* line 51, ../sass/modules/_white-box.scss */
+.white-box-bg {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+/* line 56, ../sass/modules/_white-box.scss */
+.white-box-bg.bg-right {
+  left: initial;
+  top: 120px;
+  right: 41px;
+}
+
+/* line 1, ../sass/modules/_backgrounds.scss */
+.bg-1 {
+  background: url(img/fill-1.png) bottom right no-repeat;
+}
+
+/* line 5, ../sass/modules/_backgrounds.scss */
+.bg-2 {
+  background: url(img/fill-2.png) bottom left no-repeat;
+}
+
+/* line 9, ../sass/modules/_backgrounds.scss */
+.bg-3 {
+  background: url(img/fill-3.png) bottom right no-repeat;
+}
+
+/* line 13, ../sass/modules/_backgrounds.scss */
+.bg-4 {
+  background: url(img/fill-4.png) bottom left no-repeat;
 }
 
 /* line 1, ../sass/partials/_header.scss */
@@ -260,11 +294,23 @@ footer .contact p {
   font-size: 13px;
   line-height: 1.5;
   letter-spacing: 0.5px;
-  padding-left: 40px;
+  padding-left: 50px;
   padding-bottom: 25px;
   font-weight: bold;
 }
-/* line 53, ../sass/partials/_footer.scss */
+/* line 51, ../sass/partials/_footer.scss */
+footer .contact p.dir {
+  background: url(img/location-icon.png) top left no-repeat;
+}
+/* line 55, ../sass/partials/_footer.scss */
+footer .contact p.mail {
+  background: url(img/tel-icon.png) top left no-repeat;
+}
+/* line 59, ../sass/partials/_footer.scss */
+footer .contact p.tel {
+  background: url(img/email-icon.png) top left no-repeat;
+}
+/* line 65, ../sass/partials/_footer.scss */
 footer .copyright {
   font-size: 13px;
   letter-spacing: 0.3px;
@@ -275,10 +321,21 @@ footer .copyright {
 
 /* line 3, ../sass/partials/_hero.scss */
 .hero .main {
-  padding: 50px 0;
+  padding: 50px 0 0;
   min-height: 570px;
+  position: relative;
 }
-/* line 7, ../sass/partials/_hero.scss */
+/* line 8, ../sass/partials/_hero.scss */
+.hero .main:after {
+  content: "";
+  position: absolute;
+  width: 123px;
+  height: 142px;
+  background: url(img/matrix-award.png) top left no-repeat;
+  bottom: 25px;
+  right: 70px;
+}
+/* line 18, ../sass/partials/_hero.scss */
 .hero .main .hero-title {
   font-size: 40px;
   font-weight: bold;
@@ -287,23 +344,23 @@ footer .copyright {
   letter-spacing: 0.9px;
   margin-bottom: 40px;
 }
-/* line 15, ../sass/partials/_hero.scss */
+/* line 26, ../sass/partials/_hero.scss */
 .hero .main .hero-text {
   font-size: 27px;
   line-height: 1.44;
   letter-spacing: 0.9px;
 }
-/* line 21, ../sass/partials/_hero.scss */
+/* line 32, ../sass/partials/_hero.scss */
 .hero .main .btn {
   margin: 40px 0;
 }
-/* line 26, ../sass/partials/_hero.scss */
+/* line 37, ../sass/partials/_hero.scss */
 .hero .bottom {
   background-color: #914691;
   min-height: 5px;
   text-align: center;
 }
-/* line 31, ../sass/partials/_hero.scss */
+/* line 42, ../sass/partials/_hero.scss */
 .hero .bottom p {
   font-size: 31px;
   font-weight: bold;
@@ -330,7 +387,28 @@ footer .copyright {
   line-height: 1.79;
   letter-spacing: 4.7px;
 }
-/* line 19, ../sass/partials/_lets-talk.scss */
+/* line 17, ../sass/partials/_lets-talk.scss */
+.lets-talk .info-bottom {
+  position: absolute;
+  bottom: -420px;
+}
+/* line 21, ../sass/partials/_lets-talk.scss */
+.lets-talk .info-bottom .heading {
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+/* line 27, ../sass/partials/_lets-talk.scss */
+.lets-talk .info-bottom p {
+  color: #0055a1;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+/* line 33, ../sass/partials/_lets-talk.scss */
+.lets-talk .info-bottom a {
+  width: 280px;
+}
+/* line 40, ../sass/partials/_lets-talk.scss */
 .lets-talk form .form-control {
   width: 100%;
   border-radius: 4px;
@@ -343,13 +421,13 @@ footer .copyright {
   color: #6b7175;
   box-shadow: none;
 }
-/* line 31, ../sass/partials/_lets-talk.scss */
+/* line 52, ../sass/partials/_lets-talk.scss */
 .lets-talk form .form-control::placeholder {
   font-size: 15px;
   letter-spacing: 2.2px;
   color: #6b7175;
 }
-/* line 39, ../sass/partials/_lets-talk.scss */
+/* line 60, ../sass/partials/_lets-talk.scss */
 .lets-talk form textarea.form-control {
   height: 230px;
   margin-bottom: 40px;
@@ -4119,74 +4197,107 @@ footer .copyright {
   }
 }
 
-/* line 3, ../sass/pages/_home.scss */
+/* line 4, ../sass/pages/_home.scss */
+.page-home .hero .main {
+  background: url(img/hero-home-bg.png) bottom left no-repeat;
+  background-size: 742px;
+  background-position-y: 1px;
+  background-position-x: 85%;
+}
+/* line 10, ../sass/pages/_home.scss */
+.page-home .hero .main .hero-img {
+  position: absolute;
+  top: -68px;
+  right: 115px;
+}
+/* line 18, ../sass/pages/_home.scss */
 .page-home .partners {
   padding: 80px 0;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 7, ../sass/pages/_home.scss */
+/* line 22, ../sass/pages/_home.scss */
 .page-home .partners .title {
   padding: 25px 0;
 }
-/* line 11, ../sass/pages/_home.scss */
+/* line 26, ../sass/pages/_home.scss */
 .page-home .partners .partners-slider {
   padding: 0 100px;
 }
-/* line 15, ../sass/pages/_home.scss */
+/* line 30, ../sass/pages/_home.scss */
 .page-home .partners .partners-slider .flex-direction-nav a {
   top: 50%;
   height: 30px;
   opacity: 1;
 }
-/* line 20, ../sass/pages/_home.scss */
+/* line 35, ../sass/pages/_home.scss */
 .page-home .partners .partners-slider .flex-direction-nav a:before {
   font-size: 20px;
   color: #94989b;
 }
-/* line 26, ../sass/pages/_home.scss */
+/* line 41, ../sass/pages/_home.scss */
 .page-home .partners .partners-slider .flex-direction-nav .flex-next {
   right: 50px !important;
 }
-/* line 30, ../sass/pages/_home.scss */
+/* line 45, ../sass/pages/_home.scss */
 .page-home .partners .partners-slider .flex-direction-nav .flex-prev {
   left: 50px !important;
 }
-/* line 35, ../sass/pages/_home.scss */
+/* line 50, ../sass/pages/_home.scss */
 .page-home .partners .partners-slider .flex-direction-nav:hover .flex-next {
   right: 50px !important;
 }
-/* line 39, ../sass/pages/_home.scss */
+/* line 54, ../sass/pages/_home.scss */
 .page-home .partners .partners-slider .flex-direction-nav:hover .flex-prev {
   left: 50px !important;
 }
-/* line 51, ../sass/pages/_home.scss */
+/* line 66, ../sass/pages/_home.scss */
 .page-home .description {
   padding: 80px 0;
 }
-/* line 56, ../sass/pages/_home.scss */
+/* line 73, ../sass/pages/_home.scss */
+.page-home .description .white-box .item:nth-of-type(1) {
+  background: url(img/icon-clock.png) top left no-repeat;
+  background-size: 80px;
+  background-position-y: 10px;
+}
+/* line 79, ../sass/pages/_home.scss */
+.page-home .description .white-box .item:nth-of-type(2) {
+  background: url(img/icon-calc.png) top left no-repeat;
+  background-size: 75px;
+  background-position-y: 10px;
+}
+/* line 85, ../sass/pages/_home.scss */
+.page-home .description .white-box .item:nth-of-type(3) {
+  background: url(img/icon-smile.png) top left no-repeat;
+  background-size: 70px;
+  background-position-y: 10px;
+  background-position-x: 10px;
+}
+/* line 98, ../sass/pages/_home.scss */
 .page-home .training-programs {
-  padding: 80px 0 130px;
+  padding: 130px 0 130px;
+  transform: translateY(-100px);
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 60, ../sass/pages/_home.scss */
+/* line 103, ../sass/pages/_home.scss */
 .page-home .training-programs .item {
   margin-top: 120px;
 }
-/* line 63, ../sass/pages/_home.scss */
+/* line 106, ../sass/pages/_home.scss */
 .page-home .training-programs .item .img-container {
   position: relative;
 }
-/* line 66, ../sass/pages/_home.scss */
+/* line 109, ../sass/pages/_home.scss */
 .page-home .training-programs .item .img-container img {
   border-radius: 30px;
   border-top-left-radius: 0;
   width: 100%;
 }
-/* line 71, ../sass/pages/_home.scss */
+/* line 114, ../sass/pages/_home.scss */
 .page-home .training-programs .item .img-container img.border-right {
   border-top-right-radius: 0;
 }
-/* line 76, ../sass/pages/_home.scss */
+/* line 119, ../sass/pages/_home.scss */
 .page-home .training-programs .item .img-container .info-box {
   position: absolute;
   width: 95%;
@@ -4202,46 +4313,46 @@ footer .copyright {
   bottom: 35px;
   right: -22%;
 }
-/* line 96, ../sass/pages/_home.scss */
+/* line 139, ../sass/pages/_home.scss */
 .page-home .training-programs .item .program-info .subtitle {
   margin: 15px 0;
 }
-/* line 100, ../sass/pages/_home.scss */
+/* line 143, ../sass/pages/_home.scss */
 .page-home .training-programs .item .program-info p {
   font-size: 15px;
   letter-spacing: 2.2px;
   padding-right: 190px;
   margin: 25px 0 40px;
 }
-/* line 108, ../sass/pages/_home.scss */
+/* line 151, ../sass/pages/_home.scss */
 .page-home .training-programs .item .program-info.text-right p {
   padding-right: 0;
   padding-left: 190px;
 }
-/* line 120, ../sass/pages/_home.scss */
+/* line 163, ../sass/pages/_home.scss */
 .page-home .good-company {
   padding: 80px 0 130px;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 124, ../sass/pages/_home.scss */
+/* line 167, ../sass/pages/_home.scss */
 .page-home .good-company .title {
   margin-bottom: 30px;
 }
-/* line 130, ../sass/pages/_home.scss */
+/* line 173, ../sass/pages/_home.scss */
 .page-home .good-company .partners-images img {
   float: left;
   margin: 0 15px;
 }
-/* line 139, ../sass/pages/_home.scss */
+/* line 182, ../sass/pages/_home.scss */
 .page-home .testimonials {
-  padding: 150px 0 80px;
+  padding: 140px 0 80px;
 }
-/* line 143, ../sass/pages/_home.scss */
+/* line 186, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .slide {
   overflow: hidden;
   margin-bottom: 20px;
 }
-/* line 147, ../sass/pages/_home.scss */
+/* line 190, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .slide .quote {
   font-size: 16px;
   line-height: 1.5;
@@ -4250,19 +4361,18 @@ footer .copyright {
   height: 185px;
   padding: 35px 45px;
 }
-/* line 155, ../sass/pages/_home.scss */
+/* line 198, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .slide .quote:before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 185px;
+  height: 188px;
   top: 0;
   left: 0;
-  background-color: #ffffff;
-  border: solid 2.5px #914691;
+  background: url(img/testimonial-bg.png) top left no-repeat;
   z-index: -1;
 }
-/* line 168, ../sass/pages/_home.scss */
+/* line 210, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .slide .author {
   margin-top: 25px;
   font-size: 18px;
@@ -4271,40 +4381,45 @@ footer .copyright {
   letter-spacing: 0.7px;
   text-align: center;
 }
-/* line 180, ../sass/pages/_home.scss */
+/* line 222, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .flex-control-nav a {
   background: #d5d5d5;
   box-shadow: none;
 }
-/* line 184, ../sass/pages/_home.scss */
+/* line 226, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .flex-control-nav a.flex-active {
   background: #914691;
 }
-/* line 197, ../sass/pages/_home.scss */
+/* line 239, ../sass/pages/_home.scss */
+.page-home .lets-talk {
+  padding-bottom: 50px;
+}
+/* line 243, ../sass/pages/_home.scss */
 .page-home .blog-posts {
   padding: 80px 0 130px;
 }
-/* line 200, ../sass/pages/_home.scss */
+/* line 246, ../sass/pages/_home.scss */
 .page-home .blog-posts .section-desc {
   margin: 30px 0 40px;
 }
-/* line 206, ../sass/pages/_home.scss */
+/* line 252, ../sass/pages/_home.scss */
 .page-home .blog-posts .posts .box {
   width: 255px;
   overflow: hidden;
-  margin-left: 50px;
+  margin-left: 30px;
   float: right;
   border-radius: 30px;
   border-top-right-radius: 0;
   background-color: #FFFFFF;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+  position: relative;
 }
-/* line 216, ../sass/pages/_home.scss */
+/* line 263, ../sass/pages/_home.scss */
 .page-home .blog-posts .posts .box .inner-text {
   padding: 20px 30px;
   min-height: 160px;
 }
-/* line 220, ../sass/pages/_home.scss */
+/* line 267, ../sass/pages/_home.scss */
 .page-home .blog-posts .posts .box .inner-text .heading {
   font-size: 14px;
   font-weight: bold;
@@ -4313,21 +4428,21 @@ footer .copyright {
   color: #50c7ba;
   margin-bottom: 20px;
 }
-/* line 229, ../sass/pages/_home.scss */
+/* line 276, ../sass/pages/_home.scss */
 .page-home .blog-posts .posts .box .inner-text .date {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 1.8px;
   color: #6b7175;
 }
-/* line 235, ../sass/pages/_home.scss */
+/* line 282, ../sass/pages/_home.scss */
 .page-home .blog-posts .posts .box .inner-text .date i {
   font-size: 17px;
   vertical-align: text-top;
   padding-right: 5px;
   color: #8d9295;
 }
-/* line 244, ../sass/pages/_home.scss */
+/* line 291, ../sass/pages/_home.scss */
 .page-home .blog-posts .posts .box .btn {
   width: 100%;
   border-radius: 0;
@@ -4338,79 +4453,111 @@ footer .copyright {
 }
 
 /* line 3, ../sass/pages/_training-programs.scss */
-.page-training-programs .hero .hero-title {
+.page-training-programs .hero .main {
+  background: url(img/hero-training-bg.png) bottom right no-repeat;
+  background-size: 780px;
+}
+/* line 7, ../sass/pages/_training-programs.scss */
+.page-training-programs .hero .main .hero-title {
   margin-top: 20px;
 }
-/* line 8, ../sass/pages/_training-programs.scss */
+/* line 11, ../sass/pages/_training-programs.scss */
+.page-training-programs .hero .main .hero-img {
+  position: absolute;
+  right: -155px;
+  top: -64px;
+}
+/* line 19, ../sass/pages/_training-programs.scss */
 .page-training-programs .option {
   padding: 80px 0 130px;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 12, ../sass/pages/_training-programs.scss */
+/* line 23, ../sass/pages/_training-programs.scss */
 .page-training-programs .option .title {
   margin-bottom: 50px;
 }
-/* line 15, ../sass/pages/_training-programs.scss */
+/* line 26, ../sass/pages/_training-programs.scss */
 .page-training-programs .option .title.center {
   margin-bottom: 70px;
 }
-/* line 19, ../sass/pages/_training-programs.scss */
+/* line 30, ../sass/pages/_training-programs.scss */
 .page-training-programs .option .subtitle {
   margin: 60px 0;
 }
-/* line 23, ../sass/pages/_training-programs.scss */
+/* line 34, ../sass/pages/_training-programs.scss */
 .page-training-programs .option .benefit {
   margin-bottom: 50px;
   width: 90%;
 }
-/* line 27, ../sass/pages/_training-programs.scss */
+/* line 38, ../sass/pages/_training-programs.scss */
 .page-training-programs .option .benefit p {
   font-size: 17px;
   line-height: 1.41;
   letter-spacing: 1.2px;
   padding-right: 20px;
 }
-/* line 34, ../sass/pages/_training-programs.scss */
+/* line 45, ../sass/pages/_training-programs.scss */
 .page-training-programs .option .benefit:last-of-type {
   margin-bottom: 0;
 }
-/* line 40, ../sass/pages/_training-programs.scss */
+/* line 51, ../sass/pages/_training-programs.scss */
 .page-training-programs .option .offer {
   margin-top: 100px;
 }
-/* line 43, ../sass/pages/_training-programs.scss */
+/* line 54, ../sass/pages/_training-programs.scss */
 .page-training-programs .option .offer .subtitle {
   margin-top: 0;
   margin-bottom: 30px;
 }
-/* line 48, ../sass/pages/_training-programs.scss */
+/* line 59, ../sass/pages/_training-programs.scss */
 .page-training-programs .option .offer .section-desc {
   padding-right: 0;
   padding-left: 80px;
   margin-bottom: 30px;
 }
-/* line 58, ../sass/pages/_training-programs.scss */
+/* line 67, ../sass/pages/_training-programs.scss */
+.page-training-programs .option .offer .white-box .item {
+  padding: 5px 0;
+  padding-left: 140px;
+}
+/* line 71, ../sass/pages/_training-programs.scss */
+.page-training-programs .option .offer .white-box .item:nth-of-type(1) {
+  background: url(img/icon-calc.png) top left no-repeat;
+  background-size: 75px;
+  background-position-x: 10px;
+}
+/* line 77, ../sass/pages/_training-programs.scss */
+.page-training-programs .option .offer .white-box .item:nth-of-type(2) {
+  background: url(img/icon-learn.png) top left no-repeat;
+  background-position-x: 10px;
+}
+/* line 82, ../sass/pages/_training-programs.scss */
+.page-training-programs .option .offer .white-box .item:nth-of-type(3) {
+  background: url(img/icon-people.png) top left no-repeat;
+  background-position-x: 16px;
+}
+/* line 92, ../sass/pages/_training-programs.scss */
 .page-training-programs .challenges {
   padding: 80px 0;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 62, ../sass/pages/_training-programs.scss */
+/* line 96, ../sass/pages/_training-programs.scss */
 .page-training-programs .challenges .title {
   margin-bottom: 80px;
 }
-/* line 66, ../sass/pages/_training-programs.scss */
+/* line 100, ../sass/pages/_training-programs.scss */
 .page-training-programs .challenges .challenge {
   margin-bottom: 30px;
   width: 90%;
 }
-/* line 70, ../sass/pages/_training-programs.scss */
+/* line 104, ../sass/pages/_training-programs.scss */
 .page-training-programs .challenges .challenge p {
   font-size: 17px;
   line-height: 1.41;
   letter-spacing: 1.2px;
   padding-right: 40px;
 }
-/* line 79, ../sass/pages/_training-programs.scss */
+/* line 113, ../sass/pages/_training-programs.scss */
 .page-training-programs .challenges .btn {
   margin-top: 45px;
 }

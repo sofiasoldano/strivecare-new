@@ -1,5 +1,20 @@
 .page-home {
     
+    .hero{
+        .main{
+            background: url(img/hero-home-bg.png) bottom left no-repeat;          
+            background-size: 742px;
+            background-position-y: 1px;
+            background-position-x: 85%;
+            
+            .hero-img{
+                position: absolute;
+                top: -68px;
+                right: 115px;
+            }
+        }
+    }
+    
     .partners{
         padding: 80px 0;
         border-bottom: 1px solid #e0e0e0;
@@ -51,10 +66,38 @@
     .description{
         padding: 80px 0;
         
+        .white-box{
+            
+            .item{
+        
+                &:nth-of-type(1){
+                    background: url(img/icon-clock.png) top left no-repeat;
+                    background-size: 80px;
+                    background-position-y: 10px;
+                }
+                
+                &:nth-of-type(2){
+                    background: url(img/icon-calc.png) top left no-repeat;
+                    background-size: 75px;
+                    background-position-y: 10px;
+                }
+                
+                &:nth-of-type(3){
+                    background: url(img/icon-smile.png) top left no-repeat;
+                    background-size: 70px;
+                    background-position-y: 10px;
+                    background-position-x: 10px;
+                }
+                
+            }
+            
+        }
+        
     }
     
     .training-programs{
-        padding: 80px 0 130px;
+        padding: 130px 0 130px;
+        transform: translateY(-100px);
         border-bottom: 1px solid #e0e0e0;
         
         .item{
@@ -137,7 +180,7 @@
     }
     
     .testimonials{
-        padding: 150px 0 80px;
+        padding: 140px 0 80px;
         
         .testimonials-slider{
             .slide{
@@ -156,11 +199,10 @@
                         content: "";
                         position: absolute;
                         width: 100%;
-                        height: 185px;
+                        height: 188px;
                         top: 0;
                         left: 0;
-                        background-color: #ffffff;
-                        border: solid 2.5px #914691;
+                        background: url(img/testimonial-bg.png) top left no-repeat;
                         z-index: -1;
                     }
                 }
@@ -193,6 +235,10 @@
         
     }
     
+        
+    .lets-talk{
+        padding-bottom: 50px;
+    }
     
     .blog-posts{
         padding: 80px 0 130px;
@@ -206,12 +252,13 @@
             .box{
                 width: 255px;
                 overflow: hidden;
-                margin-left: 50px;
+                margin-left: 30px;
                 float: right;
                 border-radius: 30px;
                 border-top-right-radius: 0;
                 background-color: $white;
                 box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+                position: relative;
                 
                 .inner-text{
                     padding: 20px 30px;
