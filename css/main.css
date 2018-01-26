@@ -433,6 +433,47 @@ footer .copyright {
   margin-bottom: 40px;
 }
 
+/* line 1, ../sass/partials/_partners.scss */
+.partners {
+  padding: 80px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* line 5, ../sass/partials/_partners.scss */
+.partners .title {
+  padding: 25px 0;
+}
+/* line 9, ../sass/partials/_partners.scss */
+.partners .partners-slider {
+  padding: 0 100px;
+}
+/* line 13, ../sass/partials/_partners.scss */
+.partners .partners-slider .flex-direction-nav a {
+  top: 50%;
+  height: 30px;
+  opacity: 1;
+}
+/* line 18, ../sass/partials/_partners.scss */
+.partners .partners-slider .flex-direction-nav a:before {
+  font-size: 20px;
+  color: #94989b;
+}
+/* line 24, ../sass/partials/_partners.scss */
+.partners .partners-slider .flex-direction-nav .flex-next {
+  right: 50px !important;
+}
+/* line 28, ../sass/partials/_partners.scss */
+.partners .partners-slider .flex-direction-nav .flex-prev {
+  left: 50px !important;
+}
+/* line 33, ../sass/partials/_partners.scss */
+.partners .partners-slider .flex-direction-nav:hover .flex-next {
+  right: 50px !important;
+}
+/* line 37, ../sass/partials/_partners.scss */
+.partners .partners-slider .flex-direction-nav:hover .flex-prev {
+  left: 50px !important;
+}
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -4211,93 +4252,53 @@ footer .copyright {
   right: 115px;
 }
 /* line 18, ../sass/pages/_home.scss */
-.page-home .partners {
-  padding: 80px 0;
-  border-bottom: 1px solid #e0e0e0;
-}
-/* line 22, ../sass/pages/_home.scss */
-.page-home .partners .title {
-  padding: 25px 0;
-}
-/* line 26, ../sass/pages/_home.scss */
-.page-home .partners .partners-slider {
-  padding: 0 100px;
-}
-/* line 30, ../sass/pages/_home.scss */
-.page-home .partners .partners-slider .flex-direction-nav a {
-  top: 50%;
-  height: 30px;
-  opacity: 1;
-}
-/* line 35, ../sass/pages/_home.scss */
-.page-home .partners .partners-slider .flex-direction-nav a:before {
-  font-size: 20px;
-  color: #94989b;
-}
-/* line 41, ../sass/pages/_home.scss */
-.page-home .partners .partners-slider .flex-direction-nav .flex-next {
-  right: 50px !important;
-}
-/* line 45, ../sass/pages/_home.scss */
-.page-home .partners .partners-slider .flex-direction-nav .flex-prev {
-  left: 50px !important;
-}
-/* line 50, ../sass/pages/_home.scss */
-.page-home .partners .partners-slider .flex-direction-nav:hover .flex-next {
-  right: 50px !important;
-}
-/* line 54, ../sass/pages/_home.scss */
-.page-home .partners .partners-slider .flex-direction-nav:hover .flex-prev {
-  left: 50px !important;
-}
-/* line 66, ../sass/pages/_home.scss */
 .page-home .description {
   padding: 80px 0;
 }
-/* line 73, ../sass/pages/_home.scss */
+/* line 25, ../sass/pages/_home.scss */
 .page-home .description .white-box .item:nth-of-type(1) {
   background: url(img/icon-clock.png) top left no-repeat;
   background-size: 80px;
   background-position-y: 10px;
 }
-/* line 79, ../sass/pages/_home.scss */
+/* line 31, ../sass/pages/_home.scss */
 .page-home .description .white-box .item:nth-of-type(2) {
   background: url(img/icon-calc.png) top left no-repeat;
   background-size: 75px;
   background-position-y: 10px;
 }
-/* line 85, ../sass/pages/_home.scss */
+/* line 37, ../sass/pages/_home.scss */
 .page-home .description .white-box .item:nth-of-type(3) {
   background: url(img/icon-smile.png) top left no-repeat;
   background-size: 70px;
   background-position-y: 10px;
   background-position-x: 10px;
 }
-/* line 98, ../sass/pages/_home.scss */
+/* line 50, ../sass/pages/_home.scss */
 .page-home .training-programs {
   padding: 130px 0 130px;
   transform: translateY(-100px);
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 103, ../sass/pages/_home.scss */
+/* line 55, ../sass/pages/_home.scss */
 .page-home .training-programs .item {
   margin-top: 120px;
 }
-/* line 106, ../sass/pages/_home.scss */
+/* line 58, ../sass/pages/_home.scss */
 .page-home .training-programs .item .img-container {
   position: relative;
 }
-/* line 109, ../sass/pages/_home.scss */
+/* line 61, ../sass/pages/_home.scss */
 .page-home .training-programs .item .img-container img {
   border-radius: 30px;
   border-top-left-radius: 0;
   width: 100%;
 }
-/* line 114, ../sass/pages/_home.scss */
+/* line 66, ../sass/pages/_home.scss */
 .page-home .training-programs .item .img-container img.border-right {
   border-top-right-radius: 0;
 }
-/* line 119, ../sass/pages/_home.scss */
+/* line 71, ../sass/pages/_home.scss */
 .page-home .training-programs .item .img-container .info-box {
   position: absolute;
   width: 95%;
@@ -4313,46 +4314,46 @@ footer .copyright {
   bottom: 35px;
   right: -22%;
 }
-/* line 139, ../sass/pages/_home.scss */
+/* line 91, ../sass/pages/_home.scss */
 .page-home .training-programs .item .program-info .subtitle {
   margin: 15px 0;
 }
-/* line 143, ../sass/pages/_home.scss */
+/* line 95, ../sass/pages/_home.scss */
 .page-home .training-programs .item .program-info p {
   font-size: 15px;
   letter-spacing: 2.2px;
   padding-right: 190px;
   margin: 25px 0 40px;
 }
-/* line 151, ../sass/pages/_home.scss */
+/* line 103, ../sass/pages/_home.scss */
 .page-home .training-programs .item .program-info.text-right p {
   padding-right: 0;
   padding-left: 190px;
 }
-/* line 163, ../sass/pages/_home.scss */
+/* line 115, ../sass/pages/_home.scss */
 .page-home .good-company {
   padding: 80px 0 130px;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 167, ../sass/pages/_home.scss */
+/* line 119, ../sass/pages/_home.scss */
 .page-home .good-company .title {
   margin-bottom: 30px;
 }
-/* line 173, ../sass/pages/_home.scss */
+/* line 125, ../sass/pages/_home.scss */
 .page-home .good-company .partners-images img {
   float: left;
   margin: 0 15px;
 }
-/* line 182, ../sass/pages/_home.scss */
+/* line 134, ../sass/pages/_home.scss */
 .page-home .testimonials {
   padding: 140px 0 80px;
 }
-/* line 186, ../sass/pages/_home.scss */
+/* line 138, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .slide {
   overflow: hidden;
   margin-bottom: 20px;
 }
-/* line 190, ../sass/pages/_home.scss */
+/* line 142, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .slide .quote {
   font-size: 16px;
   line-height: 1.5;
@@ -4361,7 +4362,7 @@ footer .copyright {
   height: 185px;
   padding: 35px 45px;
 }
-/* line 198, ../sass/pages/_home.scss */
+/* line 150, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .slide .quote:before {
   content: "";
   position: absolute;
@@ -4372,7 +4373,7 @@ footer .copyright {
   background: url(img/testimonial-bg.png) top left no-repeat;
   z-index: -1;
 }
-/* line 210, ../sass/pages/_home.scss */
+/* line 162, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .slide .author {
   margin-top: 25px;
   font-size: 18px;
@@ -4381,28 +4382,28 @@ footer .copyright {
   letter-spacing: 0.7px;
   text-align: center;
 }
-/* line 222, ../sass/pages/_home.scss */
+/* line 174, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .flex-control-nav a {
   background: #d5d5d5;
   box-shadow: none;
 }
-/* line 226, ../sass/pages/_home.scss */
+/* line 178, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .flex-control-nav a.flex-active {
   background: #914691;
 }
-/* line 239, ../sass/pages/_home.scss */
+/* line 191, ../sass/pages/_home.scss */
 .page-home .lets-talk {
   padding-bottom: 50px;
 }
-/* line 243, ../sass/pages/_home.scss */
+/* line 195, ../sass/pages/_home.scss */
 .page-home .blog-posts {
   padding: 80px 0 130px;
 }
-/* line 246, ../sass/pages/_home.scss */
+/* line 198, ../sass/pages/_home.scss */
 .page-home .blog-posts .section-desc {
   margin: 30px 0 40px;
 }
-/* line 252, ../sass/pages/_home.scss */
+/* line 204, ../sass/pages/_home.scss */
 .page-home .blog-posts .posts .box {
   width: 255px;
   overflow: hidden;
@@ -4414,12 +4415,12 @@ footer .copyright {
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
   position: relative;
 }
-/* line 263, ../sass/pages/_home.scss */
+/* line 215, ../sass/pages/_home.scss */
 .page-home .blog-posts .posts .box .inner-text {
   padding: 20px 30px;
   min-height: 160px;
 }
-/* line 267, ../sass/pages/_home.scss */
+/* line 219, ../sass/pages/_home.scss */
 .page-home .blog-posts .posts .box .inner-text .heading {
   font-size: 14px;
   font-weight: bold;
@@ -4428,21 +4429,21 @@ footer .copyright {
   color: #50c7ba;
   margin-bottom: 20px;
 }
-/* line 276, ../sass/pages/_home.scss */
+/* line 228, ../sass/pages/_home.scss */
 .page-home .blog-posts .posts .box .inner-text .date {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 1.8px;
   color: #6b7175;
 }
-/* line 282, ../sass/pages/_home.scss */
+/* line 234, ../sass/pages/_home.scss */
 .page-home .blog-posts .posts .box .inner-text .date i {
   font-size: 17px;
   vertical-align: text-top;
   padding-right: 5px;
   color: #8d9295;
 }
-/* line 291, ../sass/pages/_home.scss */
+/* line 243, ../sass/pages/_home.scss */
 .page-home .blog-posts .posts .box .btn {
   width: 100%;
   border-radius: 0;
@@ -4560,4 +4561,71 @@ footer .copyright {
 /* line 113, ../sass/pages/_training-programs.scss */
 .page-training-programs .challenges .btn {
   margin-top: 45px;
+}
+
+/* line 3, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .hero .main {
+  background: url(img/hero-nvq-bg.png) bottom right no-repeat;
+  background-size: 780px;
+}
+/* line 7, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .hero .main .hero-title {
+  margin-top: 20px;
+}
+/* line 14, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .inner-menu {
+  padding: 30px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* line 18, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .inner-menu .menu {
+  margin: 0;
+  padding: 0;
+}
+/* line 22, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .inner-menu .menu li {
+  display: inline-block;
+  padding: 0 13px;
+  border-left: 1px solid;
+}
+/* line 27, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .inner-menu .menu li:first-of-type {
+  border: none;
+  padding-left: 0;
+}
+/* line 32, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .inner-menu .menu li a {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 3.69;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+/* line 47, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .partners {
+  border: none;
+  padding: 50px 0;
+}
+/* line 52, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .whos-for {
+  padding-bottom: 50px;
+}
+/* line 55, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .whos-for .title {
+  margin-bottom: 50px;
+}
+/* line 59, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .whos-for .green-box {
+  width: 100%;
+  padding: 40px 115px;
+  background-color: #50c7ba;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  letter-spacing: 2.5px;
+  border-radius: 30px;
+  border-top-right-radius: 0;
 }

@@ -15,54 +15,6 @@
         }
     }
     
-    .partners{
-        padding: 80px 0;
-        border-bottom: 1px solid #e0e0e0;
-        
-        .title{
-            padding: 25px 0;
-        }
-        
-        .partners-slider{
-            padding: 0 100px;
-            
-            .flex-direction-nav{
-                a{
-                    top: 50%;
-                    height: 30px;
-                    opacity: 1;
-
-                    &:before{
-                        font-size: 20px;
-                        color: #94989b;
-                    }
-                }
-                
-                .flex-next {
-                    right: 50px !important;
-                }
-                
-                .flex-prev {
-                    left: 50px !important;
-                }
-                
-                &:hover{
-                    .flex-next {
-                        right: 50px !important;
-                    }
-
-                    .flex-prev {
-                        left: 50px !important;
-                    }
-                    
-                }
-                
-            }
-            
-        }
-        
-    }
-    
     .description{
         padding: 80px 0;
         
