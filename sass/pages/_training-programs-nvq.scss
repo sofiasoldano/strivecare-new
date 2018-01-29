@@ -70,5 +70,330 @@
             border-top-right-radius: 0;
         }
     }
+    
+    .org-benefits{
+        padding: 80px 0 285px;
+        border-bottom: 1px solid #e0e0e0;
+        
+        .img-container{
+            &:before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: url(../images/white-box-bg-2.png);
+                left: -10px;
+                top: -30px;
+            }
+        }
+        
+        .info-absolute{
+            border-radius: 31px;
+            border-top-right-radius: 0;
+            background-color: $white;
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+            padding: 35px 40px;
+            position: absolute;
+            bottom: -160px;
+            
+            ul{
+                margin: 0;
+                
+                li{
+                    font-size: 17px;
+                    font-weight: bold;
+                    line-height: 2.06;
+                    letter-spacing: 2.5px;
+                    color: $purple;
+                    padding-left: 15px;
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+    .how-work{
+        padding: 80px 0;
+        border-bottom: 1px solid #e0e0e0;
+        
+        .title{
+            margin-bottom: 50px;
+        }
+        
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            
+            li{
+                font-size: 15px;
+                line-height: 1.6;
+                letter-spacing: 1px;
+                position: relative;
+                padding-left: 20px;
+                margin-bottom: 20px;
+                width: 88%;
+                
+                &:before{
+                    content: "";
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 5px;
+                    background: $purple;
+                    left: 0;
+                    top: 9px;
+                }
+                
+            }
+            
+        }
+        
+    }
 
+    
+    .how-long{
+        padding: 130px 0 80px;
+        
+        .title{
+            margin-bottom: 30px;
+        }
+        
+    }
+    
+    .how-much{
+        padding: 80px 0 185px;
+        border-bottom: 1px solid #e0e0e0;
+        
+        .white-box{
+
+            .item{
+                padding: 5px 0;
+                padding-left: 140px;
+
+                &:nth-of-type(1){
+                    background: url(img/icon-calc.png) top left no-repeat;
+                    background-size: 75px;
+                    background-position-x: 10px;
+                }
+
+                &:nth-of-type(2){
+                    background: url(img/icon-learn.png) top left no-repeat;
+                    background-position-x: 10px;
+                }
+
+                &:nth-of-type(3){
+                    background: url(img/icon-people.png) top left no-repeat;
+                    background-position-x: 16px;
+                }
+
+            }  
+        }
+        
+    }
+    
+    .comparison{
+        padding: 80px 0;
+        border-bottom: 1px solid #e0e0e0;
+        
+        .title{
+            margin-bottom: 130px;
+        }
+        
+        .table-container{
+
+            &:before{
+                display: none;
+            }
+            
+            &:after{
+                content: "";
+                width: 274px;
+                height: 117px;
+                position: absolute;
+                right: -16px;
+                top: -109px;
+                background: url(img/new-and-exclusive-icon.png) no-repeat;
+            }
+
+            table{
+
+                thead{
+
+                    th{
+                        padding: 20px 0 85px;
+                        width: 30%;
+
+                        &:first-of-type{
+                            text-align: left;
+                            padding-left: 90px;
+                            padding-top: 20px;
+                            width: 38%;
+                        }
+                        
+                        &:nth-last-of-type(2){
+                            background: url(img/icono-traditional.png) bottom center no-repeat;
+                            background-position-y: 88px;
+                            background-position-x: 142px;
+                        }
+
+                        &:last-of-type{
+                            background: url(img/icono-nvq.png) bottom center no-repeat;
+                            background-position-y: 90px;
+                            background-position-x: 134px;
+                        }
+
+                    }
+
+                }
+
+                tbody{
+                    
+                    tr{
+
+                        td{
+                            background: $white;
+
+                            &:before{
+                                content: "";
+                                width: 93%;
+                                position: absolute;
+                                height: 1px;
+                                background: #d6d6d6;
+                                bottom: 0;
+                                right: 0;
+                            }
+                            
+                            &:first-of-type{
+                                text-align: left;
+                                padding-left: 60px;
+                                vertical-align: top;
+                            }
+        
+                            &:nth-of-type(2){
+                                &:before{
+                                    width: 100%;
+                                }
+                                
+                                &:after{
+                                    content: "";
+                                    position: absolute;
+                                    height: 100%;
+                                    width: 1px;
+                                    background: #d6d6d6;
+                                    bottom: 0;
+                                    right: 0;
+                                }
+                            }
+                            
+                            .fa-check{
+                                color: $green;
+                                font-size: 35px;
+                            }
+                            
+                            .fa-times{
+                                color: #d0021b;
+                                font-size: 35px;
+                            }
+                            
+                            &.required{
+                                color: #d0021b;
+                                text-transform: uppercase; 
+                                letter-spacing: 1px;
+                            }
+                            
+                            &.green-text{
+                                color: $green;
+                                text-transform: uppercase; 
+                                letter-spacing: 1px;
+                            }
+                            
+                            &.left{
+                                letter-spacing: 1px;
+                            }
+
+                        }
+
+                        &:first-of-type{
+                            td:nth-of-type(2){
+                                &:after{
+                                    height: 73%;
+                                }
+                            }
+
+                        }
+
+                        &:last-of-type{
+
+                            td:nth-of-type(2){
+
+                                &:after{
+                                    height: 73%;
+                                    bottom: initial;
+                                    top: 0;
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }   
+
+        }
+        
+    }
+    
+    .questions{
+        padding: 80px 0 50px;
+        border-bottom: 1px solid #e0e0e0;
+        
+        #accordion{
+            
+            .card{
+                width: 100%;
+                
+                .card-header{
+                    background-color: $green;
+                    margin-bottom: 20px;
+                    padding: 20px 30px;
+                    border-radius: 31px;
+                    border-top-right-radius: 0;
+                    position: relative;
+                    padding-right: 65px;
+                     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+                    
+                    .card-lnk {
+                        color: $white;
+                        text-transform: uppercase;
+                        font-size: 15px;
+                        font-weight: bold;
+                        line-height: 1.6;
+                        letter-spacing: 2.2px;
+                    }
+                    
+                    .faq-btn{
+                        position: absolute;
+                        top: calc(50% - 30px);
+                        right: 20px;
+                        font-size: 35px;
+                        
+                        .fa-angle-up{
+                            display: none;
+                        }
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
 }

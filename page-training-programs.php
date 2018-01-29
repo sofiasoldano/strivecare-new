@@ -27,13 +27,13 @@
             </div>
          </div>
          <div class="row">
-             <div class="col-md-5">
+             <div class="col-md-6">
                  <div class="title"><span class="green">The new and exclusive<br><b>fast track diploma in health and <br> social care</b></span></div>
                  <a class="btn green">find out more</a>
              </div>
-             <div class="col-md-7">
-                 <img class="white-box-bg" src="images/white-box-bg-2.png"> 
-                 <div class="white-box right">
+             <div class="col-md-6">
+                <div class="white-box-bg">
+                 <div class="white-box">
                     <p><b>Accelerated learning with internally and externally-verified quality tuition to achieve the nationally recognised ualification in Health and Social Care. Equipping every learner with the skills and knowledge they need to work in all areas of health and social care.</b></p>
                     <div class="bottom">
                      <div class="small-subtitle purple">Duration</div>
@@ -42,6 +42,7 @@
                         <p>NVQ Level 2/3/4/5 Diploma in Health and Social Care</p>
                     </div>
                  </div>
+                </div>
              </div>
          </div> 
          <div class="row">
@@ -72,8 +73,8 @@
             </div>
         </div>
          <div class="row offer">
-             <div class="col-md-7">
-                 <img class="white-box-bg bg-right" src="images/white-box-bg-2.png"> 
+             <div class="col-md-6">
+                <div class="white-box-bg left">
                 <div class="white-box">
                     <div class="item">
                         <div class="small-subtitle green">FREE Health and Social Care trainingr</div>
@@ -88,9 +89,9 @@
                      <div class="small-subtitle center">Limited Availability:<br>Offer limited to the first 500 sign ups</div>
                     </div>
                 </div>
-                 
+                 </div>
             </div>
-            <div class="col-md-5 text-right">
+            <div class="col-md-6 text-right">
                 <div class="subtitle">Special<br><b>introductory offer</b></div>
                 <p class="section-desc">Upskill your Health and Social Care staff in as little as three months… <b>and pay nothing!</b></p>
                 <a class="btn green">find out more</a>
@@ -107,21 +108,22 @@
             </div>
          </div>
          <div class="row">
-             <div class="col-md-5">
+             <div class="col-md-6">
                  <div class="title"><span class="purple">The new and exclusive<br><b>fast track diploma in health and <br> social care</b></span></div>
                  <a class="btn green">find out more</a>
              </div>
-             <div class="col-md-7">
-                 <img class="white-box-bg" src="images/white-box-bg-2.png"> 
-                 <div class="white-box right">
-                    <p><b>The Health and Social Care Apprenticeship is a comprehensive work-based training programme that provides learners with the skills and knowledge they need to work in all aspects of health and social care.</b></p>
-                    <div class="bottom">
-                     <div class="small-subtitle green">Duration</div>
-                        <p>12 – 24 Months</p>
-                    <div class="small-subtitle green">Qualification</div>
-                        <p>Apprenticeship & NVQ Diploma in Health and Social Care</p>
-                    </div>
-                 </div>
+             <div class="col-md-6">
+                 <div class="white-box-bg">
+                     <div class="white-box">
+                        <p><b>The Health and Social Care Apprenticeship is a comprehensive work-based training programme that provides learners with the skills and knowledge they need to work in all aspects of health and social care.</b></p>
+                        <div class="bottom">
+                         <div class="small-subtitle green">Duration</div>
+                            <p>12 – 24 Months</p>
+                        <div class="small-subtitle green">Qualification</div>
+                            <p>Apprenticeship & NVQ Diploma in Health and Social Care</p>
+                        </div>
+                     </div>
+                </div>
              </div>
          </div> 
          <div class="row">

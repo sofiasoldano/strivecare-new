@@ -135,33 +135,53 @@ img {
   letter-spacing: 2.2px;
   padding-right: 125px;
 }
+/* line 73, ../sass/modules/_titles.scss */
+.section-desc.text-right {
+  padding-right: 0;
+  padding-left: 155px;
+}
 
-/* line 1, ../sass/modules/_white-box.scss */
+/* line 3, ../sass/modules/_white-box.scss */
+.white-box-bg:before {
+  content: "";
+  position: absolute;
+  width: 99%;
+  height: 98%;
+  background: url(../images/white-box-bg-2.png);
+  bottom: -44px;
+  right: 21px;
+}
+/* line 14, ../sass/modules/_white-box.scss */
+.white-box-bg.left:before {
+  right: initial;
+  left: 21px;
+}
+
+/* line 21, ../sass/modules/_white-box.scss */
 .white-box {
   border-radius: 31px;
   border-top-right-radius: 0;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
-  width: 90%;
   padding: 35px 45px;
   position: relative;
   background-color: #FFFFFF;
 }
-/* line 10, ../sass/modules/_white-box.scss */
+/* line 31, ../sass/modules/_white-box.scss */
 .white-box p {
   font-size: 17px;
   line-height: 1.41;
   letter-spacing: 2.5px;
 }
-/* line 17, ../sass/modules/_white-box.scss */
+/* line 38, ../sass/modules/_white-box.scss */
 .white-box .item {
   padding-left: 140px;
   margin-bottom: 30px;
 }
-/* line 21, ../sass/modules/_white-box.scss */
+/* line 42, ../sass/modules/_white-box.scss */
 .white-box .item:last-of-type {
   margin-bottom: 0;
 }
-/* line 27, ../sass/modules/_white-box.scss */
+/* line 48, ../sass/modules/_white-box.scss */
 .white-box .bottom {
   background-color: #fbfbfb;
   margin: 27px -45px -35px;
@@ -169,33 +189,20 @@ img {
   border-bottom-left-radius: 31px;
   border-bottom-right-radius: 31px;
 }
-/* line 34, ../sass/modules/_white-box.scss */
+/* line 55, ../sass/modules/_white-box.scss */
 .white-box .bottom p {
   margin-bottom: 30px;
   padding-right: 100px;
 }
-/* line 38, ../sass/modules/_white-box.scss */
+/* line 59, ../sass/modules/_white-box.scss */
 .white-box .bottom p:last-of-type {
   margin-bottom: 0;
 }
-/* line 43, ../sass/modules/_white-box.scss */
+/* line 64, ../sass/modules/_white-box.scss */
 .white-box .bottom.green {
   background-color: #50c7ba;
   color: #FFFFFF;
   padding: 20px 45px;
-}
-
-/* line 51, ../sass/modules/_white-box.scss */
-.white-box-bg {
-  position: absolute;
-  top: 20px;
-  left: 40px;
-}
-/* line 56, ../sass/modules/_white-box.scss */
-.white-box-bg.bg-right {
-  left: initial;
-  top: 120px;
-  right: 41px;
 }
 
 /* line 1, ../sass/modules/_backgrounds.scss */
@@ -216,6 +223,119 @@ img {
 /* line 13, ../sass/modules/_backgrounds.scss */
 .bg-4 {
   background: url(img/fill-4.png) bottom left no-repeat;
+}
+
+/* line 17, ../sass/modules/_backgrounds.scss */
+.bg-5 {
+  background: url(img/fill-5.png) bottom left no-repeat;
+}
+
+/* line 3, ../sass/modules/_table.scss */
+.table-container:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../images/white-box-bg-2.png) no-repeat;
+  bottom: -49px;
+  right: -83px;
+}
+/* line 13, ../sass/modules/_table.scss */
+.table-container table {
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 2.5px;
+}
+/* line 21, ../sass/modules/_table.scss */
+.table-container table thead {
+  background: #914691;
+  color: #FFFFFF;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+}
+/* line 27, ../sass/modules/_table.scss */
+.table-container table thead th {
+  text-align: center;
+  padding: 20px 0;
+  width: 50%;
+}
+/* line 32, ../sass/modules/_table.scss */
+.table-container table thead th:first-of-type {
+  border-top-left-radius: 30px;
+}
+/* line 36, ../sass/modules/_table.scss */
+.table-container table thead th:last-of-type {
+  border-bottom-right-radius: 30px;
+}
+/* line 44, ../sass/modules/_table.scss */
+.table-container table tbody {
+  border-bottom-left-radius: 31px;
+  border-bottom-right-radius: 31px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+}
+/* line 51, ../sass/modules/_table.scss */
+.table-container table tbody tr td {
+  background: #FFFFFF;
+  padding: 20px 0;
+  position: relative;
+}
+/* line 56, ../sass/modules/_table.scss */
+.table-container table tbody tr td:before {
+  content: "";
+  width: 88%;
+  position: absolute;
+  height: 1px;
+  background: #d6d6d6;
+  bottom: 0;
+  right: 0;
+}
+/* line 67, ../sass/modules/_table.scss */
+.table-container table tbody tr td:first-of-type:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background: #d6d6d6;
+  bottom: 0;
+  right: 0;
+}
+/* line 79, ../sass/modules/_table.scss */
+.table-container table tbody tr td:last-of-type:before {
+  left: 0;
+  right: initial;
+}
+/* line 88, ../sass/modules/_table.scss */
+.table-container table tbody tr:first-of-type td {
+  padding-top: 40px;
+}
+/* line 92, ../sass/modules/_table.scss */
+.table-container table tbody tr:first-of-type td:first-of-type:after {
+  height: 73%;
+}
+/* line 100, ../sass/modules/_table.scss */
+.table-container table tbody tr:last-of-type td {
+  padding-bottom: 40px;
+}
+/* line 103, ../sass/modules/_table.scss */
+.table-container table tbody tr:last-of-type td:before {
+  background: none;
+}
+/* line 107, ../sass/modules/_table.scss */
+.table-container table tbody tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 29px;
+}
+/* line 110, ../sass/modules/_table.scss */
+.table-container table tbody tr:last-of-type td:first-of-type:after {
+  height: 73%;
+  bottom: initial;
+  top: 0;
+}
+/* line 118, ../sass/modules/_table.scss */
+.table-container table tbody tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 29px;
 }
 
 /* line 1, ../sass/partials/_header.scss */
@@ -380,35 +500,39 @@ footer .copyright {
   color: #0055a1;
   margin-bottom: 50px;
 }
-/* line 10, ../sass/partials/_lets-talk.scss */
+/* line 9, ../sass/partials/_lets-talk.scss */
+.lets-talk .title .gray {
+  color: #6b7175;
+}
+/* line 14, ../sass/partials/_lets-talk.scss */
 .lets-talk .extra-info {
   font-size: 24px;
   font-weight: bold;
   line-height: 1.79;
   letter-spacing: 4.7px;
 }
-/* line 17, ../sass/partials/_lets-talk.scss */
+/* line 21, ../sass/partials/_lets-talk.scss */
 .lets-talk .info-bottom {
   position: absolute;
   bottom: -420px;
 }
-/* line 21, ../sass/partials/_lets-talk.scss */
+/* line 25, ../sass/partials/_lets-talk.scss */
 .lets-talk .info-bottom .heading {
   font-size: 30px;
   letter-spacing: 3px;
   margin-bottom: 10px;
 }
-/* line 27, ../sass/partials/_lets-talk.scss */
+/* line 31, ../sass/partials/_lets-talk.scss */
 .lets-talk .info-bottom p {
   color: #0055a1;
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
-/* line 33, ../sass/partials/_lets-talk.scss */
+/* line 37, ../sass/partials/_lets-talk.scss */
 .lets-talk .info-bottom a {
   width: 280px;
 }
-/* line 40, ../sass/partials/_lets-talk.scss */
+/* line 44, ../sass/partials/_lets-talk.scss */
 .lets-talk form .form-control {
   width: 100%;
   border-radius: 4px;
@@ -421,13 +545,13 @@ footer .copyright {
   color: #6b7175;
   box-shadow: none;
 }
-/* line 52, ../sass/partials/_lets-talk.scss */
+/* line 56, ../sass/partials/_lets-talk.scss */
 .lets-talk form .form-control::placeholder {
   font-size: 15px;
   letter-spacing: 2.2px;
   color: #6b7175;
 }
-/* line 60, ../sass/partials/_lets-talk.scss */
+/* line 64, ../sass/partials/_lets-talk.scss */
 .lets-talk form textarea.form-control {
   height: 230px;
   margin-bottom: 40px;
@@ -4255,50 +4379,55 @@ footer .copyright {
 .page-home .description {
   padding: 80px 0;
 }
-/* line 25, ../sass/pages/_home.scss */
+/* line 23, ../sass/pages/_home.scss */
+.page-home .description .white-box-bg:before {
+  background: url(../images/white-box-bg.png) no-repeat;
+  bottom: -90px;
+}
+/* line 34, ../sass/pages/_home.scss */
 .page-home .description .white-box .item:nth-of-type(1) {
   background: url(img/icon-clock.png) top left no-repeat;
   background-size: 80px;
   background-position-y: 10px;
 }
-/* line 31, ../sass/pages/_home.scss */
+/* line 40, ../sass/pages/_home.scss */
 .page-home .description .white-box .item:nth-of-type(2) {
   background: url(img/icon-calc.png) top left no-repeat;
   background-size: 75px;
   background-position-y: 10px;
 }
-/* line 37, ../sass/pages/_home.scss */
+/* line 46, ../sass/pages/_home.scss */
 .page-home .description .white-box .item:nth-of-type(3) {
   background: url(img/icon-smile.png) top left no-repeat;
   background-size: 70px;
   background-position-y: 10px;
   background-position-x: 10px;
 }
-/* line 50, ../sass/pages/_home.scss */
+/* line 59, ../sass/pages/_home.scss */
 .page-home .training-programs {
   padding: 130px 0 130px;
   transform: translateY(-100px);
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 55, ../sass/pages/_home.scss */
+/* line 64, ../sass/pages/_home.scss */
 .page-home .training-programs .item {
   margin-top: 120px;
 }
-/* line 58, ../sass/pages/_home.scss */
+/* line 67, ../sass/pages/_home.scss */
 .page-home .training-programs .item .img-container {
   position: relative;
 }
-/* line 61, ../sass/pages/_home.scss */
+/* line 70, ../sass/pages/_home.scss */
 .page-home .training-programs .item .img-container img {
   border-radius: 30px;
   border-top-left-radius: 0;
   width: 100%;
 }
-/* line 66, ../sass/pages/_home.scss */
+/* line 75, ../sass/pages/_home.scss */
 .page-home .training-programs .item .img-container img.border-right {
   border-top-right-radius: 0;
 }
-/* line 71, ../sass/pages/_home.scss */
+/* line 80, ../sass/pages/_home.scss */
 .page-home .training-programs .item .img-container .info-box {
   position: absolute;
   width: 95%;
@@ -4314,46 +4443,46 @@ footer .copyright {
   bottom: 35px;
   right: -22%;
 }
-/* line 91, ../sass/pages/_home.scss */
+/* line 100, ../sass/pages/_home.scss */
 .page-home .training-programs .item .program-info .subtitle {
   margin: 15px 0;
 }
-/* line 95, ../sass/pages/_home.scss */
+/* line 104, ../sass/pages/_home.scss */
 .page-home .training-programs .item .program-info p {
   font-size: 15px;
   letter-spacing: 2.2px;
   padding-right: 190px;
   margin: 25px 0 40px;
 }
-/* line 103, ../sass/pages/_home.scss */
+/* line 112, ../sass/pages/_home.scss */
 .page-home .training-programs .item .program-info.text-right p {
   padding-right: 0;
   padding-left: 190px;
 }
-/* line 115, ../sass/pages/_home.scss */
+/* line 124, ../sass/pages/_home.scss */
 .page-home .good-company {
   padding: 80px 0 130px;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 119, ../sass/pages/_home.scss */
+/* line 128, ../sass/pages/_home.scss */
 .page-home .good-company .title {
   margin-bottom: 30px;
 }
-/* line 125, ../sass/pages/_home.scss */
+/* line 134, ../sass/pages/_home.scss */
 .page-home .good-company .partners-images img {
   float: left;
   margin: 0 15px;
 }
-/* line 134, ../sass/pages/_home.scss */
+/* line 143, ../sass/pages/_home.scss */
 .page-home .testimonials {
   padding: 140px 0 80px;
 }
-/* line 138, ../sass/pages/_home.scss */
+/* line 147, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .slide {
   overflow: hidden;
   margin-bottom: 20px;
 }
-/* line 142, ../sass/pages/_home.scss */
+/* line 151, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .slide .quote {
   font-size: 16px;
   line-height: 1.5;
@@ -4362,7 +4491,7 @@ footer .copyright {
   height: 185px;
   padding: 35px 45px;
 }
-/* line 150, ../sass/pages/_home.scss */
+/* line 159, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .slide .quote:before {
   content: "";
   position: absolute;
@@ -4373,7 +4502,7 @@ footer .copyright {
   background: url(img/testimonial-bg.png) top left no-repeat;
   z-index: -1;
 }
-/* line 162, ../sass/pages/_home.scss */
+/* line 171, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .slide .author {
   margin-top: 25px;
   font-size: 18px;
@@ -4382,28 +4511,38 @@ footer .copyright {
   letter-spacing: 0.7px;
   text-align: center;
 }
-/* line 174, ../sass/pages/_home.scss */
+/* line 183, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .flex-control-nav a {
   background: #d5d5d5;
   box-shadow: none;
 }
-/* line 178, ../sass/pages/_home.scss */
+/* line 187, ../sass/pages/_home.scss */
 .page-home .testimonials .testimonials-slider .flex-control-nav a.flex-active {
   background: #914691;
 }
-/* line 191, ../sass/pages/_home.scss */
+/* line 200, ../sass/pages/_home.scss */
 .page-home .lets-talk {
   padding-bottom: 50px;
 }
-/* line 195, ../sass/pages/_home.scss */
+/* line 204, ../sass/pages/_home.scss */
 .page-home .blog-posts {
   padding: 80px 0 130px;
 }
-/* line 198, ../sass/pages/_home.scss */
+/* line 207, ../sass/pages/_home.scss */
 .page-home .blog-posts .section-desc {
   margin: 30px 0 40px;
 }
-/* line 204, ../sass/pages/_home.scss */
+/* line 212, ../sass/pages/_home.scss */
+.page-home .blog-posts .posts:before {
+  content: "";
+  position: absolute;
+  width: 76%;
+  height: 99%;
+  background: url(../images/white-box-bg.png);
+  bottom: -29px;
+  right: 82px;
+}
+/* line 222, ../sass/pages/_home.scss */
 .page-home .blog-posts .posts .box {
   width: 255px;
   overflow: hidden;
@@ -4415,12 +4554,12 @@ footer .copyright {
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
   position: relative;
 }
-/* line 215, ../sass/pages/_home.scss */
+/* line 233, ../sass/pages/_home.scss */
 .page-home .blog-posts .posts .box .inner-text {
   padding: 20px 30px;
   min-height: 160px;
 }
-/* line 219, ../sass/pages/_home.scss */
+/* line 237, ../sass/pages/_home.scss */
 .page-home .blog-posts .posts .box .inner-text .heading {
   font-size: 14px;
   font-weight: bold;
@@ -4429,21 +4568,21 @@ footer .copyright {
   color: #50c7ba;
   margin-bottom: 20px;
 }
-/* line 228, ../sass/pages/_home.scss */
+/* line 246, ../sass/pages/_home.scss */
 .page-home .blog-posts .posts .box .inner-text .date {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 1.8px;
   color: #6b7175;
 }
-/* line 234, ../sass/pages/_home.scss */
+/* line 252, ../sass/pages/_home.scss */
 .page-home .blog-posts .posts .box .inner-text .date i {
   font-size: 17px;
   vertical-align: text-top;
   padding-right: 5px;
   color: #8d9295;
 }
-/* line 243, ../sass/pages/_home.scss */
+/* line 261, ../sass/pages/_home.scss */
 .page-home .blog-posts .posts .box .btn {
   width: 100%;
   border-radius: 0;
@@ -4628,4 +4767,269 @@ footer .copyright {
   letter-spacing: 2.5px;
   border-radius: 30px;
   border-top-right-radius: 0;
+}
+/* line 74, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .org-benefits {
+  padding: 80px 0 285px;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* line 79, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .org-benefits .img-container:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../images/white-box-bg-2.png);
+  left: -10px;
+  top: -30px;
+}
+/* line 90, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .org-benefits .info-absolute {
+  border-radius: 31px;
+  border-top-right-radius: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+  padding: 35px 40px;
+  position: absolute;
+  bottom: -160px;
+}
+/* line 99, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .org-benefits .info-absolute ul {
+  margin: 0;
+}
+/* line 102, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .org-benefits .info-absolute ul li {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 2.06;
+  letter-spacing: 2.5px;
+  color: #914691;
+  padding-left: 15px;
+}
+/* line 117, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .how-work {
+  padding: 80px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* line 121, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .how-work .title {
+  margin-bottom: 50px;
+}
+/* line 125, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .how-work ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 130, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .how-work ul li {
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  width: 88%;
+}
+/* line 139, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .how-work ul li:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background: #914691;
+  left: 0;
+  top: 9px;
+}
+/* line 157, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .how-long {
+  padding: 130px 0 80px;
+}
+/* line 160, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .how-long .title {
+  margin-bottom: 30px;
+}
+/* line 166, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .how-much {
+  padding: 80px 0 185px;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* line 172, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .how-much .white-box .item {
+  padding: 5px 0;
+  padding-left: 140px;
+}
+/* line 176, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .how-much .white-box .item:nth-of-type(1) {
+  background: url(img/icon-calc.png) top left no-repeat;
+  background-size: 75px;
+  background-position-x: 10px;
+}
+/* line 182, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .how-much .white-box .item:nth-of-type(2) {
+  background: url(img/icon-learn.png) top left no-repeat;
+  background-position-x: 10px;
+}
+/* line 187, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .how-much .white-box .item:nth-of-type(3) {
+  background: url(img/icon-people.png) top left no-repeat;
+  background-position-x: 16px;
+}
+/* line 197, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .comparison {
+  padding: 80px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* line 201, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .comparison .title {
+  margin-bottom: 130px;
+}
+/* line 207, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .comparison .table-container:before {
+  display: none;
+}
+/* line 211, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .comparison .table-container:after {
+  content: "";
+  width: 274px;
+  height: 117px;
+  position: absolute;
+  right: -16px;
+  top: -109px;
+  background: url(img/new-and-exclusive-icon.png) no-repeat;
+}
+/* line 225, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .comparison .table-container table thead th {
+  padding: 20px 0 85px;
+  width: 30%;
+}
+/* line 229, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .comparison .table-container table thead th:first-of-type {
+  text-align: left;
+  padding-left: 90px;
+  padding-top: 20px;
+  width: 38%;
+}
+/* line 236, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .comparison .table-container table thead th:nth-last-of-type(2) {
+  background: url(img/icono-traditional.png) bottom center no-repeat;
+  background-position-y: 88px;
+  background-position-x: 142px;
+}
+/* line 242, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .comparison .table-container table thead th:last-of-type {
+  background: url(img/icono-nvq.png) bottom center no-repeat;
+  background-position-y: 90px;
+  background-position-x: 134px;
+}
+/* line 256, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .comparison .table-container table tbody tr td {
+  background: #FFFFFF;
+}
+/* line 259, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .comparison .table-container table tbody tr td:before {
+  content: "";
+  width: 93%;
+  position: absolute;
+  height: 1px;
+  background: #d6d6d6;
+  bottom: 0;
+  right: 0;
+}
+/* line 269, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .comparison .table-container table tbody tr td:first-of-type {
+  text-align: left;
+  padding-left: 60px;
+  vertical-align: top;
+}
+/* line 276, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .comparison .table-container table tbody tr td:nth-of-type(2):before {
+  width: 100%;
+}
+/* line 280, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .comparison .table-container table tbody tr td:nth-of-type(2):after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background: #d6d6d6;
+  bottom: 0;
+  right: 0;
+}
+/* line 291, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .comparison .table-container table tbody tr td .fa-check {
+  color: #50c7ba;
+  font-size: 35px;
+}
+/* line 296, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .comparison .table-container table tbody tr td .fa-times {
+  color: #d0021b;
+  font-size: 35px;
+}
+/* line 301, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .comparison .table-container table tbody tr td.required {
+  color: #d0021b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* line 307, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .comparison .table-container table tbody tr td.green-text {
+  color: #50c7ba;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* line 313, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .comparison .table-container table tbody tr td.left {
+  letter-spacing: 1px;
+}
+/* line 321, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .comparison .table-container table tbody tr:first-of-type td:nth-of-type(2):after {
+  height: 73%;
+}
+/* line 332, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .comparison .table-container table tbody tr:last-of-type td:nth-of-type(2):after {
+  height: 73%;
+  bottom: initial;
+  top: 0;
+}
+/* line 352, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .questions {
+  padding: 80px 0 50px;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* line 358, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .questions #accordion .card {
+  width: 100%;
+}
+/* line 361, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .questions #accordion .card .card-header {
+  background-color: #50c7ba;
+  margin-bottom: 20px;
+  padding: 20px 30px;
+  border-radius: 31px;
+  border-top-right-radius: 0;
+  position: relative;
+  padding-right: 65px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+}
+/* line 371, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .questions #accordion .card .card-header .card-lnk {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: 2.2px;
+}
+/* line 380, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .questions #accordion .card .card-header .faq-btn {
+  position: absolute;
+  top: calc(50% - 30px);
+  right: 20px;
+  font-size: 35px;
+}
+/* line 386, ../sass/pages/_training-programs-nvq.scss */
+.page-training-programs-nvq .questions #accordion .card .card-header .faq-btn .fa-angle-up {
+  display: none;
 }

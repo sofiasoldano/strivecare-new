@@ -18,8 +18,17 @@
     .description{
         padding: 80px 0;
         
-        .white-box{
+        .white-box-bg{
+                        
+            &:before{
+                background: url(../images/white-box-bg.png) no-repeat;
+                bottom: -90px;
+            }
             
+        }
+        
+        .white-box{
+
             .item{
         
                 &:nth-of-type(1){
@@ -200,7 +209,16 @@
         }
         
         .posts{
-            
+            &:before{
+                content: "";
+                position: absolute;
+                width: 76%;
+                height: 99%;
+                background: url(../images/white-box-bg.png);
+                bottom: -29px;
+                right: 82px;
+            }
+
             .box{
                 width: 255px;
                 overflow: hidden;

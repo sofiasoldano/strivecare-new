@@ -69,4 +69,9 @@
     line-height: 1.6;
     letter-spacing: 2.2px;
     padding-right: 125px;
+    
+    &.text-right{
+        padding-right: 0;
+        padding-left: 155px;
+    }
 }

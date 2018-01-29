@@ -85,23 +85,24 @@
 <section class="description">
     <div class="container">
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-6">
                 <div class="title"><b>Drive up</b><br> your cqc rating with outstanding training</div>
             </div>
-            <div class="col-md-7">
-                <img class="white-box-bg" src="images/white-box-bg.png"> 
-                <div class="white-box right">
-                    <div class="item">
-                        <div class="small-subtitle green">Your team gets qualified sooner</div>
-                        <p> A nationally recognised NVQ Diploma in as little as three months.</p>
-                    </div>
-                    <div class="item">
-                        <div class="small-subtitle green">Minimal disruption</div>
-                        <p> Keep your staff doing what they need to do.</p>
-                    </div>
-                    <div class="item">
-                        <div class="small-subtitle green">Free training</div>
-                        <p> For a limited time you can train as many staff as you want… <b>for free.</b></p>
+            <div class="col-md-6">
+                <div class="white-box-bg">
+                    <div class="white-box right">
+                        <div class="item">
+                            <div class="small-subtitle green">Your team gets qualified sooner</div>
+                            <p> A nationally recognised NVQ Diploma in as little as three months.</p>
+                        </div>
+                        <div class="item">
+                            <div class="small-subtitle green">Minimal disruption</div>
+                            <p> Keep your staff doing what they need to do.</p>
+                        </div>
+                        <div class="item">
+                            <div class="small-subtitle green">Free training</div>
+                            <p> For a limited time you can train as many staff as you want… <b>for free.</b></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -252,7 +253,6 @@
                 <a class="btn green">View blog</a>
             </div>
             <div class="col-md-7 posts">
-                <img class="white-box-bg" src="images/white-box-bg.png"> 
                    <div class="box">
                     <img src="images/post-2.jpg" class="img-responsive">
                     <div class="inner-text">

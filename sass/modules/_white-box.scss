@@ -1,11 +1,32 @@
+.white-box-bg{
+    
+    &:before{
+        content: "";
+        position: absolute;
+        width: 99%;
+        height: 98%;
+        background: url(../images/white-box-bg-2.png);
+        bottom: -44px;
+        right: 21px;
+    }
+    
+    &.left{
+        &:before{
+            right: initial;
+            left: 21px;
+        }
+    }
+}
+
 .white-box{
     border-radius: 31px;
     border-top-right-radius: 0;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
-    width: 90%;
     padding: 35px 45px;
     position: relative;
     background-color: $white;
+    
+    
 
     p{
         font-size: 17px;
@@ -46,16 +67,4 @@
              padding: 20px 45px;
          }
      }
-}
-
-.white-box-bg{
-    position: absolute;
-    top: 20px;
-    left: 40px;
-    
-    &.bg-right{
-        left: initial;
-        top: 120px;
-        right: 41px;
-    }
 }

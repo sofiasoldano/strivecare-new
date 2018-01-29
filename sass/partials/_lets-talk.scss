@@ -5,6 +5,10 @@
     .title{
         color: #0055a1;
         margin-bottom: 50px;
+        
+        .gray{
+            color: $gray;
+        }
     }
 
     .extra-info{
