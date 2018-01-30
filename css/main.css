@@ -5366,3 +5366,98 @@ footer .copyright {
   bottom: initial;
   top: 0;
 }
+
+/* line 3, ../sass/pages/_blog.scss */
+.page-blog .hero .main {
+  background: url(img/hero-training-bg.png) bottom right no-repeat;
+  background-size: 780px;
+}
+/* line 7, ../sass/pages/_blog.scss */
+.page-blog .hero .main .hero-title {
+  margin-top: 100px;
+}
+/* line 11, ../sass/pages/_blog.scss */
+.page-blog .hero .main .hero-img {
+  position: absolute;
+  right: -60px;
+  top: -33px;
+}
+/* line 21, ../sass/pages/_blog.scss */
+.page-blog .blog-posts {
+  padding: 100px 0 50px;
+}
+/* line 24, ../sass/pages/_blog.scss */
+.page-blog .blog-posts .post {
+  margin-bottom: 55px;
+}
+/* line 27, ../sass/pages/_blog.scss */
+.page-blog .blog-posts .post .content {
+  padding: 30px 10px;
+}
+/* line 30, ../sass/pages/_blog.scss */
+.page-blog .blog-posts .post .content .date {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 1.8px;
+  color: #8f9090;
+  margin: 15px 0;
+}
+/* line 37, ../sass/pages/_blog.scss */
+.page-blog .blog-posts .post .content .date i {
+  font-size: 17px;
+  vertical-align: text-top;
+  padding-right: 5px;
+}
+/* line 45, ../sass/pages/_blog.scss */
+.page-blog .blog-posts .post .content .desc {
+  font-size: 17px;
+  line-height: 1.41;
+  letter-spacing: 1.2px;
+  padding-right: 60px;
+  margin-bottom: 35px;
+}
+/* line 53, ../sass/pages/_blog.scss */
+.page-blog .blog-posts .post .content .read-more {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #50c7ba;
+  text-transform: uppercase;
+  position: relative;
+}
+/* line 61, ../sass/pages/_blog.scss */
+.page-blog .blog-posts .post .content .read-more i {
+  font-size: 24px;
+  padding-left: 5px;
+  vertical-align: bottom;
+}
+/* line 67, ../sass/pages/_blog.scss */
+.page-blog .blog-posts .post .content .read-more:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background: #50c7ba;
+  bottom: -10px;
+  left: 0;
+}
+/* line 85, ../sass/pages/_blog.scss */
+.page-blog .center {
+  text-align: center;
+}
+
+/* line 3, ../sass/pages/_additional-courses.scss */
+.page-aditional-courses .hero .main {
+  background: url(img/hero-courses-bg.png) bottom right no-repeat;
+  background-size: 860px;
+}
+/* line 7, ../sass/pages/_additional-courses.scss */
+.page-aditional-courses .hero .main .hero-title {
+  margin-top: 20px;
+}
+/* line 11, ../sass/pages/_additional-courses.scss */
+.page-aditional-courses .hero .main .hero-img {
+  position: absolute;
+  right: -60px;
+  top: -53px;
+}

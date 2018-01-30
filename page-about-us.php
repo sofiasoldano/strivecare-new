@@ -11,7 +11,7 @@
                     <a href="#" class="btn green">Learn more</a>
                 </div>
                 <div class="col-md-7">
-                    <img class="img-responsive hero-img right" src="images/hero-about.png" width="575">
+                    <img class="img-responsive hero-img right" src="images/hero-about.png" width="516">
                 </div>
             </div>
         </div>

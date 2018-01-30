@@ -36,7 +36,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <div class="title">Our <b class="purple">partners</b></div>
+                <div class="title">Our <br><b class="purple">clients</b></div>
             </div>    
             <div class="col-md-9">
                  <div class="flexslider partners-slider">
@@ -265,7 +265,7 @@
                     <img src="images/post-1.png" class="img-responsive">
                     <div class="inner-text">
                         <div class="heading">Sensory Rooms: A Beginners Guide for your Care Home</div>
-                        <p class="d0ate"><i class="fa fa-clock-o" aria-hidden="true"></i> 4th December 2017</p>
+                        <p class="date"><i class="fa fa-clock-o" aria-hidden="true"></i> 4th December 2017</p>
                     </div>
                     <a href="#" class="btn green">Read more</a>
                 </div>
