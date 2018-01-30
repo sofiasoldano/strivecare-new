@@ -1,4 +1,4 @@
-.page-training-programs-nvq{
+.page-training-programs-inner{
     .hero{
         .main{
             background: url(img/hero-nvq-bg.png) bottom right no-repeat;
@@ -6,6 +6,12 @@
             
             .hero-title{
                 margin-top: 20px;
+            }
+            
+            .hero-apprenticeship{
+                position: absolute;
+                right: 0;
+                bottom: 0;
             }
             
         }
@@ -46,11 +52,11 @@
     
     .partners{
         border: none;
-        padding: 50px 0;
+        padding: 50px 0 0;
     }
     
     .whos-for{
-        padding-bottom: 50px;
+        padding: 50px 0;
         
         .title{
             margin-bottom: 50px;
@@ -68,6 +74,11 @@
             letter-spacing: 2.5px;
             border-radius: 30px;
             border-top-right-radius: 0;
+        }
+        
+        .purple-box{
+            @extend .green-box;
+            background-color: $purple;
         }
     }
     
@@ -166,6 +177,10 @@
     .how-much{
         padding: 80px 0 185px;
         border-bottom: 1px solid #e0e0e0;
+        
+        .title{
+            margin-bottom: 30px;
+        }
         
         .white-box{
 
@@ -357,24 +372,26 @@
             
             .card{
                 width: 100%;
+                margin-bottom: 20px;
                 
                 .card-header{
                     background-color: $green;
-                    margin-bottom: 20px;
-                    padding: 20px 30px;
                     border-radius: 31px;
                     border-top-right-radius: 0;
                     position: relative;
                     padding-right: 65px;
-                     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+                    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+                    z-index: 1;
                     
                     .card-lnk {
+                        display: block;
                         color: $white;
                         text-transform: uppercase;
                         font-size: 15px;
                         font-weight: bold;
                         line-height: 1.6;
                         letter-spacing: 2.2px;
+                        padding: 20px 30px;
                     }
                     
                     .faq-btn{
@@ -390,10 +407,40 @@
                     
                 }
                 
+                .card-body{
+                    background: $white;
+                    border-bottom-left-radius: 31px;
+                    border-bottom-right-radius: 31px;
+                    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+                    padding: 35px;
+                    padding-top: 60px;
+                    transform: translateY(-35px);
+                    margin-bottom: -30px;
+                    
+                    p{
+                        font-size: 14px;
+                        line-height: 1.6;
+                        letter-spacing: 2.2px;
+                    }
+                    
+                }
+                
             }
             
         }
         
     }
+    
+    .lets-talk{
+        .info-bottom{
+            bottom: -440px;
+            
+            p{
+                margin-bottom: 25px;
+            }
+            
+        } 
+        
+    } 
     
 }

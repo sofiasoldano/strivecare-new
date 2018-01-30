@@ -1,0 +1,157 @@
+.page-about-us{
+     .hero{
+        .main{
+            background: url(img/hero-about-bg.png) bottom right no-repeat;
+            background-size: 855px;
+            
+            .hero-title{
+                margin-top: 60px;
+            }
+            
+        }
+    }
+    
+    .about-desc{
+        padding: 60px 0;
+        
+        .title{
+            margin-bottom: 50px;
+        }
+        
+        p{
+            width: 90%;
+            font-size: 15px;
+            line-height: 1.6;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+    }
+    
+    .team{
+        padding: 50px 0;
+        border-bottom: 1px solid #e0e0e0;
+        
+        .title{
+            margin-bottom: 30px;
+        }
+        
+        .section-desc{
+            color: $green;
+            font-weight: bold;
+        }
+        
+        .team-members{
+            margin: 130px 0 0;
+            
+            .member{
+                position: relative;
+                margin-bottom: 50px;
+            
+                .desc{
+                    border-radius: 31px;
+                    border-top-right-radius: 0;
+                    background-color: $white;
+                    padding: 12px 35px;
+                    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+                    position: absolute;
+                    width: 99%;
+                    bottom: -25px;
+                    right: -15px;
+
+                    .name{
+                        font-size: 17px;
+                        line-height: 1.47;
+                        letter-spacing: 2px;
+                        margin-bottom: 5px;
+                    }
+
+                    .position{
+                        font-size: 15px;
+                        line-height: 1.67;
+                        letter-spacing: 1.8px;
+                        color: #94989b;
+                        text-transform: uppercase;
+                        margin: 0;
+                    }
+
+                }
+            
+            }
+            
+        }
+        
+    }
+    
+    .why-choose{
+        padding: 130px 0 80px;
+        border-bottom: 1px solid #e0e0e0;
+        
+        .title{
+            margin-bottom: 50px;
+            
+            &.center{
+                margin: 80px 0;
+            }
+            
+        }
+        
+        .white-box{
+            overflow: hidden; 
+        }
+        
+        .info{
+            width: 90%;
+            margin-bottom: 40px;
+
+            &:last-of-type{
+                margin: 0;
+            }
+
+        }
+        
+        .green-box{
+            background-color: $green;
+            color: $white;
+            border-radius: 31px;
+            border-top-right-radius: 0;
+            overflow: hidden;
+            padding: 45px 60px;
+            width: 90%;
+            margin: 0 auto;
+            
+            .plus-info{
+                margin-bottom: 40px;
+                
+                &:last-of-type{
+                    margin: 0;
+                }
+                
+                .small-subtitle{
+                    position: relative;
+                    
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 5px;
+                        background: $white;
+                        top: 8px;
+                        left: -22px;
+                    }
+                    
+                }
+                
+                p{
+                    font-size: 17px;
+                    line-height: 1.41;
+                    letter-spacing: 1.9px;
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}

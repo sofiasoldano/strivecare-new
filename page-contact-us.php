@@ -9,6 +9,9 @@
                     <div class="hero-title">Get in touch</div>
                     <p class="hero-text">We'd love to hear from you</p>
                 </div>
+                <div class="col-md-7">
+                    <img class="img-responsive hero-img right" src="images/hero-contact.png" width="578">
+                </div>
             </div>
         </div>
     </div>
@@ -35,7 +38,7 @@
                 <div class="info-bottom">
                     <div class="heading">Book a 15 Minute Chat!</div>
                     <p>Get the clarity you need.</p>
-                    <a class="btn green">Book a time to chat</a>
+                    <a href="#" class="btn green">Book a time to chat</a>
                 </div>
             </div>
             <div class="col-md-6">

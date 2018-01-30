@@ -6,21 +6,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="hero-title">The FastTrack NVQ Diploma</div>
-                    <p class="hero-text">Train your staff for a nationally recognised qualification in as little as three months – without the heavy admin workload.</p>
+                    <div class="hero-title">Health and Social Care <br>Apprenticeship</div>
+                    <p class="hero-text">A comprehensive work-based training programme that provides learners with the skills and knowledge they need to work in all aspects of health and social care.</p>
                     <a href="#" class="btn green">Book a time to chat</a>
                 </div>
                 <div class="col-md-7">
-                    <img class="img-responsive hero-img" src="images/hero-nvq.png" width="545">
+                    
                 </div>
             </div>
         </div>
+        <img class="img-responsive hero-img hero-apprenticeship" src="images/hero-apprenticeships.png" width="540">
     </div>
     <div class="bottom">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p>The new FastTrack NVQ Diploma in Health and Social Care is nothing short of revolutionary. It’s fast, free and effective.</p>
+                    <p>Lasting between 12 and 24 months, and with direct assessor support throughout, the Health and Social Care Apprenticeship is a thorough training course that ends with learners attaining an Apprenticeship in Health and Social Care.</p>
                 </div>
             </div>
         </div>
@@ -45,68 +46,19 @@
     </div>
 </section>
 
-<section class="partners">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="title">Our <b class="purple">partners</b></div>
-            </div>    
-            <div class="col-md-9">
-                 <div class="flexslider partners-slider">
-                    <ul class="slides">
-                      <li class="slide">
-                        <img src="images/partners/partner1.png" class="img-responsive" title="slide" alt="slide">
-                      </li>
-                      <li class="slide">
-                        <img src="images/partners/partner2.png" class="img-responsive" title="slide" alt="slide">
-                      </li>
-                      <li class="slide">
-                        <img src="images/partners/partner3.png" class="img-responsive" title="slide" alt="slide">
-                      </li>
-                      <li class="slide">
-                       <img src="images/partners/partner4.png" class="img-responsive" title="slide" alt="slide">
-                      </li>
-                        <li class="slide">
-                       <img src="images/partners/partner5.png" class="img-responsive" title="slide" alt="slide">
-                      </li>
-                      <li class="slide">
-                        <img src="images/partners/partner6.png" class="img-responsive" title="slide" alt="slide">
-                      </li>
-                      <li class="slide">
-                        <img src="images/partners/partner7.png" class="img-responsive" title="slide" alt="slide">
-                      </li>
-                      <li class="slide">
-                        <img src="images/partners/partner8.png" class="img-responsive" title="slide" alt="slide">
-                      </li>
-                        <li class="slide">
-                        <img src="images/partners/partner9.png" class="img-responsive" title="slide" alt="slide">
-                      </li>
-                        <li class="slide">
-                        <img src="images/partners/partner10.png" class="img-responsive" title="slide" alt="slide">
-                      </li>
-                        <li class="slide">
-                        <img src="images/partners/partner11.png" class="img-responsive" title="slide" alt="slide">
-                      </li>
-    
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
+<div class="bg-8">
 <section id="whos-for" class="whos-for">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="title center"><b class="green">Who's it for</b></div>
-                <div class="green-box">The Fast Track NVQ Diploma is available to all learners through levels 2 – 5 in Health and Social Care. Courses at each level are designed to equip learners with the skills and knowledge needed to care for others in a broad range of health or social care settings.</div>
+                <div class="title center"><b class="purple">Who's it for</b></div>
+                <div class="purple-box">The Health and Social Care Apprenticeship is available to all learners through levels 2 – 5 in Health and Social care. This qualification meets the needs of candidates who work in a wide range of adult and elderly care settings.As a care home committed to maintaining a skilled and motivated workforce, our role-relevant Apprenticeship training is suited to a wide range of career pathways to match your business needs..</div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="org-benefits" class="org-benefits bg-5">
+<section id="org-benefits" class="org-benefits bg-6">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -114,18 +66,16 @@
             </div>
             <div class="col-md-6">
                 <div class="img-container">
-                    <img src="images/org-benefits.png" class="img-responsive">
+                    <img src="images/org-benefits-2.png" class="img-responsive">
                 </div>
             </div>
             <div class="col-md-7">
                 <div class="info-absolute">
                     <ul>
-                        <li>Improve and maintain your CQC rating</li>
-                        <li>Train faster and more efficiently</li>
-                        <li>Minimise disruption on your care home and your staff</li>
-                        <li>Lower staff attrition</li>
-                        <li>Pay less to qualify your staff</li>
-                        <li>Reduce administration</li>
+                        <li>Assigned direct contact with industry experienced assessor for every learner in their working environment</li>
+                        <li>Tailored support for every learner’s individual learning style</li>
+                        <li>Functional skills training</li>
+                        <li>Pay 10% towards to the cost of apprenticeship training (for Non-levy paying employers only)</li>
                     </ul>
                         
                 </div>
@@ -133,39 +83,48 @@
         </div>
     </div>
 </section>
+</div>
 
 <section id="how-work" class="how-work">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="title">How does <br><b class="purple">it work?</b></div>
+                <div class="title">How does <br><b class="green">it work?</b></div>
             </div>
             <div class="col-md-6">
                 <ul>
-                    <li>Flexible to suit all fields of health and social care. Learners, with the support of their industry-experienced assessor, will select from multiple pathways from working with people with a learning disability, to people with dementia or children and young people. Naturally, input from management is always welcome.</li>
-                    <li>Following a simple single page process for enrolment, all learners are entitled to a FREE one day on-site assessor visit (or, two half-days), plus on-going telephone support from a fully qualified industry experienced assessor.
+                    <li>Our health and social care apprenticeship programmes are all delivered on site, working around your ever day care setting</li>
+                    <li>Following a simple single page process for enrolment, all Health and social care apprenticeships are offered at Levels 2 through to 5.
+                    </li>
+                    <li>Each level comprises a number of learning components and candidates at all levels must achieve all aspects to complete the full framework
                     </li>
                 </ul>
             </div>
             <div class="col-md-6">
                  <ul>
-                    <li class="right">Training for the diploma is delivered online through our simple to use and fully transparent ePortfolio system.</li>
-                    <li class="right">The online assessment process is conducted using a variety of communication methods to suit the individual learner, such as Skype, telephone, email, and the ePortfolio software.
+                    <li class="right">Apprenticeship training typically lasts between 12 – 24 months dependent on the level with direct assessor support throughout with training approaches tailored to individual learning styles.</li>
+                    <li class="right">Apprentices assessed by industry experienced assessors in natural working enviroments
                     </li>
-                     <li class="right">OPTIONAL ADD-ON – Direct contact with Assessor. Tailored to meet your organisation’s individual needs, this one-to-one contact to be provided on-site as full-day or half-day meetings.
+                     <li class="right">Non levy paying employers are eligible to take advantage of government ‘co-investment’ rate and pay 10% towards to the cost of apprenticeship training
                      </li>
+                     <li class="right">Functional skills training to all learners covering English and Maths to improve confidence</li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
 
-<div class="bg-1">
+<div class="bg-7">
 <section id="how-long" class="how-long">
     <div class="container">
-        <div class="row">
+        <div class="row">  
             <div class="col-md-6">
-                <div class="table-container">
+                <div class="title">How long is <br><b>the training?</b></div>
+                <div class="section-desc">
+                Comprehensive work-based training programme that lasts up to 18 months.</div>
+            </div>
+            <div class="col-md-6">
+                <div class="table-container to-right">
                     <table>
                         <thead>
                             <tr>
@@ -194,11 +153,6 @@
                     </table>
                 </div>
             </div>
-            <div class="col-md-6 text-right">
-                <div class="title">How long is <br><b>the training?</b></div>
-                <div class="section-desc text-right">
-                Accelerated learning with internally and externally-verified quality tuition to achieve the nationally recognised qualification in Health and Social Care.</div>
-            </div>
         </div>
     </div>
 </section>
@@ -206,28 +160,17 @@
 <section id="how-much" class="how-much">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <div class="title"><b>How much</b><br>does it cost?</div>
-                <div class="section-desc">
-                Accelerated learning with internally and externally-verified quality tuition to achieve the nationally recognised qualification in Health and Social Care.</div>
+            <div class="col-md-8">
+                <div class="white-box-bg left">
+                <div class="white-box">
+                    <p>Funding for apprenticeship is available to employers either through their paymentof the new Apprenticeship Levy or from a co-financing system from the Education and Skills Funding Agency. Non levy paying employers pay 10% towards to the cost of apprenticeship training with the remaining 90% covered by the Education and Skills Funding Agency.</p>
+                    <p>Levy paying employers can only use the he levy to fund apprenticeships, 
+                    not any other form of training.</p>
+                </div>
+                </div>
             </div>
-            <div class="col-md-6">
-                <div class="white-box-bg">
-                <div class="white-box right">
-                    <div class="item">
-                        <div class="small-subtitle green">FREE Health and Social Care trainingr</div>
-                    </div>
-                    <div class="item">
-                        <div class="small-subtitle green">FREE one-day on-site assessor visit for all learners</div>
-                    </div>
-                    <div class="item">
-                        <div class="small-subtitle green">Sign up an UNLIMITED amount of learners</div>
-                    </div>
-                    <div class="bottom green">
-                     <div class="small-subtitle center">Limited Availability:<br>Offer limited to the first 500 sign ups</div>
-                    </div>
-                </div>
-                </div>
+            <div class="col-md-4 text-right">
+                <div class="title"><b>How much</b><br>does it cost?</div>
             </div>
         </div>
     </div>    
@@ -415,7 +358,7 @@
                 <div class="card">
                     <div class="card-header" role="tab" id="heading4">
 
-                        <a class="card-lnk collapsed" data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">What are the benefits of completing the fast track nvq diploma?
+                        <a class="card-lnk collapsed" data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">Do the courses require anything from managers?
                         <div class="faq-btn">
                             <i class="fa fa-angle-down" aria-hidden="true"></i>
                             <i class="fa fa-angle-up" aria-hidden="true"></i>
@@ -425,8 +368,7 @@
 
                     <div class="collapse" id="collapse4" role="tabpanel" aria-labelledby="heading4" data-parent="#accordion">
                       <div class="card-body">
-                          <p>The Fast Track Diploma benefits from a faster completion timescale without having to fulfil a mandatory timeframe (as is the case with apprenticeships). Employers can apply for FULL reimbursement of funding for the qualification, subject only to successful completion and certification resulting in the qualification being free of charge. Much reduced administration at sign up and throughout the training if compared to the apprenticeship with no Ofsted or college inspections or involvement during the entire process.</p>
-
+                          <p>Management input for the Apprenticeships is on a monthly basis and include monthly progress reviews, support with ‘off the job’ learning, college inspections and ofsted vists etc. The input for the Fast Track Diploma is limited to a fast and efficient sign up process, with any further involvement at the discretion of the manager.</p>
                       </div>
                     </div>
                   </div>    

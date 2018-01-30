@@ -1,0 +1,124 @@
+.page-faqs{
+    .hero{
+        .main{
+            background: url(img/hero-faqs-bg.png) bottom right no-repeat;
+            background-size: 780px;
+            
+            .hero-title{
+                margin-top: 115px;
+            }
+            
+            .hero-img{
+                position: absolute;
+                top: -50px;
+                right: -97px;
+            }
+            
+        }
+        
+    }
+    
+    .questions{
+        padding: 50px 0;
+        border-bottom: 1px solid #e0e0e0;
+        
+        .info{
+            .ques{
+                border-radius: 31px;
+                border-top-right-radius: 0;
+                background-color: $white;
+                box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+                padding: 25px 30px;
+                margin: 30px 0;
+                
+                .small-subtitle{
+                    margin: 0;    
+                }
+                
+            }
+            
+            p{
+                font-size: 15px;
+                line-height: 1.6;
+                letter-spacing: 1.5px;  
+                padding: 0 30px;
+                margin-bottom: 30px;
+            }
+            
+            .table-container{
+                
+                &:before{
+                    right: -70px;
+                }
+                
+                table{
+
+                    thead{
+
+                        th{
+                            &:first-of-type{
+                                width: 27%;
+                            }
+                            
+                            width: 42%;
+                        }
+                    }
+                    
+                    tbody{
+                    
+                        tr{
+
+                            td{
+                                &:nth-of-type(2){
+                                    &:before{
+                                        width: 100%;
+                                    }
+
+                                    &:after{
+                                        content: "";
+                                        position: absolute;
+                                        height: 100%;
+                                        width: 1px;
+                                        background: #d6d6d6;
+                                        bottom: 0;
+                                        right: 0;
+                                    }
+                                }
+                            }
+                           
+                            &:first-of-type{
+                                td:nth-of-type(2){
+                                    &:after{
+                                        height: 73%;
+                                    }
+                                }
+
+                            }
+
+                            &:last-of-type{
+
+                                td:nth-of-type(2){
+
+                                    &:after{
+                                        height: 73%;
+                                        bottom: initial;
+                                        top: 0;
+                                    }
+
+                                }
+
+                            }    
+                        
+                        }
+                        
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}

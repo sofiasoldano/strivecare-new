@@ -29,7 +29,7 @@
          <div class="row">
              <div class="col-md-6">
                  <div class="title"><span class="green">The new and exclusive<br><b>fast track diploma in health and <br> social care</b></span></div>
-                 <a class="btn green">find out more</a>
+                 <a href="#" class="btn green">find out more</a>
              </div>
              <div class="col-md-6">
                 <div class="white-box-bg">
@@ -94,7 +94,7 @@
             <div class="col-md-6 text-right">
                 <div class="subtitle">Special<br><b>introductory offer</b></div>
                 <p class="section-desc">Upskill your Health and Social Care staff in as little as three months… <b>and pay nothing!</b></p>
-                <a class="btn green">find out more</a>
+                <a href="#" class="btn green">find out more</a>
             </div>
          </div>
     </div>
@@ -110,7 +110,7 @@
          <div class="row">
              <div class="col-md-6">
                  <div class="title"><span class="purple">The new and exclusive<br><b>fast track diploma in health and <br> social care</b></span></div>
-                 <a class="btn green">find out more</a>
+                 <a href="#" class="btn green">find out more</a>
              </div>
              <div class="col-md-6">
                  <div class="white-box-bg">
@@ -173,7 +173,7 @@
                     <div class="small-subtitle green">Improve CQC compliance</div>
                     <p>Meet CQC standards of compliance for continuing professional development.</p>
                 </div>
-                <a class="btn green">Find out more</a>
+                <a href="#" class="btn green">Find out more</a>
             </div>
             <div class="col-md-6">
                  <div class="challenge">

@@ -1,4 +1,5 @@
 .table-container{
+    position: relative;
 
     &:before{
         content: "";
@@ -8,6 +9,12 @@
         background: url(../images/white-box-bg-2.png) no-repeat;
         bottom: -49px;
         right: -83px;
+    }
+    
+    &.to-right{
+        &:before{
+            right: 30px;
+        }
     }
 
     table{

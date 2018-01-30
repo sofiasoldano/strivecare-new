@@ -13,7 +13,7 @@
                         <li>No cost</li>
                         <li>Loved by CQC!</li>
                     </ul>
-                    <a class="btn green">Find out more</a>
+                    <a href="#" class="btn green">Find out more</a>
                 </div>
                 <div class="col-md-7">
                     <img class="img-responsive hero-img" src="images/hero-home.png" width="485">
@@ -128,7 +128,7 @@
                 <div class="program-info text-right">
                     <div class="subtitle"><b class="green"> Fasttrack nvq diploma in health and social care</b></div>
                     <p>New and exclusive! Learners achieve an NVQ qualification in Health and Social Care in as little as three months.</p>
-                    <a class="btn green">Find out more</a>
+                    <a href="#" class="btn green">Find out more</a>
                 </div>
             </div>
         </div>
@@ -137,7 +137,7 @@
                 <div class="program-info">
                     <div class="subtitle"><b class="green"> Health and social care apprenticeship</b></div>
                     <p>Comprehensive work-based training programme that lasts up to 18 months.</p>
-                    <a class="btn green">Find out more</a>
+                    <a href="#" class="btn green">Find out more</a>
                 </div>
             </div>
             <div class="col-md-6">
@@ -250,7 +250,7 @@
             <div class="col-md-5">
                 <div class="title"><b>Some</b> of our<br><b class="purple">blog posts</b></div>
                 <p class="section-desc">Exploring Best Practice in UK Health and Social Cares.</p>
-                <a class="btn green">View blog</a>
+                <a href="#" class="btn green">View blog</a>
             </div>
             <div class="col-md-7 posts">
                    <div class="box">
@@ -259,7 +259,7 @@
                         <div class="heading">The Digital Era Transforms Health and Social Care</div>
                         <p class="date"><i class="fa fa-clock-o" aria-hidden="true"></i> 4th December 2017</p>
                     </div>
-                       <a class="btn green">Read more</a>
+                       <a href="#" class="btn green">Read more</a>
                 </div>
                 <div class="box">
                     <img src="images/post-1.png" class="img-responsive">
@@ -267,9 +267,8 @@
                         <div class="heading">Sensory Rooms: A Beginners Guide for your Care Home</div>
                         <p class="d0ate"><i class="fa fa-clock-o" aria-hidden="true"></i> 4th December 2017</p>
                     </div>
-                    <a class="btn green">Read more</a>
+                    <a href="#" class="btn green">Read more</a>
                 </div>
-             
             </div>
         </div>
     </div>
