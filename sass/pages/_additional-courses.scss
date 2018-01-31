@@ -4,10 +4,6 @@
             background: url(img/hero-courses-bg.png) bottom right no-repeat;
             background-size: 860px;
             
-            .hero-title{
-                margin-top: 20px;
-            }
-            
            .hero-img{
                 position: absolute;
                 right: -60px;
@@ -17,4 +13,52 @@
         }
         
     }
+    
+    .courses{
+        padding: 80px 0 0;
+        border-bottom: 1px solid #e0e0e0;
+        
+        .title{
+            margin-bottom: 30px;
+        }
+        
+        .row{
+            margin-bottom: 130px;
+        }
+        
+        .white-box{
+            
+            ul{
+                
+                &.purple{
+                    color: $purple;
+                    
+                    li{
+                        font-size: 17px;
+                        font-weight: bold;
+                        line-height: 2.06;
+                        letter-spacing: 2.5px;
+                        margin-bottom: 1px;
+                        padding-left: 15px;
+                    }
+                    
+                }
+                
+                &.green{
+                    color: $green;
+                    
+                    p{
+                        color: $gray;
+                        margin-bottom: 25px;
+                    }
+                }
+                
+                
+                
+            }
+            
+        }
+        
+    }
+    
 }

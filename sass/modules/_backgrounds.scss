@@ -4,6 +4,10 @@
 
 .bg-2{
     background: url(img/fill-2.png) bottom left no-repeat;
+    
+    &.small{
+        background: url(img/fill-2-small.png) bottom left no-repeat;
+    }
 }
 
 .bg-3{

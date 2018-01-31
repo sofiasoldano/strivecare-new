@@ -25,40 +25,61 @@ a:hover {
   color: #6b7175;
   text-decoration: none;
 }
-
 /* line 22, ../sass/base/_reset.scss */
+a:focus {
+  text-decoration: none;
+}
+/* line 26, ../sass/base/_reset.scss */
+a:visited {
+  text-decoration: none;
+}
+
+/* line 31, ../sass/base/_reset.scss */
 img {
   margin: auto;
 }
 
-/* line 25, ../sass/base/_reset.scss */
+/* line 34, ../sass/base/_reset.scss */
 .right {
   float: right !important;
 }
 
-/* line 28, ../sass/base/_reset.scss */
+/* line 37, ../sass/base/_reset.scss */
 #mfPreviewBar {
   display: none !important;
 }
 
 /* line 1, ../sass/modules/_buttons.scss */
 .btn {
-  width: 245px;
-  padding: 15px 0;
+  padding: 15px 35px;
   border-radius: 75px;
   color: #FFFFFF;
   font-size: 17px;
   font-family: "Brandon Text Bold";
   letter-spacing: 0.4px;
   text-transform: uppercase;
+  transition: all 0.5s;
 }
 /* line 11, ../sass/modules/_buttons.scss */
+.btn:hover {
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+/* line 16, ../sass/modules/_buttons.scss */
 .btn.green {
   background-color: #50c7ba;
 }
-/* line 15, ../sass/modules/_buttons.scss */
+/* line 19, ../sass/modules/_buttons.scss */
+.btn.green:hover {
+  background-color: #41ab9f;
+}
+/* line 24, ../sass/modules/_buttons.scss */
 .btn.purple {
   background-color: #914691;
+}
+/* line 27, ../sass/modules/_buttons.scss */
+.btn.purple:hover {
+  background-color: #753b75;
 }
 
 /* line 1, ../sass/modules/_titles.scss */
@@ -147,7 +168,7 @@ img {
   position: absolute;
   width: 99%;
   height: 98%;
-  background: url(../images/white-box-bg-2.png);
+  background: url(../images/white-box-bg-2.png) bottom left;
   bottom: -44px;
   right: 21px;
 }
@@ -155,9 +176,10 @@ img {
 .white-box-bg.left:before {
   right: initial;
   left: 21px;
+  background-position: bottom right;
 }
 
-/* line 21, ../sass/modules/_white-box.scss */
+/* line 22, ../sass/modules/_white-box.scss */
 .white-box {
   border-radius: 31px;
   border-top-right-radius: 0;
@@ -166,23 +188,23 @@ img {
   position: relative;
   background-color: #FFFFFF;
 }
-/* line 31, ../sass/modules/_white-box.scss */
+/* line 32, ../sass/modules/_white-box.scss */
 .white-box p {
   font-size: 17px;
   line-height: 1.41;
   letter-spacing: 2.5px;
   margin-bottom: 15px;
 }
-/* line 39, ../sass/modules/_white-box.scss */
+/* line 40, ../sass/modules/_white-box.scss */
 .white-box .item {
   padding-left: 140px;
   margin-bottom: 30px;
 }
-/* line 43, ../sass/modules/_white-box.scss */
+/* line 44, ../sass/modules/_white-box.scss */
 .white-box .item:last-of-type {
   margin-bottom: 0;
 }
-/* line 49, ../sass/modules/_white-box.scss */
+/* line 50, ../sass/modules/_white-box.scss */
 .white-box .bottom {
   background-color: #fbfbfb;
   margin: 27px -45px -35px;
@@ -190,16 +212,16 @@ img {
   border-bottom-left-radius: 31px;
   border-bottom-right-radius: 31px;
 }
-/* line 56, ../sass/modules/_white-box.scss */
+/* line 57, ../sass/modules/_white-box.scss */
 .white-box .bottom p {
   margin-bottom: 30px;
   padding-right: 100px;
 }
-/* line 60, ../sass/modules/_white-box.scss */
+/* line 61, ../sass/modules/_white-box.scss */
 .white-box .bottom p:last-of-type {
   margin-bottom: 0;
 }
-/* line 65, ../sass/modules/_white-box.scss */
+/* line 66, ../sass/modules/_white-box.scss */
 .white-box .bottom.green {
   background-color: #50c7ba;
   color: #FFFFFF;
@@ -215,64 +237,68 @@ img {
 .bg-2 {
   background: url(img/fill-2.png) bottom left no-repeat;
 }
+/* line 8, ../sass/modules/_backgrounds.scss */
+.bg-2.small {
+  background: url(img/fill-2-small.png) bottom left no-repeat;
+}
 
-/* line 9, ../sass/modules/_backgrounds.scss */
+/* line 13, ../sass/modules/_backgrounds.scss */
 .bg-3 {
   background: url(img/fill-3.png) bottom right no-repeat;
 }
 
-/* line 13, ../sass/modules/_backgrounds.scss */
+/* line 17, ../sass/modules/_backgrounds.scss */
 .bg-4 {
   background: url(img/fill-4.png) bottom left no-repeat;
 }
 
-/* line 17, ../sass/modules/_backgrounds.scss */
+/* line 21, ../sass/modules/_backgrounds.scss */
 .bg-5 {
   background: url(img/fill-5.png) bottom left no-repeat;
 }
 
-/* line 21, ../sass/modules/_backgrounds.scss */
+/* line 25, ../sass/modules/_backgrounds.scss */
 .bg-6 {
   background: url(img/fill-6.png) bottom right no-repeat;
 }
 
-/* line 25, ../sass/modules/_backgrounds.scss */
+/* line 29, ../sass/modules/_backgrounds.scss */
 .bg-7 {
   background: url(img/fill-7.png) bottom left no-repeat;
 }
 
-/* line 29, ../sass/modules/_backgrounds.scss */
+/* line 33, ../sass/modules/_backgrounds.scss */
 .bg-8 {
   background: url(img/fill-8.png) top left no-repeat;
 }
 
-/* line 33, ../sass/modules/_backgrounds.scss */
+/* line 37, ../sass/modules/_backgrounds.scss */
 .bg-9 {
   background: url(img/fill-9.png) top right no-repeat;
 }
 
-/* line 37, ../sass/modules/_backgrounds.scss */
+/* line 41, ../sass/modules/_backgrounds.scss */
 .bg-10 {
   background: url(img/fill-10.png) top left no-repeat;
 }
 
-/* line 41, ../sass/modules/_backgrounds.scss */
+/* line 45, ../sass/modules/_backgrounds.scss */
 .bg-11 {
   background: url(img/fill-11.png) bottom right no-repeat;
 }
 
-/* line 45, ../sass/modules/_backgrounds.scss */
+/* line 49, ../sass/modules/_backgrounds.scss */
 .bg-12 {
   background: url(img/fill-12.png) top left no-repeat;
   background-position-y: 60px;
 }
 
-/* line 50, ../sass/modules/_backgrounds.scss */
+/* line 54, ../sass/modules/_backgrounds.scss */
 .bg-13 {
   background: url(img/fill-13.png) top left no-repeat;
 }
 
-/* line 54, ../sass/modules/_backgrounds.scss */
+/* line 58, ../sass/modules/_backgrounds.scss */
 .bg-14 {
   background: url(img/fill-14.png) bottom right no-repeat;
 }
@@ -391,6 +417,38 @@ img {
 /* line 125, ../sass/modules/_table.scss */
 .table-container table tbody tr:last-of-type td:last-of-type {
   border-bottom-right-radius: 29px;
+}
+/* line 143, ../sass/modules/_table.scss */
+.table-container table.three-rows thead th {
+  width: 42%;
+}
+/* line 144, ../sass/modules/_table.scss */
+.table-container table.three-rows thead th:first-of-type {
+  width: 27%;
+}
+/* line 158, ../sass/modules/_table.scss */
+.table-container table.three-rows tbody tr td:nth-of-type(2):before {
+  width: 100%;
+}
+/* line 162, ../sass/modules/_table.scss */
+.table-container table.three-rows tbody tr td:nth-of-type(2):after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background: #d6d6d6;
+  bottom: 0;
+  right: 0;
+}
+/* line 176, ../sass/modules/_table.scss */
+.table-container table.three-rows tbody tr:first-of-type td:nth-of-type(2):after {
+  height: 73%;
+}
+/* line 187, ../sass/modules/_table.scss */
+.table-container table.three-rows tbody tr:last-of-type td:nth-of-type(2):after {
+  height: 73%;
+  bottom: initial;
+  top: 0;
 }
 
 /* line 1, ../sass/partials/_header.scss */
@@ -4757,6 +4815,10 @@ footer .copyright {
   margin-top: 45px;
 }
 
+/* line 1, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner {
+  /* NVQ LANDING */
+}
 /* line 3, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .hero .main {
   background: url(img/hero-nvq-bg.png) bottom right no-repeat;
@@ -4808,15 +4870,7 @@ footer .copyright {
   padding: 50px 0 0;
 }
 /* line 58, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .whos-for {
-  padding: 50px 0;
-}
-/* line 61, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .whos-for .title {
-  margin-bottom: 50px;
-}
-/* line 65, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .whos-for .green-box, .page-training-programs-inner .whos-for .purple-box {
+.page-training-programs-inner .green-box, .page-training-programs-inner .purple-box {
   width: 100%;
   padding: 40px 115px;
   background-color: #50c7ba;
@@ -4829,16 +4883,24 @@ footer .copyright {
   border-radius: 30px;
   border-top-right-radius: 0;
 }
-/* line 79, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .whos-for .purple-box {
+/* line 72, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .purple-box {
   background-color: #914691;
 }
-/* line 85, ../sass/pages/_training-programs-inner.scss */
+/* line 77, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .whos-for {
+  padding: 50px 0;
+}
+/* line 80, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .whos-for .title {
+  margin-bottom: 50px;
+}
+/* line 86, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .org-benefits {
   padding: 80px 0 285px;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 90, ../sass/pages/_training-programs-inner.scss */
+/* line 91, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .org-benefits .img-container:before {
   content: "";
   position: absolute;
@@ -4848,7 +4910,7 @@ footer .copyright {
   left: -10px;
   top: -30px;
 }
-/* line 101, ../sass/pages/_training-programs-inner.scss */
+/* line 102, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .org-benefits .info-absolute {
   border-radius: 31px;
   border-top-right-radius: 0;
@@ -4858,11 +4920,11 @@ footer .copyright {
   position: absolute;
   bottom: -160px;
 }
-/* line 110, ../sass/pages/_training-programs-inner.scss */
+/* line 111, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .org-benefits .info-absolute ul {
   margin: 0;
 }
-/* line 113, ../sass/pages/_training-programs-inner.scss */
+/* line 114, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .org-benefits .info-absolute ul li {
   font-size: 17px;
   font-weight: bold;
@@ -4871,22 +4933,22 @@ footer .copyright {
   color: #914691;
   padding-left: 15px;
 }
-/* line 128, ../sass/pages/_training-programs-inner.scss */
+/* line 129, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .how-work {
   padding: 80px 0;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 132, ../sass/pages/_training-programs-inner.scss */
+/* line 133, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .how-work .title {
   margin-bottom: 50px;
 }
-/* line 136, ../sass/pages/_training-programs-inner.scss */
+/* line 137, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .how-work ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 141, ../sass/pages/_training-programs-inner.scss */
+/* line 142, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .how-work ul li {
   font-size: 15px;
   line-height: 1.6;
@@ -4896,7 +4958,7 @@ footer .copyright {
   margin-bottom: 20px;
   width: 88%;
 }
-/* line 150, ../sass/pages/_training-programs-inner.scss */
+/* line 151, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .how-work ul li:before {
   content: "";
   position: absolute;
@@ -4907,58 +4969,58 @@ footer .copyright {
   left: 0;
   top: 9px;
 }
-/* line 168, ../sass/pages/_training-programs-inner.scss */
+/* line 169, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .how-long {
   padding: 130px 0 80px;
 }
-/* line 171, ../sass/pages/_training-programs-inner.scss */
+/* line 172, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .how-long .title {
   margin-bottom: 30px;
 }
-/* line 177, ../sass/pages/_training-programs-inner.scss */
+/* line 178, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .how-much {
   padding: 80px 0 185px;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 181, ../sass/pages/_training-programs-inner.scss */
+/* line 182, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .how-much .title {
   margin-bottom: 30px;
 }
-/* line 187, ../sass/pages/_training-programs-inner.scss */
+/* line 188, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .how-much .white-box .item {
   padding: 5px 0;
   padding-left: 140px;
 }
-/* line 191, ../sass/pages/_training-programs-inner.scss */
+/* line 192, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .how-much .white-box .item:nth-of-type(1) {
   background: url(img/icon-calc.png) top left no-repeat;
   background-size: 75px;
   background-position-x: 10px;
 }
-/* line 197, ../sass/pages/_training-programs-inner.scss */
+/* line 198, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .how-much .white-box .item:nth-of-type(2) {
   background: url(img/icon-learn.png) top left no-repeat;
   background-position-x: 10px;
 }
-/* line 202, ../sass/pages/_training-programs-inner.scss */
+/* line 203, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .how-much .white-box .item:nth-of-type(3) {
   background: url(img/icon-people.png) top left no-repeat;
   background-position-x: 16px;
 }
-/* line 212, ../sass/pages/_training-programs-inner.scss */
+/* line 213, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .comparison {
   padding: 80px 0;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 216, ../sass/pages/_training-programs-inner.scss */
+/* line 217, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .comparison .title {
   margin-bottom: 130px;
 }
-/* line 222, ../sass/pages/_training-programs-inner.scss */
+/* line 223, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .comparison .table-container:before {
   display: none;
 }
-/* line 226, ../sass/pages/_training-programs-inner.scss */
+/* line 227, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .comparison .table-container:after {
   content: "";
   width: 274px;
@@ -4968,111 +5030,91 @@ footer .copyright {
   top: -109px;
   background: url(img/new-and-exclusive-icon.png) no-repeat;
 }
-/* line 240, ../sass/pages/_training-programs-inner.scss */
+/* line 241, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .comparison .table-container table thead th {
   padding: 20px 0 85px;
   width: 30%;
 }
-/* line 244, ../sass/pages/_training-programs-inner.scss */
+/* line 245, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .comparison .table-container table thead th:first-of-type {
   text-align: left;
   padding-left: 90px;
   padding-top: 20px;
   width: 38%;
 }
-/* line 251, ../sass/pages/_training-programs-inner.scss */
+/* line 252, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .comparison .table-container table thead th:nth-last-of-type(2) {
   background: url(img/icono-traditional.png) bottom center no-repeat;
   background-position-y: 88px;
   background-position-x: 142px;
 }
-/* line 257, ../sass/pages/_training-programs-inner.scss */
+/* line 258, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .comparison .table-container table thead th:last-of-type {
   background: url(img/icono-nvq.png) bottom center no-repeat;
   background-position-y: 90px;
   background-position-x: 134px;
 }
-/* line 271, ../sass/pages/_training-programs-inner.scss */
+/* line 272, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .comparison .table-container table tbody tr td {
   background: #FFFFFF;
 }
-/* line 274, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison .table-container table tbody tr td:before {
-  content: "";
-  width: 93%;
-  position: absolute;
-  height: 1px;
-  background: #d6d6d6;
-  bottom: 0;
-  right: 0;
-}
-/* line 284, ../sass/pages/_training-programs-inner.scss */
+/* line 275, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .comparison .table-container table tbody tr td:first-of-type {
   text-align: left;
   padding-left: 60px;
   vertical-align: top;
 }
-/* line 291, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison .table-container table tbody tr td:nth-of-type(2):before {
-  width: 100%;
-}
-/* line 295, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison .table-container table tbody tr td:nth-of-type(2):after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 1px;
-  background: #d6d6d6;
-  bottom: 0;
-  right: 0;
-}
-/* line 306, ../sass/pages/_training-programs-inner.scss */
+/* line 281, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .comparison .table-container table tbody tr td .fa-check {
   color: #50c7ba;
   font-size: 35px;
 }
-/* line 311, ../sass/pages/_training-programs-inner.scss */
+/* line 286, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .comparison .table-container table tbody tr td .fa-times {
   color: #d0021b;
   font-size: 35px;
 }
-/* line 316, ../sass/pages/_training-programs-inner.scss */
+/* line 291, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .comparison .table-container table tbody tr td.required {
   color: #d0021b;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 322, ../sass/pages/_training-programs-inner.scss */
+/* line 297, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .comparison .table-container table tbody tr td.green-text {
   color: #50c7ba;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 328, ../sass/pages/_training-programs-inner.scss */
+/* line 303, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .comparison .table-container table tbody tr td.left {
   letter-spacing: 1px;
 }
-/* line 336, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison .table-container table tbody tr:first-of-type td:nth-of-type(2):after {
-  height: 73%;
+/* line 319, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .comparison.nvq .title {
+  margin-bottom: 25px;
 }
-/* line 347, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison .table-container table tbody tr:last-of-type td:nth-of-type(2):after {
-  height: 73%;
-  bottom: initial;
-  top: 0;
+/* line 323, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .comparison.nvq p {
+  font-size: 17px;
+  line-height: 1.41;
+  letter-spacing: 1.2px;
 }
-/* line 367, ../sass/pages/_training-programs-inner.scss */
+/* line 329, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .comparison.nvq .table-container {
+  margin: 80px 0 30px;
+}
+/* line 337, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .questions {
   padding: 80px 0 50px;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 373, ../sass/pages/_training-programs-inner.scss */
+/* line 343, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .questions #accordion .card {
   width: 100%;
   margin-bottom: 20px;
 }
-/* line 377, ../sass/pages/_training-programs-inner.scss */
+/* line 347, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .questions #accordion .card .card-header {
   background-color: #50c7ba;
   border-radius: 31px;
@@ -5082,7 +5124,7 @@ footer .copyright {
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
   z-index: 1;
 }
-/* line 386, ../sass/pages/_training-programs-inner.scss */
+/* line 356, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .questions #accordion .card .card-header .card-lnk {
   display: block;
   color: #FFFFFF;
@@ -5093,18 +5135,18 @@ footer .copyright {
   letter-spacing: 2.2px;
   padding: 20px 30px;
 }
-/* line 397, ../sass/pages/_training-programs-inner.scss */
+/* line 367, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .questions #accordion .card .card-header .faq-btn {
   position: absolute;
   top: calc(50% - 30px);
   right: 20px;
   font-size: 35px;
 }
-/* line 403, ../sass/pages/_training-programs-inner.scss */
+/* line 373, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .questions #accordion .card .card-header .faq-btn .fa-angle-up {
   display: none;
 }
-/* line 410, ../sass/pages/_training-programs-inner.scss */
+/* line 380, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .questions #accordion .card .card-body {
   background: #FFFFFF;
   border-bottom-left-radius: 31px;
@@ -5115,19 +5157,203 @@ footer .copyright {
   transform: translateY(-35px);
   margin-bottom: -30px;
 }
-/* line 420, ../sass/pages/_training-programs-inner.scss */
+/* line 390, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .questions #accordion .card .card-body p {
   font-size: 14px;
   line-height: 1.6;
   letter-spacing: 2.2px;
 }
-/* line 435, ../sass/pages/_training-programs-inner.scss */
+/* line 405, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .lets-talk .info-bottom {
   bottom: -440px;
 }
-/* line 438, ../sass/pages/_training-programs-inner.scss */
+/* line 408, ../sass/pages/_training-programs-inner.scss */
 .page-training-programs-inner .lets-talk .info-bottom p {
   margin-bottom: 25px;
+}
+/* line 418, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-description {
+  padding: 80px 0;
+}
+/* line 421, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-description .subtitle {
+  margin-bottom: 50px;
+}
+/* line 425, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-description p {
+  font-size: 17px;
+  line-height: 1.41;
+  letter-spacing: 1.2px;
+  width: 86%;
+  margin-bottom: 25px;
+}
+/* line 432, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-description p.right {
+  width: 95%;
+}
+/* line 438, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-description .green-box, .page-training-programs-inner .nvq-description .purple-box {
+  margin-top: 80px;
+}
+/* line 444, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-different {
+  padding: 80px 0 50px;
+}
+/* line 447, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-different .title {
+  margin-bottom: 30px;
+}
+/* line 453, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-different .white-box .item {
+  padding: 5px 0;
+  padding-left: 140px;
+}
+/* line 457, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-different .white-box .item:nth-of-type(1) {
+  background: url(img/icon-calc.png) top left no-repeat;
+  background-size: 75px;
+  background-position-x: 10px;
+}
+/* line 463, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-different .white-box .item:nth-of-type(2) {
+  background: url(img/icon-learn.png) top left no-repeat;
+  background-position-x: 10px;
+}
+/* line 468, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-different .white-box .item:nth-of-type(3) {
+  background: url(img/icon-people.png) top left no-repeat;
+  background-position-x: 16px;
+}
+/* line 478, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-table {
+  padding: 290px 0 80px;
+  transform: translateY(-100px);
+}
+/* line 483, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-table .table-container:before {
+  right: 35px;
+}
+/* line 489, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-path {
+  padding: 0 0 130px;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* line 493, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-path .title {
+  padding: 0 85px;
+  margin-bottom: 80px;
+}
+/* line 498, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-path .white-box {
+  overflow: hidden;
+}
+/* line 501, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-path .white-box .purple {
+  color: #914691;
+}
+/* line 504, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-path .white-box .purple li {
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+/* line 515, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-offer {
+  padding: 80px 0 130px;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* line 519, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-offer .title {
+  padding-left: 20px;
+}
+/* line 525, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-offer .white-box .item {
+  padding: 5px 0;
+  padding-left: 140px;
+}
+/* line 529, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-offer .white-box .item:nth-of-type(1) {
+  background: url(img/icon-calc.png) top left no-repeat;
+  background-size: 75px;
+  background-position-x: 10px;
+}
+/* line 535, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-offer .white-box .item:nth-of-type(2) {
+  background: url(img/icon-learn.png) top left no-repeat;
+  background-position-x: 10px;
+}
+/* line 546, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-quality {
+  padding: 80px 0;
+}
+/* line 549, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-quality .title {
+  margin-bottom: 60px;
+}
+/* line 553, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-quality p {
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  padding-left: 50px;
+  margin-bottom: 25px;
+}
+/* line 560, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-quality p.section-title {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  letter-spacing: 1.6px;
+  color: #914691;
+}
+/* line 571, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-quality .list p {
+  position: relative;
+}
+/* line 574, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-quality .list p:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+  background: #914691;
+  left: 22px;
+  top: 9px;
+}
+/* line 587, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-quality .white-box-bg {
+  position: relative;
+  margin-bottom: 83px;
+}
+/* line 595, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-quality .white-box p {
+  padding-left: 0;
+  font-size: 17px;
+  line-height: 1.41;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+/* line 605, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-quality .center {
+  text-align: center;
+  margin-top: 50px;
+}
+/* line 612, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-features {
+  padding: 60px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* line 616, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-features .subtitle {
+  margin-bottom: 50px;
+}
+/* line 620, ../sass/pages/_training-programs-inner.scss */
+.page-training-programs-inner .nvq-features p {
+  font-size: 17px;
+  line-height: 1.41;
+  letter-spacing: 1.2px;
+  margin-bottom: 30px;
+  padding-right: 80px;
 }
 
 /* line 3, ../sass/pages/_about-us.scss */
@@ -5233,7 +5459,7 @@ footer .copyright {
   margin: 0;
 }
 /* line 112, ../sass/pages/_about-us.scss */
-.page-about-us .why-choose .green-box, .page-about-us .why-choose .page-training-programs-inner .whos-for .purple-box, .page-training-programs-inner .whos-for .page-about-us .why-choose .purple-box {
+.page-about-us .why-choose .green-box, .page-about-us .why-choose .page-training-programs-inner .purple-box, .page-training-programs-inner .page-about-us .why-choose .purple-box {
   background-color: #50c7ba;
   color: #FFFFFF;
   border-radius: 31px;
@@ -5244,19 +5470,19 @@ footer .copyright {
   margin: 0 auto;
 }
 /* line 122, ../sass/pages/_about-us.scss */
-.page-about-us .why-choose .green-box .plus-info, .page-about-us .why-choose .page-training-programs-inner .whos-for .purple-box .plus-info, .page-training-programs-inner .whos-for .page-about-us .why-choose .purple-box .plus-info {
+.page-about-us .why-choose .green-box .plus-info, .page-about-us .why-choose .page-training-programs-inner .purple-box .plus-info, .page-training-programs-inner .page-about-us .why-choose .purple-box .plus-info {
   margin-bottom: 40px;
 }
 /* line 125, ../sass/pages/_about-us.scss */
-.page-about-us .why-choose .green-box .plus-info:last-of-type, .page-about-us .why-choose .page-training-programs-inner .whos-for .purple-box .plus-info:last-of-type, .page-training-programs-inner .whos-for .page-about-us .why-choose .purple-box .plus-info:last-of-type {
+.page-about-us .why-choose .green-box .plus-info:last-of-type, .page-about-us .why-choose .page-training-programs-inner .purple-box .plus-info:last-of-type, .page-training-programs-inner .page-about-us .why-choose .purple-box .plus-info:last-of-type {
   margin: 0;
 }
 /* line 129, ../sass/pages/_about-us.scss */
-.page-about-us .why-choose .green-box .plus-info .small-subtitle, .page-about-us .why-choose .page-training-programs-inner .whos-for .purple-box .plus-info .small-subtitle, .page-training-programs-inner .whos-for .page-about-us .why-choose .purple-box .plus-info .small-subtitle {
+.page-about-us .why-choose .green-box .plus-info .small-subtitle, .page-about-us .why-choose .page-training-programs-inner .purple-box .plus-info .small-subtitle, .page-training-programs-inner .page-about-us .why-choose .purple-box .plus-info .small-subtitle {
   position: relative;
 }
 /* line 132, ../sass/pages/_about-us.scss */
-.page-about-us .why-choose .green-box .plus-info .small-subtitle:before, .page-about-us .why-choose .page-training-programs-inner .whos-for .purple-box .plus-info .small-subtitle:before, .page-training-programs-inner .whos-for .page-about-us .why-choose .purple-box .plus-info .small-subtitle:before {
+.page-about-us .why-choose .green-box .plus-info .small-subtitle:before, .page-about-us .why-choose .page-training-programs-inner .purple-box .plus-info .small-subtitle:before, .page-training-programs-inner .page-about-us .why-choose .purple-box .plus-info .small-subtitle:before {
   content: "";
   position: absolute;
   width: 5px;
@@ -5267,7 +5493,7 @@ footer .copyright {
   left: -22px;
 }
 /* line 145, ../sass/pages/_about-us.scss */
-.page-about-us .why-choose .green-box .plus-info p, .page-about-us .why-choose .page-training-programs-inner .whos-for .purple-box .plus-info p, .page-training-programs-inner .whos-for .page-about-us .why-choose .purple-box .plus-info p {
+.page-about-us .why-choose .green-box .plus-info p, .page-about-us .why-choose .page-training-programs-inner .purple-box .plus-info p, .page-training-programs-inner .page-about-us .why-choose .purple-box .plus-info p {
   font-size: 17px;
   line-height: 1.41;
   letter-spacing: 1.9px;
@@ -5333,38 +5559,6 @@ footer .copyright {
 /* line 50, ../sass/pages/_faqs.scss */
 .page-faqs .questions .info .table-container:before {
   right: -70px;
-}
-/* line 58, ../sass/pages/_faqs.scss */
-.page-faqs .questions .info .table-container table thead th {
-  width: 42%;
-}
-/* line 59, ../sass/pages/_faqs.scss */
-.page-faqs .questions .info .table-container table thead th:first-of-type {
-  width: 27%;
-}
-/* line 73, ../sass/pages/_faqs.scss */
-.page-faqs .questions .info .table-container table tbody tr td:nth-of-type(2):before {
-  width: 100%;
-}
-/* line 77, ../sass/pages/_faqs.scss */
-.page-faqs .questions .info .table-container table tbody tr td:nth-of-type(2):after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 1px;
-  background: #d6d6d6;
-  bottom: 0;
-  right: 0;
-}
-/* line 91, ../sass/pages/_faqs.scss */
-.page-faqs .questions .info .table-container table tbody tr:first-of-type td:nth-of-type(2):after {
-  height: 73%;
-}
-/* line 102, ../sass/pages/_faqs.scss */
-.page-faqs .questions .info .table-container table tbody tr:last-of-type td:nth-of-type(2):after {
-  height: 73%;
-  bottom: initial;
-  top: 0;
 }
 
 /* line 3, ../sass/pages/_blog.scss */
@@ -5452,12 +5646,43 @@ footer .copyright {
   background-size: 860px;
 }
 /* line 7, ../sass/pages/_additional-courses.scss */
-.page-aditional-courses .hero .main .hero-title {
-  margin-top: 20px;
-}
-/* line 11, ../sass/pages/_additional-courses.scss */
 .page-aditional-courses .hero .main .hero-img {
   position: absolute;
   right: -60px;
   top: -53px;
+}
+/* line 17, ../sass/pages/_additional-courses.scss */
+.page-aditional-courses .courses {
+  padding: 80px 0 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* line 21, ../sass/pages/_additional-courses.scss */
+.page-aditional-courses .courses .title {
+  margin-bottom: 30px;
+}
+/* line 25, ../sass/pages/_additional-courses.scss */
+.page-aditional-courses .courses .row {
+  margin-bottom: 130px;
+}
+/* line 33, ../sass/pages/_additional-courses.scss */
+.page-aditional-courses .courses .white-box ul.purple {
+  color: #914691;
+}
+/* line 36, ../sass/pages/_additional-courses.scss */
+.page-aditional-courses .courses .white-box ul.purple li {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 2.06;
+  letter-spacing: 2.5px;
+  margin-bottom: 1px;
+  padding-left: 15px;
+}
+/* line 47, ../sass/pages/_additional-courses.scss */
+.page-aditional-courses .courses .white-box ul.green {
+  color: #50c7ba;
+}
+/* line 50, ../sass/pages/_additional-courses.scss */
+.page-aditional-courses .courses .white-box ul.green p {
+  color: #6b7175;
+  margin-bottom: 25px;
 }

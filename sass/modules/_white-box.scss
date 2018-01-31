@@ -5,7 +5,7 @@
         position: absolute;
         width: 99%;
         height: 98%;
-        background: url(../images/white-box-bg-2.png);
+        background: url(../images/white-box-bg-2.png) bottom left;
         bottom: -44px;
         right: 21px;
     }
@@ -14,6 +14,7 @@
         &:before{
             right: initial;
             left: 21px;
+            background-position: bottom right;
         }
     }
 }

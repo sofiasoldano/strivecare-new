@@ -18,7 +18,16 @@ a {
         color: $gray;
         text-decoration: none;
     }
+    
+    &:focus{
+        text-decoration: none;
+    }
+    
+    &:visited{
+        text-decoration: none;
+    }
 }
+
 img {
 	margin: auto;
 }

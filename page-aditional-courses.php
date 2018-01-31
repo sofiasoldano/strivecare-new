@@ -20,6 +20,63 @@
     </div>
 </section>
 
+<section class="courses bg-2"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="title"><span class="green">Short <br><b> courses</b></span></div>
+                <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="white-box-bg">
+                <div class="white-box">
+                    <ul class="purple">
+                        <li>Care Certificate</li>
+                        <li>Dementia Awareness</li>
+                        <li>Equality and Diversity</li>
+                        <li>Radicalisation</li>
+                        <li>End of Life</li>
+                        <li>Deprivation of Liberty </li><li>Safeguards (DoLS)</li>
+                        <li>Mental Health</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="white-box-bg left">
+                <div class="white-box">
+                    <ul class="green">
+                        <li>
+                            <div class="small-subtitle green">Business administration</div>
+                            <p>Levels 2 and 3</p>
+                        </li>
+                        <li>
+                            <div class="small-subtitle green">Customer service</div>
+                            <p>Levels 2 and 3</p>
+                        </li>
+                        <li>
+                            <div class="small-subtitle green">Child care</div>
+                            <p>Levels 2, 3 and 5</p>
+                        </li>
+                        <li>
+                            <div class="small-subtitle green">Management</div>
+                            <p>Levels 2, 3, 4, 5 and 7</p>
+                        </li>
+                        
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-6 text-right">
+                <div class="title"><b class="purple">Apprenticeships</b></div>
+                <p class="section-desc text-right">The following apprenticeships are offered in addition to the Health and Safety Appenticeship.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="lets-talk">
     <div class="container">
         <div class="row">

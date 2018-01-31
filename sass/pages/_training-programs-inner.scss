@@ -55,6 +55,25 @@
         padding: 50px 0 0;
     }
     
+    .green-box{
+        width: 100%;
+        padding: 40px 115px;
+        background-color: $green;
+        color: $white;
+        text-align: center;
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 1.41;
+        letter-spacing: 2.5px;
+        border-radius: 30px;
+        border-top-right-radius: 0;
+    }
+
+    .purple-box{
+        @extend .green-box;
+        background-color: $purple;
+    }
+    
     .whos-for{
         padding: 50px 0;
         
@@ -62,24 +81,6 @@
             margin-bottom: 50px;
         }
         
-        .green-box{
-            width: 100%;
-            padding: 40px 115px;
-            background-color: $green;
-            color: $white;
-            text-align: center;
-            font-size: 17px;
-            font-weight: bold;
-            line-height: 1.41;
-            letter-spacing: 2.5px;
-            border-radius: 30px;
-            border-top-right-radius: 0;
-        }
-        
-        .purple-box{
-            @extend .green-box;
-            background-color: $purple;
-        }
     }
     
     .org-benefits{
@@ -270,37 +271,11 @@
 
                         td{
                             background: $white;
-
-                            &:before{
-                                content: "";
-                                width: 93%;
-                                position: absolute;
-                                height: 1px;
-                                background: #d6d6d6;
-                                bottom: 0;
-                                right: 0;
-                            }
                             
                             &:first-of-type{
                                 text-align: left;
                                 padding-left: 60px;
                                 vertical-align: top;
-                            }
-        
-                            &:nth-of-type(2){
-                                &:before{
-                                    width: 100%;
-                                }
-                                
-                                &:after{
-                                    content: "";
-                                    position: absolute;
-                                    height: 100%;
-                                    width: 1px;
-                                    background: #d6d6d6;
-                                    bottom: 0;
-                                    right: 0;
-                                }
                             }
                             
                             .fa-check{
@@ -331,35 +306,30 @@
 
                         }
 
-                        &:first-of-type{
-                            td:nth-of-type(2){
-                                &:after{
-                                    height: 73%;
-                                }
-                            }
-
-                        }
-
-                        &:last-of-type{
-
-                            td:nth-of-type(2){
-
-                                &:after{
-                                    height: 73%;
-                                    bottom: initial;
-                                    top: 0;
-                                }
-
-                            }
-
-                        }
-
                     }
 
                 }
 
             }   
 
+        }
+        
+        &.nvq{
+            
+            .title{
+                margin-bottom: 25px;
+            }
+            
+            p{
+                font-size: 17px;
+                line-height: 1.41;
+                letter-spacing: 1.2px;
+            }
+            
+            .table-container{
+                margin: 80px 0 30px;
+            }
+            
         }
         
     }
@@ -442,5 +412,219 @@
         } 
         
     } 
+    
+    /* NVQ LANDING */
+    
+    .nvq-description{
+        padding: 80px 0;
+        
+        .subtitle{
+            margin-bottom: 50px;
+        }
+        
+        p{
+            font-size: 17px;
+            line-height: 1.41;
+            letter-spacing: 1.2px;
+            width: 86%;
+            margin-bottom: 25px;
+            
+            &.right{
+                width: 95%;
+            }
+            
+        }
+        
+        .green-box{
+            margin-top: 80px;
+        }
+        
+    }
+    
+    .nvq-different{
+        padding: 80px 0 50px;
+        
+        .title{
+            margin-bottom: 30px;
+        }
+        
+        .white-box{
+
+            .item{
+                padding: 5px 0;
+                padding-left: 140px;
+
+                &:nth-of-type(1){
+                    background: url(img/icon-calc.png) top left no-repeat;
+                    background-size: 75px;
+                    background-position-x: 10px;
+                }
+
+                &:nth-of-type(2){
+                    background: url(img/icon-learn.png) top left no-repeat;
+                    background-position-x: 10px;
+                }
+
+                &:nth-of-type(3){
+                    background: url(img/icon-people.png) top left no-repeat;
+                    background-position-x: 16px;
+                }
+
+            }  
+        }
+        
+    }
+    
+    .nvq-table{
+        padding: 290px 0 80px;
+        transform: translateY(-100px);
+        
+        .table-container{
+            &:before{
+                right: 35px;
+            }
+        }
+    }
+    
+    .nvq-path{
+        padding: 0 0 130px;
+        border-bottom: 1px solid #e0e0e0;
+        
+        .title{
+            padding: 0 85px;
+            margin-bottom: 80px;
+        }
+        
+        .white-box{
+            overflow: hidden;
+            
+            .purple{
+                color: $purple;
+                
+                li{
+                    padding: 0 15px;
+                    margin-bottom: 20px;
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+    .nvq-offer{
+        padding: 80px 0 130px;
+        border-bottom: 1px solid #e0e0e0;
+        
+        .title{
+            padding-left: 20px;
+        }
+        
+        .white-box{
+
+            .item{
+                padding: 5px 0;
+                padding-left: 140px;
+
+                &:nth-of-type(1){
+                    background: url(img/icon-calc.png) top left no-repeat;
+                    background-size: 75px;
+                    background-position-x: 10px;
+                }
+
+                &:nth-of-type(2){
+                    background: url(img/icon-learn.png) top left no-repeat;
+                    background-position-x: 10px;
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+    .nvq-quality{
+        padding: 80px 0;
+        
+        .title{
+            margin-bottom: 60px;
+        }
+                
+        p{
+            font-size: 15px;
+            line-height: 1.6;
+            letter-spacing: 1px;
+            padding-left: 50px;
+            margin-bottom: 25px;
+            
+            &.section-title{
+                font-size: 17px;
+                font-weight: bold;
+                line-height: 1.41;
+                letter-spacing: 1.6px;
+                color: $purple;
+            }
+        }
+        
+        .list{
+            
+            p{
+                position: relative;
+                
+                &:before{
+                    content: "";
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 10px;
+                    background: $purple;
+                    left: 22px;
+                    top: 9px;
+                }
+            }
+        }
+        
+        .white-box-bg{
+            position: relative;
+            margin-bottom: 83px;
+        }
+    
+        
+        .white-box{
+            
+            p{
+                padding-left: 0;
+                font-size: 17px;
+                line-height: 1.41;
+                letter-spacing: 2px;
+                margin-bottom: 0;
+            }
+            
+        }
+        
+        .center{
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+    }
+    
+    .nvq-features{
+        padding: 60px 0;
+        border-bottom: 1px solid #e0e0e0;
+        
+        .subtitle{
+            margin-bottom: 50px;
+        }
+        
+        p{
+            font-size: 17px;
+            line-height: 1.41;
+            letter-spacing: 1.2px;
+            margin-bottom: 30px;
+            padding-right: 80px;
+        }
+        
+    }
     
 }

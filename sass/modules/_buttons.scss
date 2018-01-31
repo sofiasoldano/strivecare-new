@@ -1,18 +1,31 @@
 .btn {
-    width: 245px;
-    padding: 15px 0;
+    padding: 15px 35px;
     border-radius: 75px;
     color: $white;
     font-size: 17px;
     font-family: $bold;
     letter-spacing: 0.4px;
     text-transform: uppercase;
+    transition: all 0.5s;
+    
+    &:hover{
+        color: $white;  
+        transition: all 0.5s;
+    }
     
     &.green{
         background-color: $green;
+        
+        &:hover{ 
+            background-color: #41ab9f;
+        }
     }
     
      &.purple{
         background-color: $purple;
+         
+         &:hover{
+            background-color: #753b75;
+        }
     }
 }

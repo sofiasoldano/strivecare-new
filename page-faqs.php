@@ -39,7 +39,7 @@
                 <div class="info">
                     <div class="ques"> <div class="small-subtitle green">How long will it take to complete the qualification(s)?</div></div>
                     <div class="table-container">
-                        <table>
+                        <table class="three-rows">
                             <thead>
                                 <tr>
                                     <th>LEVELS</th> <th>Apprenticeship</th>
