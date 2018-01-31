@@ -1,0 +1,234 @@
+a.mfPreviewButton {
+  background: #fefefe;
+  border: 1px solid;
+  border-color: #e3e3e3 #d9d9d9 #d5d5d5 #d9d9d9;
+  border-radius: 1px;
+  box-shadow: inset -1px -1px 3px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  color: #444 !important;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 24px;
+  margin: 0px 5px;
+  padding: 6px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: background 200ms ease-in-out, border 200ms ease-in-out;
+  -moz-transition: background 200ms ease-in-out, border 200ms ease-in-out;
+  -ms-transition: background 200ms ease-in-out, border 200ms ease-in-out;
+  -o-transition: background 200ms ease-in-out, border 200ms ease-in-out;
+  transition: background 200ms ease-in-out, border 200ms ease-in-out; }
+  a.mfPreviewButton:hover {
+    color: #07c !important; }
+  a.mfPreviewButton.blue {
+    background: #09f;
+    border-color: #09f;
+    box-shadow: inset -1px -1px 3px rgba(0, 0, 0, 0.2), inset 1px 1px 3px rgba(255, 255, 255, 0.25);
+    color: #fff !important; }
+    a.mfPreviewButton.blue:hover {
+      background: #078adb;
+      border-color: #007acb; }
+
+div#mfPreviewBarShow {
+  background: #09f;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'mfPreviewClose';
+  font-size: 30px;
+  height: 30px;
+  line-height: 36px;
+  width: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  text-align: center; }
+  div#mfPreviewBarShow:hover {
+    background: #06c; }
+
+#mfPreviewBar {
+  background: #0092F5;
+  box-sizing: content-box;
+  color: #fff;
+  font-family: "mfPreviewBar", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  height: 38px;
+  line-height: 38px;
+  overflow: hidden;
+  padding: 12px 0px;
+  position: static;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  text-align: left;
+  z-index: 999; }
+  #mfPreviewBar * {
+    box-sizing: content-box; }
+  #mfPreviewBar span#mfPreviewBarText {
+    display: block;
+    float: left;
+    margin: 0px 10px 0 20px;
+    max-width: 425px; }
+  #mfPreviewBar a#mfPreviewBarLogo {
+    background-image: url("/s/images/webfont_preview_bar/logo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 71px 35px;
+    display: block;
+    float: left;
+    height: 35px;
+    margin-right: 20px;
+    position: relative;
+    top: 5px;
+    width: 71px; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+      #mfPreviewBar a#mfPreviewBarLogo {
+        background-image: url("/s/images/webfont_preview_bar/logo@2x.png"); } }
+  #mfPreviewBar a#mfPreviewBarLearn {
+    color: #fff;
+    font-size: 14px;
+    margin: 0px 20px;
+    padding: 0;
+    text-decoration: none; }
+  #mfPreviewBar a#mfPreviewBarClose {
+    border: 2px solid #005492;
+    border-radius: 14px;
+    color: #005492;
+    font-family: 'mfPreviewClose';
+    font-size: 24px;
+    height: 24px;
+    line-height: 24px;
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    text-align: center;
+    text-decoration: none;
+    width: 24px; }
+    #mfPreviewBar a#mfPreviewBarClose:hover {
+      border-color: #04284C;
+      color: #04284C; }
+  #mfPreviewBar.expired, #mfPreviewBar.pvlimit, #mfPreviewBar.nflimit, #mfPreviewBar.invalidkey {
+    background: #FFDC73;
+    color: #444; }
+    #mfPreviewBar.expired span#mfPreviewBarText, #mfPreviewBar.pvlimit span#mfPreviewBarText, #mfPreviewBar.nflimit span#mfPreviewBarText, #mfPreviewBar.invalidkey span#mfPreviewBarText {
+      height: 38px;
+      line-height: 19px; }
+    #mfPreviewBar.expired a#mfPreviewBarLogo, #mfPreviewBar.pvlimit a#mfPreviewBarLogo, #mfPreviewBar.nflimit a#mfPreviewBarLogo, #mfPreviewBar.invalidkey a#mfPreviewBarLogo {
+      background-image: url("/s/images/webfont_preview_bar/logo_dark.png"); }
+      @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+        #mfPreviewBar.expired a#mfPreviewBarLogo, #mfPreviewBar.pvlimit a#mfPreviewBarLogo, #mfPreviewBar.nflimit a#mfPreviewBarLogo, #mfPreviewBar.invalidkey a#mfPreviewBarLogo {
+          background-image: url("/s/images/webfont_preview_bar/logo_dark@2x.png"); } }
+    #mfPreviewBar.expired a#mfPreviewBarLearn, #mfPreviewBar.pvlimit a#mfPreviewBarLearn, #mfPreviewBar.nflimit a#mfPreviewBarLearn, #mfPreviewBar.invalidkey a#mfPreviewBarLearn {
+      color: #444; }
+    #mfPreviewBar.expired a#mfPreviewBarClose, #mfPreviewBar.pvlimit a#mfPreviewBarClose, #mfPreviewBar.nflimit a#mfPreviewBarClose, #mfPreviewBar.invalidkey a#mfPreviewBarClose {
+      display: none; }
+  #mfPreviewBar.adContent {
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid #000;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 280px;
+    margin-left: -75px;
+    margin-top: -140px;
+    text-align: center;
+    line-height: 32px; }
+    #mfPreviewBar.adContent span#mfPreviewBarText {
+      font-size: 23px;
+      margin: 15px 0; }
+    #mfPreviewBar.adContent a#mfPreviewBarLogo {
+      background-image: url("/s/images/webfont_preview_bar/logo_dark.png");
+      display: inline-block;
+      float: none;
+      margin: 18px 0; }
+      @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+        #mfPreviewBar.adContent a#mfPreviewBarLogo {
+          background-image: url("/s/images/webfont_preview_bar/logo_dark@2x.png"); } }
+    #mfPreviewBar.adContent a#mfPreviewBarClose {
+      border: none;
+      color: #000;
+      top: 5px;
+      right: 5px; }
+    @media (min-width: 300px) {
+      #mfPreviewBar.adContent {
+        width: 280px;
+        height: 140px;
+        margin-left: -140px;
+        margin-top: -70px; }
+        #mfPreviewBar.adContent span#mfPreviewBarText {
+          font-size: 23px; }
+        #mfPreviewBar.adContent a#mfPreviewBarLogo {
+          margin: 10px 0; } }
+    @media (min-width: 600px) {
+      #mfPreviewBar.adContent {
+        width: 570px;
+        margin-left: -295px;
+        height: 35px;
+        padding: 20px 0 20px 20px;
+        text-align: left; }
+        #mfPreviewBar.adContent a#mfPreviewBarLogo {
+          display: block;
+          float: left;
+          margin: 0 5px 0 0; } }
+
+/* Old modal stuff - could be recycled elsewhere
+// Overlay
+#mfPreviewOverlay {
+	background: #444;
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	z-index:1000;
+}
+
+// Modal
+#mfPreviewModal {
+	background: #fff;
+	box-sizing: content-box;
+	color: #444;
+	font-family: "mfPreviewBar", Helvetica, Arial, sans-serif;
+	height: 120px;
+	padding: 40px 50px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -105px;
+	margin-left: -225px;
+	text-align: left;
+	width: 470px;
+	* {
+		box-sizing: content-box;
+	}
+	label {
+		display: inline;
+		float: none;
+		margin: 0;
+		padding: 0;
+		width: 300px;
+	}
+	#mfPreviewModalClose {
+		color: #444;
+		font-family: 'mfPreviewClose';
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		text-decoration: none;
+	}
+	#mfPreviewModalHead {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+	.mfPreviewButton {
+		margin-top: 20px;
+	}
+	#mfPreviewModalConfirm {
+		margin-left: 0px;
+	}
+} */
+
+/*# sourceMappingURL=webfont_preview_bar.css.map */

@@ -29,7 +29,7 @@
     <header>
         <div class="row">
             <div class="col-md-2">
-                <a href="page-home.php" class="logo"><img src="http://via.placeholder.com/196x40"></a>
+                <a href="page-home.php" class="logo"><img src="images/logo-header.png"></a>
             </div>
             <div class="col-md-10">
                 <ul class="main-nav right">

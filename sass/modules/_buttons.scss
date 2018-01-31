@@ -8,6 +8,10 @@
     text-transform: uppercase;
     transition: all 0.5s;
     
+    @include respond-to("xsmall"){
+        font-size: 14px;
+    }
+    
     &:hover{
         color: $white;  
         transition: all 0.5s;

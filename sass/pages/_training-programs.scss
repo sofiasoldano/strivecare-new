@@ -9,11 +9,17 @@
             }
             
            .hero-img{
-                position: absolute;
-                right: -155px;
-                top: -64px;
+               
+                @include respond-to("medium"){
+                    position: absolute;
+                    right: -155px;
+                    top: -64px;
+                }
+               
             }
+            
         }
+        
     }
     
     .option{
@@ -76,7 +82,9 @@
 
                     &:nth-of-type(2){
                         background: url(img/icon-learn.png) top left no-repeat;
-                        background-position-x: 10px;
+                        background-position-x: 14px;
+                        background-position-y: -3px;
+                        background-size: 72px;
                     }
 
                     &:nth-of-type(3){

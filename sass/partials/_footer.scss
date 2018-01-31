@@ -3,6 +3,15 @@ footer {
     color: $white;
     padding: 30px 0;
     
+    .logo{
+        margin-bottom: 15px;
+        display: block;
+        
+        @include respond-to("medium"){
+             margin-bottom: 0;
+        }
+    }
+    
     a{
         color: white;
     }
@@ -45,8 +54,12 @@ footer {
             line-height: 1.5;
             letter-spacing: 0.5px;
             padding-left: 50px;
-            padding-bottom: 25px;
+            padding-bottom: 15px;
             font-weight: bold;
+            
+            @include respond-to("medium"){
+                padding-bottom: 25px;
+            }
             
             &.dir{
                 background: url(img/location-icon.png) top left no-repeat;
@@ -54,10 +67,20 @@ footer {
             
              &.mail{
                 background: url(img/tel-icon.png) top left no-repeat;
+                 
+                 a{
+                    display: block;
+                    padding-top: 6px; 
+                 }
             }
             
              &.tel{
                 background: url(img/email-icon.png) top left no-repeat;
+                 
+                 a{
+                    display: block;
+                    padding-top: 8px; 
+                 }
             }
         }
     }

@@ -32,8 +32,16 @@ img {
 	margin: auto;
 }
 .right{
-    float: right !important;
+    
+    @include respond-to("medium"){
+        float: right !important;
+    }
 }
 #mfPreviewBar{
     display: none !important;
+}
+.container{
+    @include respond-to("xsmall"){
+        padding: 0 30px;
+    }
 }

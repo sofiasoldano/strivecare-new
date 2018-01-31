@@ -5,6 +5,11 @@
         min-height: 570px;
         position: relative;
         
+        @include respond-to("xsmall"){
+            background-size: 560px;
+            padding: 10px 0 0;
+        }
+        
         &:after{
             content: "";
             position: absolute;
@@ -13,6 +18,24 @@
             background: url(img/matrix-award.png) top left no-repeat;
             bottom: 25px;
             right: 105px;
+            
+            @include respond-to("xsmall"){
+                background-size: 78px;
+                width: 78px;
+                height: 113px;
+                right: 25px;
+            }
+        }
+        
+        .hero-img{
+            margin: 0 auto;
+            
+            @include respond-to("xsmall"){
+                width: 380px;
+                margin: 0 auto;
+                transform: translateY(-20px);
+                margin-bottom: -20px;
+            }
         }
 
         .hero-title{
@@ -22,15 +45,28 @@
             color: $green;
             letter-spacing: 0.9px;
             margin-bottom: 40px;
+            
+            @include respond-to("xsmall"){
+                font-size: 34px;
+                margin-bottom: 20px;
+            }
         }
         .hero-text{
             font-size: 27px;
             line-height: 1.44;
             letter-spacing: 0.9px;
+            
+            @include respond-to("xsmall"){
+                font-size: 23px;
+            }
 
         }
         .btn{
             margin: 40px 0;
+            
+            @include respond-to("xsmall"){
+                 margin: 10px 0;
+            }
         }
     }
     
@@ -46,6 +82,10 @@
             letter-spacing: 0.7px;
             color: $white;
             padding: 25px 0;
+            
+            @include respond-to("xsmall"){
+                font-size: 17px;
+            }
         }
     }
 }

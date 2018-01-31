@@ -69,7 +69,7 @@
         </div>
         <div class="team-members">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="member">
                         <img class="img-responsive" src="images/team/team1.png">
                         <div class="desc">
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="member">
                         <img class="img-responsive" src="images/team/team2.png">
                         <div class="desc">
@@ -87,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="member">
                         <img class="img-responsive" src="images/team/team3.png">
                         <div class="desc">
@@ -96,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="member">
                         <img class="img-responsive" src="images/team/team4.png">
                         <div class="desc">
@@ -107,7 +107,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="member">
                         <img class="img-responsive" src="images/team/team5.png">
                         <div class="desc">
@@ -116,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="member">
                         <img class="img-responsive" src="images/team/team6.png">
                         <div class="desc">
@@ -125,7 +125,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="member">
                         <img class="img-responsive" src="images/team/team7.png">
                         <div class="desc">
@@ -134,7 +134,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="member">
                         <img class="img-responsive" src="images/team/team8.png">
                         <div class="desc">
@@ -145,7 +145,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="member">
                         <img class="img-responsive" src="images/team/team9.png">
                         <div class="desc">
@@ -154,7 +154,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="member">
                         <img class="img-responsive" src="images/team/team10.png">
                         <div class="desc">
@@ -163,7 +163,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="member">
                         <img class="img-responsive" src="images/team/team11.png">
                         <div class="desc">
@@ -172,7 +172,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="member">
                         <img class="img-responsive" src="images/team/member.png">
                         <div class="desc">
@@ -183,7 +183,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="member">
                         <img class="img-responsive" src="images/team/member.png">
                         <div class="desc">
@@ -192,7 +192,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="member">
                         <img class="img-responsive" src="images/team/team14.png">
                         <div class="desc">
@@ -201,7 +201,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="member">
                         <img class="img-responsive" src="images/team/member.png">
                         <div class="desc">
@@ -210,7 +210,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="member">
                         <img class="img-responsive" src="images/team/member.png">
                         <div class="desc">
@@ -221,7 +221,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="member">
                         <img class="img-responsive" src="images/team/member.png">
                         <div class="desc">
@@ -230,7 +230,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="member">
                         <img class="img-responsive" src="images/team/member.png">
                         <div class="desc">
@@ -239,7 +239,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="member">
                         <img class="img-responsive" src="images/team/member.png">
                         <div class="desc">
@@ -248,7 +248,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="member">
                         <img class="img-responsive" src="images/team/member.png">
                         <div class="desc">

@@ -23,11 +23,13 @@
     border-radius: 31px;
     border-top-right-radius: 0;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
-    padding: 35px 45px;
+    padding: 35px 25px;
     position: relative;
     background-color: $white;
     
-    
+     @include respond-to("medium"){
+         padding: 35px 45px;
+    }
 
     p{
         font-size: 17px;
@@ -67,6 +69,7 @@
              background-color: $green;
              color: $white;
              padding: 20px 45px;
+             
          }
      }
 }

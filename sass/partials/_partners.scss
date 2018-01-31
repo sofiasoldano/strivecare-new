@@ -8,6 +8,10 @@
 
     .partners-slider{
         padding: 0 100px;
+        
+        @include respond-to("xsmall"){
+            padding: 0px 30px;
+        }
 
         .flex-direction-nav{
             a{
@@ -23,22 +27,40 @@
 
             .flex-next {
                 right: 50px !important;
+                
+                @include respond-to("xsmall"){
+                    right: 5px !important;
+                }
             }
 
             .flex-prev {
                 left: 50px !important;
+                
+                @include respond-to("xsmall"){
+                    left: 5px !important;
+                }
             }
 
             &:hover{
                 .flex-next {
                     right: 50px !important;
+                    
+                    @include respond-to("xsmall"){
+                        right: 5px !important;
+                    }
                 }
 
                 .flex-prev {
                     left: 50px !important;
+                    
+                    @include respond-to("xsmall"){
+                        left: 5px !important;
+                    }
                 }
 
             }
+            
+            
 
         }
 

@@ -8,9 +8,14 @@
             background-position-x: 85%;
             
             .hero-img{
-                position: absolute;
-                top: -68px;
-                right: 115px;
+                transform: translateY(24px);
+                
+                @include respond-to("medium"){
+                    position: absolute;
+                    top: -68px;
+                    right: 115px;
+                    transform: initial;
+                }
             }
         }
     }

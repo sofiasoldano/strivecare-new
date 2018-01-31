@@ -5,9 +5,13 @@
             background-size: 860px;
             
            .hero-img{
-                position: absolute;
-                right: -60px;
-                top: -53px;
+               
+               @include respond-to("medium"){
+                    position: absolute;
+                    right: -60px;
+                    top: -53px;
+               }
+               
             }
             
         }

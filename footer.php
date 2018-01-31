@@ -2,9 +2,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <a href="page-home.php" class="logo"><img src="http://via.placeholder.com/183x54"></a>
+                    <a href="page-home.php" class="logo"><img src="images/logo-footer.png"></a>
                 </div>
-                <div class="col-md-4">
+                <div class="hidden-xs col-md-4">
                     <div class="heading">Sections</div>
                     <ul class="navigate">
                         <li><a href="page-home.php">HOME</a></li>

@@ -9,12 +9,18 @@
             }
             
             .hero-apprenticeship{
-                position: absolute;
-                right: 0;
-                bottom: 0;
+                
+                @include respond-to("medium"){
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+
+                }
+                
             }
             
         }
+        
     }
     
     .inner-menu{
@@ -462,7 +468,9 @@
 
                 &:nth-of-type(2){
                     background: url(img/icon-learn.png) top left no-repeat;
-                    background-position-x: 10px;
+                    background-position-x: 14px;
+                    background-position-y: -3px;
+                    background-size: 72px;
                 }
 
                 &:nth-of-type(3){

@@ -3,9 +3,17 @@ header{
     max-width: 1420px;
     margin: 0 auto;
     
+    @include respond-to("xsmall"){
+        padding: 15px;
+    }
+    
     .main-nav{
         list-style: none;
         margin: 0;
+        
+        @include respond-to("xsmall"){
+            display: none;
+        }
         
         li{
             display: inline-block;

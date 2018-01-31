@@ -9,9 +9,13 @@
             }
             
             .hero-img{
-                position: absolute;
-                top: -50px;
-                right: -97px;
+                
+                @include respond-to("medium"){
+                    position: absolute;
+                    top: -50px;
+                    right: -97px;
+                }
+                
             }
             
         }
