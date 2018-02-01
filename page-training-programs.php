@@ -28,7 +28,7 @@
          </div>
          <div class="row">
              <div class="col-md-6">
-                 <div class="title"><span class="green">The new and exclusive<br><b>fast track diploma in health and <br> social care</b></span></div>
+                 <div class="title"><span class="green">The new and exclusive<br><b>fast track diploma in health and social care</b></span></div>
                  <a href="#" class="btn green">find out more</a>
              </div>
              <div class="col-md-6">
@@ -173,7 +173,7 @@
                     <div class="small-subtitle green">Improve CQC compliance</div>
                     <p>Meet CQC standards of compliance for continuing professional development.</p>
                 </div>
-                <a href="#" class="btn green">Find out more</a>
+                <a href="#" class="btn green desktop">Find out more</a>
             </div>
             <div class="col-md-6">
                  <div class="challenge">
@@ -191,6 +191,7 @@
                  <div class="challenge">
                     <div class="small-subtitle green">Reduce the administrative burden</div>
                     <p>Less paperwork and administration to obtain the right funding options by people who understand the system and can advise on funding alternatives.</p>
+                     <a href="#" class="btn green mobile">Find out more</a>
                 </div>
             </div>
         </div>

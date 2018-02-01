@@ -51,19 +51,23 @@
      
      .bottom{
         background-color: #fbfbfb;
-        margin: 27px -45px -35px;
+        margin: 27px -25px -35px;
         padding: 35px 45px;
         border-bottom-left-radius: 31px;
         border-bottom-right-radius: 31px;
          
-         p{
-             margin-bottom: 30px;
-             padding-right: 100px;
+        @include respond-to("medium"){
+            margin: 27px -45px -35px;
+        }
+         
+        p{
+            margin-bottom: 30px;
+            padding-right: 100px;
              
-             &:last-of-type{
+            &:last-of-type{
                  margin-bottom: 0;
-             }
-         }
+            }
+        }
          
          &.green{
              background-color: $green;

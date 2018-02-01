@@ -29,8 +29,11 @@
     }
     
     .info-bottom{
-        position: absolute;
-        bottom: -420px;
+        
+        @include respond-to("medium"){
+            position: absolute;
+            bottom: -420px;
+        }
         
         .heading{
             font-size: 30px;
@@ -46,6 +49,11 @@
         
         a{
             width: 280px;
+            margin-bottom: 50px;
+            
+            @include respond-to("medium"){
+                margin-bottom: 0;
+            }
         }
     }
 

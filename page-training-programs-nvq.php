@@ -164,7 +164,7 @@
 <section id="how-long" class="how-long">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 desktop">
                 <div class="table-container">
                     <table>
                         <thead>
@@ -198,6 +198,36 @@
                 <div class="title">How long is <br><b>the training?</b></div>
                 <div class="section-desc text-right">
                 Accelerated learning with internally and externally-verified quality tuition to achieve the nationally recognised qualification in Health and Social Care.</div>
+            </div>
+            <div class="col-md-6 mobile">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>LEVELS</th>
+                                <th>FastTrack NVQ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>LEVEL 2</td>
+                                <td>3- 4 months</td>
+                            </tr>
+                            <tr>
+                                <td>LEVEL 3</td>
+                                <td>3- 4 months</td>
+                            </tr>
+                            <tr>
+                                <td>LEVEL 4</td>
+                                <td>4- 6 months</td>
+                            </tr>
+                            <tr>
+                                <td>LEVEL 5</td>
+                                <td>4- 6 months</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

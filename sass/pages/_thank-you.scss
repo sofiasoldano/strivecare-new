@@ -1,0 +1,21 @@
+.page-thank-you {
+    
+    .hero{
+        .main{
+            background: url(img/hero-home-bg.png) bottom left no-repeat;          
+            background-size: 619px;
+            background-position-x: 85%;
+            
+            @include respond-to("medium"){
+                background-size: 742px;
+                background-position-y: 1px;
+                background-position-x: 85%;
+            }
+            
+            .btn{
+                margin-bottom: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+}

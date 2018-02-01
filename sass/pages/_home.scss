@@ -3,12 +3,21 @@
     .hero{
         .main{
             background: url(img/hero-home-bg.png) bottom left no-repeat;          
-            background-size: 742px;
-            background-position-y: 1px;
+            background-size: 619px;
             background-position-x: 85%;
             
+            @include respond-to("medium"){
+                background-size: 742px;
+                background-position-y: 1px;
+                background-position-x: 85%;
+            }
+
             .hero-img{
                 transform: translateY(24px);
+                
+                @include respond-to("small"){
+                    transform: translateY(57px);
+                }
                 
                 @include respond-to("medium"){
                     position: absolute;
@@ -21,7 +30,11 @@
     }
     
     .description{
-        padding: 80px 0;
+        padding: 50px 0;
+        
+        @include respond-to("medium"){
+            padding: 80px 0;
+        }
         
         .white-box-bg{
                         
@@ -62,12 +75,19 @@
     }
     
     .training-programs{
-        padding: 130px 0 130px;
+        padding: 130px 0 0;
         transform: translateY(-100px);
         border-bottom: 1px solid #e0e0e0;
         
-        .item{
-            margin-top: 120px;
+        @include respond-to("medium"){
+             padding: 130px 0 130px;
+        }
+        
+        
+        .item{            
+            @include respond-to("medium"){
+                margin-top: 120px;
+            }
             
             .img-container{
                 position: relative;
@@ -76,6 +96,11 @@
                     border-radius: 30px;
                     border-top-left-radius: 0;
                     width: 100%;
+                    margin-bottom: 50px;
+                    
+                    @include respond-to("medium"){
+                        margin: 0;
+                    }
                     
                     &.border-right{
                         border-top-right-radius: 0;
@@ -94,8 +119,14 @@
                     font-family: $bold;
                     line-height: 1.6;
                     letter-spacing: 2.2px;
-                    bottom: 35px;
-                    right: -22%;
+                    right: -3%;
+                    bottom: -35px;
+                    
+                    @include respond-to("medium"){
+                        right: -22%;
+                        bottom: 35px;
+                    }
+                    
                 }
                 
             }
@@ -109,15 +140,29 @@
                 p{
                     font-size: 15px;
                     letter-spacing: 2.2px;
-                    padding-right: 190px;
                     margin: 25px 0 40px;
+                    
+                    @include respond-to("medium"){
+                        padding-right: 190px;
+                    }
                 }
                 
-                &.text-right{
-                    p{
-                        padding-right: 0;
-                        padding-left: 190px;
+                @include respond-to("medium"){
+                    &.text-right{
+                        p{
+                            padding-right: 0;
+                            padding-left: 190px;
+                        }
                     }
+                }
+                
+                .btn{
+                    margin-bottom: 50px;
+                    
+                     @include respond-to("medium"){
+                         margin: 0;
+                    }
+                
                 }
                 
             }
@@ -127,18 +172,34 @@
     }
     
     .good-company{
-        padding: 80px 0 130px;
+        padding: 0;
         border-bottom: 1px solid #e0e0e0;
+        margin-top: -50px;
+        
+        @include respond-to("medium"){
+             padding: 80px 0 130px;
+            margin: 0;
+        }
         
         .title{
             margin-bottom: 30px;
         }
         
         .partners-images{
+            margin-top: -40px;
             
             img{
-                float: left;
+                display: inline-block;
                 margin: 0 15px;
+                width: 125px;
+                
+                @include respond-to("xxsmall"){
+                    width: 85px;
+                }
+                
+                @include respond-to("medium"){
+                    width: 140px;
+                }
             }
             
         }
@@ -146,12 +207,24 @@
     }
     
     .testimonials{
-        padding: 140px 0 80px;
+        padding: 50px 0;
+        
+        @include respond-to("medium"){
+            padding: 140px 0 80px;
+        }
         
         .testimonials-slider{
             .slide{
                 overflow: hidden;
                 margin-bottom: 20px;
+                
+                @include respond-to("xsmall"){
+                    width: 350px !important;
+                }
+                
+                @include respond-to("xxsmall"){
+                    width: 245px !important;
+                }
                 
                 .quote{
                     font-size: 16px;
@@ -161,15 +234,34 @@
                     height: 185px;
                     padding: 35px 45px;
                     
+                    @include respond-to("xsmall"){
+                        height: 300px;
+                
+                    }
+                    
+                    @include respond-to("xxsmall"){
+                        font-size: 14px;
+                        padding: 25px 31px;
+                    }
+                    
                     &:before{
                         content: "";
                         position: absolute;
                         width: 100%;
-                        height: 188px;
+                        height: 205px;
                         top: 0;
                         left: 0;
                         background: url(img/testimonial-bg.png) top left no-repeat;
                         z-index: -1;
+                        background-size: 100%; 
+                    }
+                    
+                    @include respond-to("xsmall"){
+                        &:before{
+                            background: url(img/testimonial-bg-mobile.png) top left no-repeat;
+                            background-size: 100%;
+                            height: 320px;
+                        }
                     }
                 }
                 
@@ -207,7 +299,12 @@
     }
     
     .blog-posts{
-        padding: 80px 0 130px;
+        padding: 50px 0;
+        
+         @include respond-to("medium"){
+            padding: 80px 0 130px;
+        }
+        
         
         .section-desc{
             margin: 30px 0 40px;
@@ -219,21 +316,32 @@
                 position: absolute;
                 width: 76%;
                 height: 99%;
-                background: url(../images/white-box-bg.png);
+                background: url(../images/white-box-bg.png) bottom right;
                 bottom: -29px;
-                right: 82px;
+                right: 0;
+                
+                @include respond-to("medium"){
+                    right: -25px;
+                }
+                
             }
 
             .box{
-                width: 255px;
+                width: 100%;
                 overflow: hidden;
-                margin-left: 30px;
-                float: right;
+                margin-top: 50px;
                 border-radius: 30px;
                 border-top-right-radius: 0;
                 background-color: $white;
                 box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
                 position: relative;
+                
+                 @include respond-to("medium"){
+                    width: 255px;
+                    margin-left: 30px;
+                    margin-top: 0;
+                    float: right;
+                }
                 
                 .inner-text{
                     padding: 20px 30px;

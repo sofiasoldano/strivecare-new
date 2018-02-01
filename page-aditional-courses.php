@@ -44,6 +44,10 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-md-6 text-right mobile">
+                <div class="title"><b class="purple">Apprenticeships</b></div>
+                <p class="section-desc text-right">The following apprenticeships are offered in addition to the Health and Safety Appenticeship.</p>
+            </div>
             <div class="col-md-6">
                 <div class="white-box-bg left">
                 <div class="white-box">
@@ -69,7 +73,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col-md-6 text-right">
+            <div class="col-md-6 text-right desktop">
                 <div class="title"><b class="purple">Apprenticeships</b></div>
                 <p class="section-desc text-right">The following apprenticeships are offered in addition to the Health and Safety Appenticeship.</p>
             </div>

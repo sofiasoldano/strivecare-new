@@ -2,12 +2,15 @@
     
     .main{
         padding: 50px 0 0;
-        min-height: 570px;
         position: relative;
         
         @include respond-to("xsmall"){
             background-size: 560px;
             padding: 10px 0 0;
+        }
+        
+         @include respond-to("medium"){
+              min-height: 570px;
         }
         
         &:after{
@@ -36,6 +39,15 @@
                 transform: translateY(-20px);
                 margin-bottom: -20px;
             }
+            
+            @include respond-to("medium"){
+                transform: translateY(64px);
+            }
+            
+            @include respond-to("large"){
+                transform: initial;
+            }
+            
         }
 
         .hero-title{

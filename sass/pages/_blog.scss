@@ -2,18 +2,30 @@
     .hero{
         .main{
             background: url(img/hero-training-bg.png) bottom right no-repeat;
-            background-size: 780px;
+            background-size: 600px;
+            background-position-x: -70px;
+            
+             @include respond-to("medium"){
+                 background: url(img/hero-training-bg-desktop.png) bottom right no-repeat;
+                 background-size: 780px;
+            }
             
             .hero-title{
-                margin-top: 100px;
+                margin-top: 15px;
+                
+                @include respond-to("medium"){
+                    margin-top: 100px;
+                }
             }
             
            .hero-img{
+               margin-top: 50px;
                
                 @include respond-to("medium"){
                     position: absolute;
                     right: -60px;
                     top: -33px;
+                    margin: 0;
                 }
       
             }

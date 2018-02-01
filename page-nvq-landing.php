@@ -156,6 +156,9 @@
 <section class="nvq-offer">
     <div class="container">
         <div class="row">
+            <div class="col-md-6 text-right mobile">
+                <div class="title"><b>Limited availability offer</b> for new and exclusive fast track nvq diploma</div>
+            </div>
             <div class="col-md-6">
                 <div class="white-box-bg">
                 <div class="white-box">
@@ -172,7 +175,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col-md-6 text-right">
+            <div class="col-md-6 text-right desktop">
                 <div class="title"><b>Limited availability offer</b> for new and exclusive fast track nvq diploma</div>
             </div>
         </div>

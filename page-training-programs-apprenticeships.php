@@ -160,6 +160,9 @@
 <section id="how-much" class="how-much">
     <div class="container">
         <div class="row">
+            <div class="col-md-4 text-right mobile">
+                <div class="title"><b>How much</b><br>does it cost?</div>
+            </div>
             <div class="col-md-8">
                 <div class="white-box-bg left">
                 <div class="white-box">
@@ -169,7 +172,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col-md-4 text-right">
+            <div class="col-md-4 text-right desktop">
                 <div class="title"><b>How much</b><br>does it cost?</div>
             </div>
         </div>

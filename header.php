@@ -30,9 +30,11 @@
         <div class="row">
             <div class="col-md-2">
                 <a href="page-home.php" class="logo"><img src="images/logo-header.png"></a>
+                <i class="fa fa-bars"></i>
             </div>
             <div class="col-md-10">
                 <ul class="main-nav right">
+                    <li class="logo"><img src="images/logo-footer.png"><div class="close-nav"></div></li>
                     <li class="<?php if ($page_name=="home") echo 'active'; ?>"><a href="page-home.php">HOME</a></li>
                     <li class="<?php if ($page_name=="about-us") echo 'active'; ?>"><a href="page-about-us.php">ABOUT US</a></li>
                     <li class="<?php if ($page_name=="training-programs") echo 'active'; ?><?php if ($page_name=="training-programs-inner") echo 'active'; ?>"><a href="page-training-programs.php">TRAINING PROGRAMS</a></li>

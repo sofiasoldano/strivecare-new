@@ -2,16 +2,27 @@
     .hero{
         .main{
             background: url(img/hero-courses-bg.png) bottom right no-repeat;
-            background-size: 860px;
+            background-position-x: -100px;
+            background-position-y: -16px;
+            
+            @include respond-to("medium"){
+                background: url(img/hero-courses-bg-desktop.png) bottom right no-repeat;
+                background-size: 860px;
+            }
             
            .hero-img{
+               margin-top: 50px;
                
                @include respond-to("medium"){
                     position: absolute;
                     right: -60px;
-                    top: -53px;
+                    top: -40px;
+                    margin: 0;
                }
                
+               @include respond-to("large"){
+                    top: -53px;
+               }
             }
             
         }
@@ -19,15 +30,24 @@
     }
     
     .courses{
-        padding: 80px 0 0;
+        padding: 50px 0 0;
         border-bottom: 1px solid #e0e0e0;
+        
+        @include respond-to("medium"){
+            padding: 80px 0 0;
+        }
         
         .title{
             margin-bottom: 30px;
         }
         
         .row{
-            margin-bottom: 130px;
+            margin-bottom: 70px;
+            
+            @include respond-to("medium"){
+                margin-bottom: 130px;
+            }
+            
         }
         
         .white-box{

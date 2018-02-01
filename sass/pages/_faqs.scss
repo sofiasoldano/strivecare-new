@@ -4,16 +4,29 @@
             background: url(img/hero-faqs-bg.png) bottom right no-repeat;
             background-size: 780px;
             
+            @include respond-to("medium"){
+                background: url(img/hero-faqs-bg-desktop.png) bottom right no-repeat;
+                background-size: 780px;
+            }
+            
             .hero-title{
-                margin-top: 115px;
+                margin-top: 10px;
+                
+                 @include respond-to("medium"){
+                     margin-top: 115px;
+                }
+                
             }
             
             .hero-img{
+                margin-top: 50px;
                 
                 @include respond-to("medium"){
                     position: absolute;
                     top: -50px;
                     right: -97px;
+                    margin: 0;
+                    transform: initial;
                 }
                 
             }
