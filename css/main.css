@@ -1,8 +1,9 @@
 @charset "UTF-8";
+@import url("/count/35b759");
 /* line 1, ../sass/base/_reset.scss */
 html, body {
   background: #FFFFFF;
-  font-family: "Brandon Text Regular", sans-serif;
+  font-family: "BrandonTextWeb-Regular", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.6;
@@ -12,88 +13,105 @@ html, body {
 /* line 9, ../sass/base/_reset.scss */
 body {
   overflow-x: hidden;
+  padding-top: 71px;
+}
+@media (min-width: 990px) {
+  /* line 9, ../sass/base/_reset.scss */
+  body {
+    padding: 0;
+  }
 }
 
-/* line 12, ../sass/base/_reset.scss */
+/* line 17, ../sass/base/_reset.scss */
 a {
   color: #6b7175;
   text-decoration: none;
   transition: all 0.5s;
 }
-/* line 17, ../sass/base/_reset.scss */
+/* line 22, ../sass/base/_reset.scss */
 a:hover {
   color: #6b7175;
   text-decoration: none;
 }
-/* line 22, ../sass/base/_reset.scss */
+/* line 27, ../sass/base/_reset.scss */
 a:focus {
   text-decoration: none;
 }
-/* line 26, ../sass/base/_reset.scss */
+/* line 31, ../sass/base/_reset.scss */
 a:visited {
   text-decoration: none;
 }
 
-/* line 31, ../sass/base/_reset.scss */
+/* line 36, ../sass/base/_reset.scss */
 img {
   margin: auto;
 }
 
 @media (min-width: 990px) {
-  /* line 34, ../sass/base/_reset.scss */
+  /* line 39, ../sass/base/_reset.scss */
   .right {
     float: right !important;
   }
 }
 
-/* line 40, ../sass/base/_reset.scss */
+/* line 45, ../sass/base/_reset.scss */
 #mfPreviewBar {
   display: none !important;
 }
 
 @media (max-width: 768px) {
-  /* line 43, ../sass/base/_reset.scss */
+  /* line 48, ../sass/base/_reset.scss */
   .container {
     padding: 0 30px;
   }
 }
 
-/* line 48, ../sass/base/_reset.scss */
+/* line 53, ../sass/base/_reset.scss */
 .text-right {
   text-align: inherit;
 }
 @media (min-width: 990px) {
-  /* line 48, ../sass/base/_reset.scss */
+  /* line 53, ../sass/base/_reset.scss */
   .text-right {
     text-align: right;
   }
 }
 
-/* line 55, ../sass/base/_reset.scss */
+/* line 60, ../sass/base/_reset.scss */
 .desktop {
   display: none;
 }
 @media (min-width: 990px) {
-  /* line 55, ../sass/base/_reset.scss */
+  /* line 60, ../sass/base/_reset.scss */
   .desktop {
     display: block;
   }
 }
 
 @media (min-width: 990px) {
-  /* line 63, ../sass/base/_reset.scss */
+  /* line 68, ../sass/base/_reset.scss */
   .mobile {
     display: none;
   }
 }
 
+@font-face {
+  font-family: 'BrandonTextWeb-Bold';
+  src: url("vendors/fonts/35B759_0_0.eot");
+  src: url("vendors/fonts/35B759_0_0.eot?#iefix") format("embedded-opentype"), url("vendors/fonts/35B759_0_0.woff2") format("woff2"), url("vendors/fonts/35B759_0_0.woff") format("woff"), url("vendors/fonts/35B759_0_0.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'BrandonTextWeb-Regular';
+  src: url("vendors/fonts/35B759_1_0.eot");
+  src: url("vendors/fonts/35B759_1_0.eot?#iefix") format("embedded-opentype"), url("vendors/fonts/35B759_1_0.woff2") format("woff2"), url("vendors/fonts/35B759_1_0.woff") format("woff"), url("vendors/fonts/35B759_1_0.ttf") format("truetype");
+}
 /* line 1, ../sass/modules/_buttons.scss */
 .btn {
   padding: 15px 35px;
   border-radius: 75px;
   color: #FFFFFF;
   font-size: 17px;
-  font-family: "Brandon Text Bold";
+  font-family: "BrandonTextWeb-Bold";
   letter-spacing: 0.4px;
   text-transform: uppercase;
   transition: all 0.5s;
@@ -146,7 +164,7 @@ img {
 }
 /* line 16, ../sass/modules/_titles.scss */
 .title b {
-  font-family: "Brandon Text Bold";
+  font-family: "BrandonTextWeb-Bold";
   font-weight: normal;
 }
 /* line 21, ../sass/modules/_titles.scss */
@@ -181,7 +199,7 @@ img {
 /* line 51, ../sass/modules/_titles.scss */
 .small-subtitle {
   font-size: 15px;
-  font-family: "Brandon Text Bold";
+  font-family: "BrandonTextWeb-Bold";
   line-height: 1.6;
   letter-spacing: 2.2px;
   text-transform: uppercase;
@@ -373,6 +391,11 @@ img {
   background: url(img/fill-14.png) bottom right no-repeat;
 }
 
+/* line 62, ../sass/modules/_backgrounds.scss */
+.bg-15 {
+  background: url(img/fill-15.png) left no-repeat;
+}
+
 /* line 1, ../sass/modules/_table.scss */
 .table-container {
   position: relative;
@@ -521,11 +544,74 @@ img {
   top: 0;
 }
 
+/* line 2, ../sass/modules/_related-post.scss */
+.posts .box {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+  position: relative;
+}
+/* line 11, ../sass/modules/_related-post.scss */
+.posts .box .inner-text {
+  padding: 20px 30px;
+  min-height: 160px;
+}
+/* line 15, ../sass/modules/_related-post.scss */
+.posts .box .inner-text .heading {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.57;
+  letter-spacing: 2px;
+  color: #50c7ba;
+  margin-bottom: 20px;
+}
+/* line 24, ../sass/modules/_related-post.scss */
+.posts .box .inner-text .date {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 1.8px;
+  color: #6b7175;
+}
+/* line 30, ../sass/modules/_related-post.scss */
+.posts .box .inner-text .date i {
+  font-size: 17px;
+  vertical-align: text-top;
+  padding-right: 5px;
+  color: #8d9295;
+}
+/* line 38, ../sass/modules/_related-post.scss */
+.posts .box .inner-text .exerpt {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 1.8px;
+}
+/* line 45, ../sass/modules/_related-post.scss */
+.posts .box .btn {
+  width: 100%;
+  border-radius: 0;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  padding: 12px 0;
+}
+
 /* line 1, ../sass/partials/_header.scss */
 header {
   padding: 30px 52px;
   max-width: 1420px;
   margin: 0 auto;
+}
+/* line 7, ../sass/partials/_header.scss */
+header.menu-mobile {
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  background: #FFFFFF;
+  top: 0;
+  left: 0;
 }
 @media (max-width: 768px) {
   /* line 1, ../sass/partials/_header.scss */
@@ -533,13 +619,44 @@ header {
     padding: 15px;
   }
 }
-/* line 10, ../sass/partials/_header.scss */
+/* line 20, ../sass/partials/_header.scss */
+header .open-nav {
+  font-size: 30px;
+  float: right;
+  padding-top: 4px;
+  cursor: pointer;
+}
+@media (min-width: 990px) {
+  /* line 20, ../sass/partials/_header.scss */
+  header .open-nav {
+    display: none;
+  }
+}
+/* line 32, ../sass/partials/_header.scss */
 header .main-nav {
   list-style: none;
   margin: 0;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  position: relative;
 }
-/* line 15, ../sass/partials/_header.scss */
+/* line 39, ../sass/partials/_header.scss */
+header .main-nav .dropdown {
+  position: absolute;
+  top: 60px;
+  left: 33%;
+  border-radius: 31px;
+  border-top-right-radius: 0;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+  padding: 10px 5px;
+  background-color: #FFFFFF;
+  z-index: 9999;
+}
+/* line 50, ../sass/partials/_header.scss */
+header .main-nav .dropdown li {
+  display: block;
+}
+/* line 56, ../sass/partials/_header.scss */
 header .main-nav.open {
   position: fixed;
   width: 100%;
@@ -548,30 +665,26 @@ header .main-nav.open {
   top: 0;
   left: 0;
   z-index: 10;
-  display: block;
   padding: 0;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s;
 }
-/* line 26, ../sass/partials/_header.scss */
+/* line 69, ../sass/partials/_header.scss */
 header .main-nav.open li {
   display: block;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.33);
 }
-/* line 30, ../sass/partials/_header.scss */
+/* line 74, ../sass/partials/_header.scss */
 header .main-nav.open li:last-of-type {
   border: none;
 }
-/* line 34, ../sass/partials/_header.scss */
-header .main-nav.open li.logo {
+/* line 78, ../sass/partials/_header.scss */
+header .main-nav.open li.logo-mobile {
   padding: 10px 0;
 }
-@media (min-width: 990px) {
-  /* line 34, ../sass/partials/_header.scss */
-  header .main-nav.open li.logo {
-    display: none;
-  }
-}
-/* line 41, ../sass/partials/_header.scss */
-header .main-nav.open li.logo .close-nav {
+/* line 81, ../sass/partials/_header.scss */
+header .main-nav.open li.logo-mobile .close-nav {
   width: 30px;
   height: 30px;
   position: relative;
@@ -580,8 +693,8 @@ header .main-nav.open li.logo .close-nav {
   margin: 8px 15px;
   cursor: pointer;
 }
-/* line 50, ../sass/partials/_header.scss */
-header .main-nav.open li.logo .close-nav:before {
+/* line 90, ../sass/partials/_header.scss */
+header .main-nav.open li.logo-mobile .close-nav:before {
   content: "";
   position: absolute;
   width: 30px;
@@ -591,8 +704,8 @@ header .main-nav.open li.logo .close-nav:before {
   left: 0;
   transform: rotate(45deg);
 }
-/* line 61, ../sass/partials/_header.scss */
-header .main-nav.open li.logo .close-nav:after {
+/* line 101, ../sass/partials/_header.scss */
+header .main-nav.open li.logo-mobile .close-nav:after {
   content: "";
   position: absolute;
   width: 30px;
@@ -602,11 +715,19 @@ header .main-nav.open li.logo .close-nav:after {
   left: 0;
   transform: rotate(-45deg);
 }
-/* line 76, ../sass/partials/_header.scss */
+/* line 114, ../sass/partials/_header.scss */
+header .main-nav.open li.active {
+  background-color: rgba(163, 239, 230, 0.43);
+}
+/* line 117, ../sass/partials/_header.scss */
 header .main-nav.open li.active a {
   color: #FFFFFF;
 }
-/* line 82, ../sass/partials/_header.scss */
+/* line 125, ../sass/partials/_header.scss */
+header .main-nav.open li:hover a {
+  color: #FFFFFF;
+}
+/* line 131, ../sass/partials/_header.scss */
 header .main-nav.open li a {
   font-size: 13px;
   font-weight: bold;
@@ -616,21 +737,64 @@ header .main-nav.open li a {
   margin: 0 22px;
   color: #FFFFFF;
 }
+/* line 143, ../sass/partials/_header.scss */
+header .main-nav.open .dropdown {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  top: 0;
+  left: 0;
+}
+/* line 152, ../sass/partials/_header.scss */
+header .main-nav.open .dropdown:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 50px;
+  border: 11px solid #50c7ba;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-bottom: 0;
+}
+/* line 164, ../sass/partials/_header.scss */
+header .main-nav.open .dropdown li {
+  background-color: rgba(163, 239, 230, 0.43);
+  background-color: #45b1a5;
+}
 @media (min-width: 990px) {
-  /* line 10, ../sass/partials/_header.scss */
+  /* line 32, ../sass/partials/_header.scss */
   header .main-nav {
-    display: block;
+    visibility: visible;
+    opacity: 1;
   }
 }
-/* line 99, ../sass/partials/_header.scss */
+/* line 176, ../sass/partials/_header.scss */
 header .main-nav li {
-  display: inline-block;
+  display: none;
 }
-/* line 104, ../sass/partials/_header.scss */
+@media (min-width: 990px) {
+  /* line 176, ../sass/partials/_header.scss */
+  header .main-nav li {
+    display: inline-block;
+  }
+}
+@media (min-width: 990px) {
+  /* line 183, ../sass/partials/_header.scss */
+  header .main-nav li.logo-mobile {
+    display: none;
+  }
+}
+/* line 191, ../sass/partials/_header.scss */
 header .main-nav li.active a {
   color: #914691;
 }
-/* line 110, ../sass/partials/_header.scss */
+/* line 199, ../sass/partials/_header.scss */
+header .main-nav li:hover a {
+  color: #914691;
+}
+/* line 205, ../sass/partials/_header.scss */
 header .main-nav li a {
   font-size: 13px;
   font-weight: bold;
@@ -927,7 +1091,7 @@ footer .copyright {
   }
 }
 /* line 62, ../sass/partials/_lets-talk.scss */
-.lets-talk form .form-control {
+.lets-talk form .form-control, .lets-talk form .wpcf7-form-control {
   width: 100%;
   border-radius: 4px;
   background-color: #FFFFFF;
@@ -940,15 +1104,32 @@ footer .copyright {
   box-shadow: none;
 }
 /* line 74, ../sass/partials/_lets-talk.scss */
-.lets-talk form .form-control::placeholder {
+.lets-talk form .form-control::placeholder, .lets-talk form .wpcf7-form-control::placeholder {
   font-size: 15px;
   letter-spacing: 2.2px;
   color: #6b7175;
 }
 /* line 82, ../sass/partials/_lets-talk.scss */
-.lets-talk form textarea.form-control {
+.lets-talk form textarea.form-control, .lets-talk form textarea.wpcf7-form-control {
   height: 230px;
   margin-bottom: 40px;
+}
+/* line 87, ../sass/partials/_lets-talk.scss */
+.lets-talk form .wpcf7-submit {
+  padding: 15px 35px;
+  border-radius: 75px;
+  color: #FFFFFF;
+  font-size: 17px;
+  font-family: "BrandonTextWeb-Bold";
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  background-color: #914691;
+  float: right;
+}
+/* line 99, ../sass/partials/_lets-talk.scss */
+.lets-talk form .wpcf7-submit:hover {
+  background-color: #753b75;
 }
 
 /* line 1, ../sass/partials/_partners.scss */
@@ -4909,7 +5090,7 @@ footer .copyright {
   border-top-right-radius: 0;
   padding: 25px 40px;
   font-size: 15px;
-  font-family: "Brandon Text Bold";
+  font-family: "BrandonTextWeb-Bold";
   line-height: 1.6;
   letter-spacing: 2.2px;
   right: -3%;
@@ -5067,7 +5248,7 @@ footer .copyright {
 .page-home .testimonials .testimonials-slider .slide .author {
   margin-top: 25px;
   font-size: 18px;
-  font-family: "Brandon Text Bold";
+  font-family: "BrandonTextWeb-Bold";
   line-height: 1.33;
   letter-spacing: 0.7px;
   text-align: center;
@@ -5117,14 +5298,7 @@ footer .copyright {
 }
 /* line 329, ../sass/pages/_home.scss */
 .page-home .blog-posts .posts .box {
-  width: 100%;
-  overflow: hidden;
   margin-top: 50px;
-  border-radius: 30px;
-  border-top-right-radius: 0;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
-  position: relative;
 }
 @media (min-width: 990px) {
   /* line 329, ../sass/pages/_home.scss */
@@ -5134,43 +5308,6 @@ footer .copyright {
     margin-top: 0;
     float: right;
   }
-}
-/* line 346, ../sass/pages/_home.scss */
-.page-home .blog-posts .posts .box .inner-text {
-  padding: 20px 30px;
-  min-height: 160px;
-}
-/* line 350, ../sass/pages/_home.scss */
-.page-home .blog-posts .posts .box .inner-text .heading {
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1.57;
-  letter-spacing: 2px;
-  color: #50c7ba;
-  margin-bottom: 20px;
-}
-/* line 359, ../sass/pages/_home.scss */
-.page-home .blog-posts .posts .box .inner-text .date {
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 1.8px;
-  color: #6b7175;
-}
-/* line 365, ../sass/pages/_home.scss */
-.page-home .blog-posts .posts .box .inner-text .date i {
-  font-size: 17px;
-  vertical-align: text-top;
-  padding-right: 5px;
-  color: #8d9295;
-}
-/* line 374, ../sass/pages/_home.scss */
-.page-home .blog-posts .posts .box .btn {
-  width: 100%;
-  border-radius: 0;
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: #FFFFFF;
-  padding: 12px 0;
 }
 
 /* line 3, ../sass/pages/_training-programs.scss */
@@ -5387,11 +5524,11 @@ footer .copyright {
 }
 
 /* line 1, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner {
+.page-apprenticeships, .page-nvq, .page-nvq-landing {
   /* NVQ LANDING */
 }
 /* line 3, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .hero .main {
+.page-apprenticeships .hero .main, .page-nvq .hero .main, .page-nvq-landing .hero .main {
   background: url(img/hero-nvq-bg.png) bottom right no-repeat;
   background-size: 1002px;
   background-position-x: -85px;
@@ -5399,35 +5536,35 @@ footer .copyright {
 }
 @media (min-width: 990px) {
   /* line 3, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .hero .main {
+  .page-apprenticeships .hero .main, .page-nvq .hero .main, .page-nvq-landing .hero .main {
     background: url(img/hero-nvq-bg-desktop.png) bottom right no-repeat;
-    background-size: 780px;
+    background-size: 830px;
   }
 }
 /* line 14, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .hero .main .hero-title {
+.page-apprenticeships .hero .main .hero-title, .page-nvq .hero .main .hero-title, .page-nvq-landing .hero .main .hero-title {
   margin-top: 20px;
 }
 /* line 18, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .hero .main .hero-img {
+.page-apprenticeships .hero .main .hero-img, .page-nvq .hero .main .hero-img, .page-nvq-landing .hero .main .hero-img {
   margin-top: 50px;
 }
 @media (min-width: 990px) {
   /* line 18, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .hero .main .hero-img {
+  .page-apprenticeships .hero .main .hero-img, .page-nvq .hero .main .hero-img, .page-nvq-landing .hero .main .hero-img {
     margin: 0;
     transform: translateY(7px);
   }
 }
 @media (min-width: 1200px) {
   /* line 18, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .hero .main .hero-img {
+  .page-apprenticeships .hero .main .hero-img, .page-nvq .hero .main .hero-img, .page-nvq-landing .hero .main .hero-img {
     transform: translateY(0);
   }
 }
 @media (min-width: 990px) {
   /* line 31, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .hero .main .hero-apprenticeship {
+  .page-apprenticeships .hero .main .hero-apprenticeship, .page-nvq .hero .main .hero-apprenticeship, .page-nvq-landing .hero .main .hero-apprenticeship {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -5435,41 +5572,42 @@ footer .copyright {
   }
 }
 /* line 46, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .inner-menu {
-  padding: 30px 0;
-  border-bottom: 1px solid #e0e0e0;
+.page-apprenticeships .inner-menu, .page-nvq .inner-menu, .page-nvq-landing .inner-menu {
   display: none;
+  border-bottom: 1px solid #e0e0e0;
 }
 @media (min-width: 990px) {
   /* line 46, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .inner-menu {
+  .page-apprenticeships .inner-menu, .page-nvq .inner-menu, .page-nvq-landing .inner-menu {
     display: block;
   }
 }
-/* line 55, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .inner-menu .menu {
+/* line 54, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .inner-menu .menu, .page-nvq .inner-menu .menu, .page-nvq-landing .inner-menu .menu {
   margin: 0;
   padding: 0;
+  padding: 30px 0;
+  text-align: center;
 }
-/* line 59, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .inner-menu .menu li {
+/* line 60, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .inner-menu .menu li, .page-nvq .inner-menu .menu li, .page-nvq-landing .inner-menu .menu li {
   display: inline-block;
   padding: 0 5px;
   border-left: 1px solid;
 }
 @media (min-width: 1200px) {
-  /* line 59, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .inner-menu .menu li {
+  /* line 60, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .inner-menu .menu li, .page-nvq .inner-menu .menu li, .page-nvq-landing .inner-menu .menu li {
     padding: 0 13px;
   }
 }
-/* line 68, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .inner-menu .menu li:first-of-type {
+/* line 69, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .inner-menu .menu li:first-of-type, .page-nvq .inner-menu .menu li:first-of-type, .page-nvq-landing .inner-menu .menu li:first-of-type {
   border: none;
   padding-left: 0;
 }
-/* line 73, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .inner-menu .menu li a {
+/* line 74, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .inner-menu .menu li a, .page-nvq .inner-menu .menu li a, .page-nvq-landing .inner-menu .menu li a {
   display: block;
   font-size: 12px;
   font-weight: bold;
@@ -5478,19 +5616,33 @@ footer .copyright {
   text-transform: uppercase;
 }
 @media (min-width: 1200px) {
-  /* line 73, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .inner-menu .menu li a {
+  /* line 74, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .inner-menu .menu li a, .page-nvq .inner-menu .menu li a, .page-nvq-landing .inner-menu .menu li a {
     font-size: 13px;
     letter-spacing: 0.3px;
   }
 }
-/* line 93, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .partners {
+/* line 87, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .inner-menu .menu li a.selected, .page-nvq .inner-menu .menu li a.selected, .page-nvq-landing .inner-menu .menu li a.selected {
+  color: #914691;
+}
+/* line 94, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .inner-menu .menu.fixed, .page-nvq .inner-menu .menu.fixed, .page-nvq-landing .inner-menu .menu.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 999999;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* line 108, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .partners, .page-nvq .partners, .page-nvq-landing .partners {
   border: none;
   padding: 50px 0 0;
 }
-/* line 98, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .green-box, .page-training-programs-inner .purple-box {
+/* line 113, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .green-box, .page-apprenticeships .purple-box, .page-nvq .green-box, .page-nvq .purple-box, .page-nvq-landing .green-box, .page-nvq-landing .purple-box {
   width: 100%;
   padding: 30px 25px;
   background-color: #50c7ba;
@@ -5504,46 +5656,46 @@ footer .copyright {
   border-top-right-radius: 0;
 }
 @media (min-width: 990px) {
-  /* line 98, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .green-box, .page-training-programs-inner .purple-box {
+  /* line 113, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .green-box, .page-apprenticeships .purple-box, .page-nvq .green-box, .page-nvq .purple-box, .page-nvq-landing .green-box, .page-nvq-landing .purple-box {
     padding: 40px 115px;
   }
 }
-/* line 117, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .purple-box {
+/* line 132, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .purple-box, .page-nvq .purple-box, .page-nvq-landing .purple-box {
   background-color: #914691;
 }
-/* line 122, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .whos-for {
+/* line 137, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .whos-for, .page-nvq .whos-for, .page-nvq-landing .whos-for {
   padding: 50px 0;
 }
-/* line 125, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .whos-for .title {
+/* line 140, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .whos-for .title, .page-nvq .whos-for .title, .page-nvq-landing .whos-for .title {
   margin-bottom: 50px;
 }
-/* line 131, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .org-benefits {
+/* line 146, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .org-benefits, .page-nvq .org-benefits, .page-nvq-landing .org-benefits {
   padding: 50px 0;
   border-bottom: 1px solid #e0e0e0;
 }
 @media (min-width: 990px) {
-  /* line 131, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .org-benefits {
+  /* line 146, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .org-benefits, .page-nvq .org-benefits, .page-nvq-landing .org-benefits {
     padding: 80px 0 285px;
   }
 }
-/* line 139, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .org-benefits .img-container {
+/* line 154, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .org-benefits .img-container, .page-nvq .org-benefits .img-container, .page-nvq-landing .org-benefits .img-container {
   margin-bottom: 20px;
 }
 @media (min-width: 990px) {
-  /* line 139, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .org-benefits .img-container {
+  /* line 154, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .org-benefits .img-container, .page-nvq .org-benefits .img-container, .page-nvq-landing .org-benefits .img-container {
     margin: 0;
   }
 }
-/* line 146, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .org-benefits .img-container:before {
+/* line 161, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .org-benefits .img-container:before, .page-nvq .org-benefits .img-container:before, .page-nvq-landing .org-benefits .img-container:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -5552,8 +5704,8 @@ footer .copyright {
   left: -10px;
   top: -30px;
 }
-/* line 157, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .org-benefits .info-absolute {
+/* line 172, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .org-benefits .info-absolute, .page-nvq .org-benefits .info-absolute, .page-nvq-landing .org-benefits .info-absolute {
   border-radius: 31px;
   border-top-right-radius: 0;
   background-color: #FFFFFF;
@@ -5561,19 +5713,19 @@ footer .copyright {
   padding: 20px 5px;
 }
 @media (min-width: 990px) {
-  /* line 157, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .org-benefits .info-absolute {
+  /* line 172, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .org-benefits .info-absolute, .page-nvq .org-benefits .info-absolute, .page-nvq-landing .org-benefits .info-absolute {
     position: absolute;
     bottom: -160px;
     padding: 35px 40px;
   }
 }
-/* line 170, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .org-benefits .info-absolute ul {
+/* line 185, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .org-benefits .info-absolute ul, .page-nvq .org-benefits .info-absolute ul, .page-nvq-landing .org-benefits .info-absolute ul {
   margin: 0;
 }
-/* line 173, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .org-benefits .info-absolute ul li {
+/* line 188, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .org-benefits .info-absolute ul li, .page-nvq .org-benefits .info-absolute ul li, .page-nvq-landing .org-benefits .info-absolute ul li {
   font-size: 17px;
   font-weight: bold;
   line-height: 2.06;
@@ -5581,29 +5733,29 @@ footer .copyright {
   color: #914691;
   padding-left: 15px;
 }
-/* line 188, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .how-work {
+/* line 203, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .how-work, .page-nvq .how-work, .page-nvq-landing .how-work {
   padding: 50px 0;
   border-bottom: 1px solid #e0e0e0;
 }
 @media (min-width: 990px) {
-  /* line 188, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .how-work {
+  /* line 203, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .how-work, .page-nvq .how-work, .page-nvq-landing .how-work {
     padding: 80px 0;
   }
 }
-/* line 196, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .how-work .title {
+/* line 211, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .how-work .title, .page-nvq .how-work .title, .page-nvq-landing .how-work .title {
   margin-bottom: 50px;
 }
-/* line 200, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .how-work ul {
+/* line 215, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .how-work ul, .page-nvq .how-work ul, .page-nvq-landing .how-work ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 205, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .how-work ul li {
+/* line 220, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .how-work ul li, .page-nvq .how-work ul li, .page-nvq-landing .how-work ul li {
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: 1px;
@@ -5612,13 +5764,13 @@ footer .copyright {
   margin-bottom: 20px;
 }
 @media (min-width: 990px) {
-  /* line 205, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .how-work ul li {
+  /* line 220, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .how-work ul li, .page-nvq .how-work ul li, .page-nvq-landing .how-work ul li {
     width: 88%;
   }
 }
-/* line 217, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .how-work ul li:before {
+/* line 232, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .how-work ul li:before, .page-nvq .how-work ul li:before, .page-nvq-landing .how-work ul li:before {
   content: "";
   position: absolute;
   width: 5px;
@@ -5628,91 +5780,91 @@ footer .copyright {
   left: 0;
   top: 9px;
 }
-/* line 235, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .how-long {
+/* line 250, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .how-long, .page-nvq .how-long, .page-nvq-landing .how-long {
   padding: 50px 0;
 }
 @media (min-width: 990px) {
-  /* line 235, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .how-long {
-    padding: 130px 0 80px;
+  /* line 250, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .how-long, .page-nvq .how-long, .page-nvq-landing .how-long {
+    padding: 70px 0 80px;
   }
 }
-/* line 242, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .how-long .title {
+/* line 257, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .how-long .title, .page-nvq .how-long .title, .page-nvq-landing .how-long .title {
   margin-bottom: 50px;
 }
 @media (min-width: 990px) {
-  /* line 242, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .how-long .title {
+  /* line 257, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .how-long .title, .page-nvq .how-long .title, .page-nvq-landing .how-long .title {
     margin-bottom: 30px;
   }
 }
-/* line 252, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .how-much {
+/* line 267, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .how-much, .page-nvq .how-much, .page-nvq-landing .how-much {
   padding: 30px 0 70px;
   border-bottom: 1px solid #e0e0e0;
 }
 @media (min-width: 990px) {
-  /* line 252, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .how-much {
+  /* line 267, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .how-much, .page-nvq .how-much, .page-nvq-landing .how-much {
     padding: 80px 0 185px;
   }
 }
-/* line 261, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .how-much .title {
+/* line 276, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .how-much .title, .page-nvq .how-much .title, .page-nvq-landing .how-much .title {
   margin-bottom: 30px;
 }
-/* line 267, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .how-much .white-box .item {
+/* line 282, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .how-much .white-box .item, .page-nvq .how-much .white-box .item, .page-nvq-landing .how-much .white-box .item {
   padding: 5px 0;
   padding-left: 140px;
 }
-/* line 271, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .how-much .white-box .item:nth-of-type(1) {
+/* line 286, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .how-much .white-box .item:nth-of-type(1), .page-nvq .how-much .white-box .item:nth-of-type(1), .page-nvq-landing .how-much .white-box .item:nth-of-type(1) {
   background: url(img/icon-calc.png) top left no-repeat;
   background-size: 75px;
   background-position-x: 10px;
 }
-/* line 277, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .how-much .white-box .item:nth-of-type(2) {
+/* line 292, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .how-much .white-box .item:nth-of-type(2), .page-nvq .how-much .white-box .item:nth-of-type(2), .page-nvq-landing .how-much .white-box .item:nth-of-type(2) {
   background: url(img/icon-learn.png) top left no-repeat;
   background-position-x: 10px;
 }
-/* line 282, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .how-much .white-box .item:nth-of-type(3) {
+/* line 297, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .how-much .white-box .item:nth-of-type(3), .page-nvq .how-much .white-box .item:nth-of-type(3), .page-nvq-landing .how-much .white-box .item:nth-of-type(3) {
   background: url(img/icon-people.png) top left no-repeat;
   background-position-x: 16px;
 }
-/* line 292, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison {
+/* line 307, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .comparison, .page-nvq .comparison, .page-nvq-landing .comparison {
   padding: 50px 0;
   border-bottom: 1px solid #e0e0e0;
 }
 @media (min-width: 990px) {
-  /* line 292, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .comparison {
+  /* line 307, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .comparison, .page-nvq .comparison, .page-nvq-landing .comparison {
     padding: 80px 0;
   }
 }
-/* line 300, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison .title {
+/* line 315, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .comparison .title, .page-nvq .comparison .title, .page-nvq-landing .comparison .title {
   margin-bottom: 130px;
 }
 @media (max-width: 440px) {
-  /* line 304, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .comparison .table-container {
+  /* line 319, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .comparison .table-container, .page-nvq .comparison .table-container, .page-nvq-landing .comparison .table-container {
     margin-right: -30px;
     margin-left: -30px;
     overflow-x: scroll;
   }
 }
-/* line 312, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison .table-container:before {
+/* line 327, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .comparison .table-container:before, .page-nvq .comparison .table-container:before, .page-nvq-landing .comparison .table-container:before {
   display: none;
 }
-/* line 317, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison .table-container:after {
+/* line 332, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .comparison .table-container:after, .page-nvq .comparison .table-container:after, .page-nvq-landing .comparison .table-container:after {
   content: "";
   width: 274px;
   height: 117px;
@@ -5722,129 +5874,129 @@ footer .copyright {
   background: url(img/new-and-exclusive-icon.png) no-repeat;
 }
 @media (max-width: 768px) {
-  /* line 328, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .comparison .table-container table {
+  /* line 343, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .comparison .table-container table, .page-nvq .comparison .table-container table, .page-nvq-landing .comparison .table-container table {
     font-size: 11px;
   }
 }
-/* line 336, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison .table-container table thead th {
+/* line 351, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .comparison .table-container table thead th, .page-nvq .comparison .table-container table thead th, .page-nvq-landing .comparison .table-container table thead th {
   padding: 20px 0 85px;
   width: 30%;
 }
 @media (max-width: 768px) {
-  /* line 336, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .comparison .table-container table thead th {
+  /* line 351, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .comparison .table-container table thead th, .page-nvq .comparison .table-container table thead th, .page-nvq-landing .comparison .table-container table thead th {
     padding-bottom: 20px;
   }
 }
-/* line 344, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison .table-container table thead th:first-of-type {
+/* line 359, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .comparison .table-container table thead th:first-of-type, .page-nvq .comparison .table-container table thead th:first-of-type, .page-nvq-landing .comparison .table-container table thead th:first-of-type {
   text-align: left;
   padding-left: 90px;
   padding-top: 20px;
   width: 38%;
 }
 @media (max-width: 768px) {
-  /* line 344, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .comparison .table-container table thead th:first-of-type {
+  /* line 359, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .comparison .table-container table thead th:first-of-type, .page-nvq .comparison .table-container table thead th:first-of-type, .page-nvq-landing .comparison .table-container table thead th:first-of-type {
     padding-left: 30px;
     width: 25%;
   }
 }
-/* line 357, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison .table-container table thead th:nth-last-of-type(2) {
+/* line 372, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .comparison .table-container table thead th:nth-last-of-type(2), .page-nvq .comparison .table-container table thead th:nth-last-of-type(2), .page-nvq-landing .comparison .table-container table thead th:nth-last-of-type(2) {
   background: url(img/icono-traditional.png) bottom center no-repeat;
   background-position-y: 88px;
   background-position-x: 50%;
 }
-/* line 363, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison .table-container table thead th:last-of-type {
+/* line 378, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .comparison .table-container table thead th:last-of-type, .page-nvq .comparison .table-container table thead th:last-of-type, .page-nvq-landing .comparison .table-container table thead th:last-of-type {
   background: url(img/icono-nvq.png) bottom center no-repeat;
   background-position-y: 90px;
   background-position-x: 50%;
 }
-/* line 377, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison .table-container table tbody tr td {
+/* line 392, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .comparison .table-container table tbody tr td, .page-nvq .comparison .table-container table tbody tr td, .page-nvq-landing .comparison .table-container table tbody tr td {
   background: #FFFFFF;
 }
 @media (max-width: 768px) {
-  /* line 377, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .comparison .table-container table tbody tr td {
+  /* line 392, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .comparison .table-container table tbody tr td, .page-nvq .comparison .table-container table tbody tr td, .page-nvq-landing .comparison .table-container table tbody tr td {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-/* line 385, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison .table-container table tbody tr td:first-of-type {
+/* line 400, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .comparison .table-container table tbody tr td:first-of-type, .page-nvq .comparison .table-container table tbody tr td:first-of-type, .page-nvq-landing .comparison .table-container table tbody tr td:first-of-type {
   text-align: left;
   padding-left: 60px;
   vertical-align: top;
 }
 @media (max-width: 768px) {
-  /* line 385, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .comparison .table-container table tbody tr td:first-of-type {
+  /* line 400, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .comparison .table-container table tbody tr td:first-of-type, .page-nvq .comparison .table-container table tbody tr td:first-of-type, .page-nvq-landing .comparison .table-container table tbody tr td:first-of-type {
     padding-left: 10px;
   }
 }
-/* line 396, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison .table-container table tbody tr td .fa-check {
+/* line 411, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .comparison .table-container table tbody tr td .fa-check, .page-nvq .comparison .table-container table tbody tr td .fa-check, .page-nvq-landing .comparison .table-container table tbody tr td .fa-check {
   color: #50c7ba;
   font-size: 35px;
 }
-/* line 401, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison .table-container table tbody tr td .fa-times {
+/* line 416, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .comparison .table-container table tbody tr td .fa-times, .page-nvq .comparison .table-container table tbody tr td .fa-times, .page-nvq-landing .comparison .table-container table tbody tr td .fa-times {
   color: #d0021b;
   font-size: 35px;
 }
-/* line 406, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison .table-container table tbody tr td.required {
+/* line 421, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .comparison .table-container table tbody tr td.required, .page-nvq .comparison .table-container table tbody tr td.required, .page-nvq-landing .comparison .table-container table tbody tr td.required {
   color: #d0021b;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 412, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison .table-container table tbody tr td.green-text {
+/* line 427, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .comparison .table-container table tbody tr td.green-text, .page-nvq .comparison .table-container table tbody tr td.green-text, .page-nvq-landing .comparison .table-container table tbody tr td.green-text {
   color: #50c7ba;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 418, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison .table-container table tbody tr td.left {
+/* line 433, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .comparison .table-container table tbody tr td.left, .page-nvq .comparison .table-container table tbody tr td.left, .page-nvq-landing .comparison .table-container table tbody tr td.left {
   letter-spacing: 1px;
 }
-/* line 434, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison.nvq .title {
+/* line 449, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .comparison.nvq .title, .page-nvq .comparison.nvq .title, .page-nvq-landing .comparison.nvq .title {
   margin-bottom: 25px;
 }
-/* line 438, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison.nvq p {
+/* line 453, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .comparison.nvq p, .page-nvq .comparison.nvq p, .page-nvq-landing .comparison.nvq p {
   font-size: 17px;
   line-height: 1.41;
   letter-spacing: 1.2px;
 }
-/* line 444, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .comparison.nvq .table-container {
+/* line 459, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .comparison.nvq .table-container, .page-nvq .comparison.nvq .table-container, .page-nvq-landing .comparison.nvq .table-container {
   margin: 80px 0 30px;
 }
-/* line 452, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .questions {
+/* line 467, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .questions, .page-nvq .questions, .page-nvq-landing .questions {
   padding: 50px 0;
   border-bottom: 1px solid #e0e0e0;
 }
 @media (min-width: 990px) {
-  /* line 452, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .questions {
+  /* line 467, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .questions, .page-nvq .questions, .page-nvq-landing .questions {
     padding: 80px 0 50px;
   }
 }
-/* line 462, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .questions #accordion .card {
+/* line 477, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .questions #accordion .card, .page-nvq .questions #accordion .card, .page-nvq-landing .questions #accordion .card {
   width: 100%;
   margin-bottom: 20px;
 }
-/* line 466, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .questions #accordion .card .card-header {
+/* line 481, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .questions #accordion .card .card-header, .page-nvq .questions #accordion .card .card-header, .page-nvq-landing .questions #accordion .card .card-header {
   background-color: #50c7ba;
   border-radius: 31px;
   border-top-right-radius: 0;
@@ -5853,8 +6005,8 @@ footer .copyright {
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
   z-index: 1;
 }
-/* line 475, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .questions #accordion .card .card-header .card-lnk {
+/* line 490, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .questions #accordion .card .card-header .card-lnk, .page-nvq .questions #accordion .card .card-header .card-lnk, .page-nvq-landing .questions #accordion .card .card-header .card-lnk {
   display: block;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -5864,19 +6016,19 @@ footer .copyright {
   letter-spacing: 2.2px;
   padding: 20px 30px;
 }
-/* line 486, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .questions #accordion .card .card-header .faq-btn {
+/* line 501, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .questions #accordion .card .card-header .faq-btn, .page-nvq .questions #accordion .card .card-header .faq-btn, .page-nvq-landing .questions #accordion .card .card-header .faq-btn {
   position: absolute;
   top: calc(50% - 30px);
   right: 20px;
   font-size: 35px;
 }
-/* line 492, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .questions #accordion .card .card-header .faq-btn .fa-angle-up {
+/* line 507, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .questions #accordion .card .card-header .faq-btn .fa-angle-up, .page-nvq .questions #accordion .card .card-header .faq-btn .fa-angle-up, .page-nvq-landing .questions #accordion .card .card-header .faq-btn .fa-angle-up {
   display: none;
 }
-/* line 499, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .questions #accordion .card .card-body {
+/* line 514, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .questions #accordion .card .card-body, .page-nvq .questions #accordion .card .card-body, .page-nvq-landing .questions #accordion .card .card-body {
   background: #FFFFFF;
   border-bottom-left-radius: 31px;
   border-bottom-right-radius: 31px;
@@ -5886,214 +6038,214 @@ footer .copyright {
   transform: translateY(-35px);
   margin-bottom: -30px;
 }
-/* line 509, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .questions #accordion .card .card-body p {
+/* line 524, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .questions #accordion .card .card-body p, .page-nvq .questions #accordion .card .card-body p, .page-nvq-landing .questions #accordion .card .card-body p {
   font-size: 14px;
   line-height: 1.6;
   letter-spacing: 2.2px;
 }
-/* line 524, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .lets-talk .info-bottom {
+/* line 539, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .lets-talk .info-bottom, .page-nvq .lets-talk .info-bottom, .page-nvq-landing .lets-talk .info-bottom {
   bottom: -440px;
 }
-/* line 527, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .lets-talk .info-bottom p {
+/* line 542, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .lets-talk .info-bottom p, .page-nvq .lets-talk .info-bottom p, .page-nvq-landing .lets-talk .info-bottom p {
   margin-bottom: 25px;
 }
-/* line 537, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-description {
+/* line 552, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-description, .page-nvq .nvq-description, .page-nvq-landing .nvq-description {
   padding: 50px 0;
 }
 @media (min-width: 990px) {
-  /* line 537, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .nvq-description {
+  /* line 552, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .nvq-description, .page-nvq .nvq-description, .page-nvq-landing .nvq-description {
     padding: 80px 0;
   }
 }
-/* line 544, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-description .subtitle {
+/* line 559, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-description .subtitle, .page-nvq .nvq-description .subtitle, .page-nvq-landing .nvq-description .subtitle {
   margin-bottom: 50px;
 }
-/* line 548, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-description p {
+/* line 563, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-description p, .page-nvq .nvq-description p, .page-nvq-landing .nvq-description p {
   font-size: 17px;
   line-height: 1.41;
   letter-spacing: 1.2px;
   width: 86%;
   margin-bottom: 25px;
 }
-/* line 555, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-description p.right {
+/* line 570, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-description p.right, .page-nvq .nvq-description p.right, .page-nvq-landing .nvq-description p.right {
   width: 95%;
 }
-/* line 561, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-description .green-box, .page-training-programs-inner .nvq-description .purple-box {
+/* line 576, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-description .green-box, .page-apprenticeships .nvq-description .purple-box, .page-nvq .nvq-description .green-box, .page-nvq .nvq-description .purple-box, .page-nvq-landing .nvq-description .green-box, .page-nvq-landing .nvq-description .purple-box {
   margin-top: 20px;
 }
 @media (min-width: 990px) {
-  /* line 561, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .nvq-description .green-box, .page-training-programs-inner .nvq-description .purple-box {
+  /* line 576, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .nvq-description .green-box, .page-apprenticeships .nvq-description .purple-box, .page-nvq .nvq-description .green-box, .page-nvq .nvq-description .purple-box, .page-nvq-landing .nvq-description .green-box, .page-nvq-landing .nvq-description .purple-box {
     margin-top: 80px;
   }
 }
-/* line 571, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-different {
+/* line 586, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-different, .page-nvq .nvq-different, .page-nvq-landing .nvq-different {
   padding: 10px 0 50px;
 }
 @media (min-width: 990px) {
-  /* line 571, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .nvq-different {
+  /* line 586, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .nvq-different, .page-nvq .nvq-different, .page-nvq-landing .nvq-different {
     padding: 80px 0 50px;
   }
 }
-/* line 578, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-different .title {
+/* line 593, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-different .title, .page-nvq .nvq-different .title, .page-nvq-landing .nvq-different .title {
   margin-bottom: 30px;
 }
-/* line 584, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-different .white-box .item {
+/* line 599, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-different .white-box .item, .page-nvq .nvq-different .white-box .item, .page-nvq-landing .nvq-different .white-box .item {
   padding: 5px 0;
   padding-left: 140px;
 }
-/* line 588, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-different .white-box .item:nth-of-type(1) {
+/* line 603, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-different .white-box .item:nth-of-type(1), .page-nvq .nvq-different .white-box .item:nth-of-type(1), .page-nvq-landing .nvq-different .white-box .item:nth-of-type(1) {
   background: url(img/icon-calc.png) top left no-repeat;
   background-size: 75px;
   background-position-x: 10px;
 }
-/* line 594, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-different .white-box .item:nth-of-type(2) {
+/* line 609, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-different .white-box .item:nth-of-type(2), .page-nvq .nvq-different .white-box .item:nth-of-type(2), .page-nvq-landing .nvq-different .white-box .item:nth-of-type(2) {
   background: url(img/icon-learn.png) top left no-repeat;
   background-position-x: 14px;
   background-position-y: -3px;
   background-size: 72px;
 }
-/* line 601, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-different .white-box .item:nth-of-type(3) {
+/* line 616, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-different .white-box .item:nth-of-type(3), .page-nvq .nvq-different .white-box .item:nth-of-type(3), .page-nvq-landing .nvq-different .white-box .item:nth-of-type(3) {
   background: url(img/icon-people.png) top left no-repeat;
   background-position-x: 16px;
 }
-/* line 611, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-table {
+/* line 626, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-table, .page-nvq .nvq-table, .page-nvq-landing .nvq-table {
   padding: 140px 0 0;
   transform: translateY(-100px);
 }
 @media (min-width: 990px) {
-  /* line 611, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .nvq-table {
+  /* line 626, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .nvq-table, .page-nvq .nvq-table, .page-nvq-landing .nvq-table {
     padding: 290px 0 80px;
   }
 }
-/* line 620, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-table .table-container:before {
+/* line 635, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-table .table-container:before, .page-nvq .nvq-table .table-container:before, .page-nvq-landing .nvq-table .table-container:before {
   right: 35px;
 }
 @media (max-width: 768px) {
-  /* line 624, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .nvq-table .table-container table {
+  /* line 639, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .nvq-table .table-container table, .page-nvq .nvq-table .table-container table, .page-nvq-landing .nvq-table .table-container table {
     font-size: 12px;
   }
 }
-/* line 632, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-path {
+/* line 647, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-path, .page-nvq .nvq-path, .page-nvq-landing .nvq-path {
   padding: 0 0 50px;
   border-bottom: 1px solid #e0e0e0;
 }
 @media (min-width: 990px) {
-  /* line 632, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .nvq-path {
+  /* line 647, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .nvq-path, .page-nvq .nvq-path, .page-nvq-landing .nvq-path {
     padding: 0 0 130px;
   }
 }
 @media (min-width: 990px) {
-  /* line 640, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .nvq-path .title {
+  /* line 655, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .nvq-path .title, .page-nvq .nvq-path .title, .page-nvq-landing .nvq-path .title {
     padding: 0 85px;
     margin-bottom: 80px;
   }
 }
-/* line 647, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-path .white-box {
+/* line 662, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-path .white-box, .page-nvq .nvq-path .white-box, .page-nvq-landing .nvq-path .white-box {
   overflow: hidden;
 }
 @media (max-width: 768px) {
-  /* line 647, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .nvq-path .white-box {
+  /* line 662, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .nvq-path .white-box, .page-nvq .nvq-path .white-box, .page-nvq-landing .nvq-path .white-box {
     padding: 35px 0px;
   }
 }
-/* line 654, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-path .white-box .purple {
+/* line 669, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-path .white-box .purple, .page-nvq .nvq-path .white-box .purple, .page-nvq-landing .nvq-path .white-box .purple {
   color: #914691;
 }
-/* line 657, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-path .white-box .purple li {
+/* line 672, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-path .white-box .purple li, .page-nvq .nvq-path .white-box .purple li, .page-nvq-landing .nvq-path .white-box .purple li {
   padding: 0 15px;
   margin-bottom: 20px;
 }
-/* line 668, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-offer {
+/* line 683, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-offer, .page-nvq .nvq-offer, .page-nvq-landing .nvq-offer {
   padding: 50px 0 70px;
   border-bottom: 1px solid #e0e0e0;
 }
 @media (min-width: 990px) {
-  /* line 668, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .nvq-offer {
+  /* line 683, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .nvq-offer, .page-nvq .nvq-offer, .page-nvq-landing .nvq-offer {
     padding: 80px 0 130px;
   }
 }
-/* line 676, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-offer .title {
+/* line 691, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-offer .title, .page-nvq .nvq-offer .title, .page-nvq-landing .nvq-offer .title {
   padding-left: 20px;
 }
-/* line 682, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-offer .white-box .item {
+/* line 697, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-offer .white-box .item, .page-nvq .nvq-offer .white-box .item, .page-nvq-landing .nvq-offer .white-box .item {
   padding: 5px 0;
   padding-left: 140px;
 }
-/* line 686, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-offer .white-box .item:nth-of-type(1) {
+/* line 701, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-offer .white-box .item:nth-of-type(1), .page-nvq .nvq-offer .white-box .item:nth-of-type(1), .page-nvq-landing .nvq-offer .white-box .item:nth-of-type(1) {
   background: url(img/icon-calc.png) top left no-repeat;
   background-size: 75px;
   background-position-x: 10px;
 }
-/* line 692, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-offer .white-box .item:nth-of-type(2) {
+/* line 707, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-offer .white-box .item:nth-of-type(2), .page-nvq .nvq-offer .white-box .item:nth-of-type(2), .page-nvq-landing .nvq-offer .white-box .item:nth-of-type(2) {
   background: url(img/icon-learn.png) top left no-repeat;
   background-position-x: 10px;
 }
 @media (min-width: 990px) {
-  /* line 703, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .nvq-quality {
+  /* line 718, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .nvq-quality, .page-nvq .nvq-quality, .page-nvq-landing .nvq-quality {
     padding: 80px 0;
   }
 }
-/* line 709, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-quality .title {
+/* line 724, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-quality .title, .page-nvq .nvq-quality .title, .page-nvq-landing .nvq-quality .title {
   margin-bottom: 60px;
 }
-/* line 713, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-quality p {
+/* line 728, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-quality p, .page-nvq .nvq-quality p, .page-nvq-landing .nvq-quality p {
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: 1px;
   padding-left: 50px;
   margin-bottom: 25px;
 }
-/* line 720, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-quality p.section-title {
+/* line 735, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-quality p.section-title, .page-nvq .nvq-quality p.section-title, .page-nvq-landing .nvq-quality p.section-title {
   font-size: 17px;
   font-weight: bold;
   line-height: 1.41;
   letter-spacing: 1.6px;
   color: #914691;
 }
-/* line 731, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-quality .list p {
+/* line 746, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-quality .list p, .page-nvq .nvq-quality .list p, .page-nvq-landing .nvq-quality .list p {
   position: relative;
 }
-/* line 734, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-quality .list p:before {
+/* line 749, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-quality .list p:before, .page-nvq .nvq-quality .list p:before, .page-nvq-landing .nvq-quality .list p:before {
   content: "";
   position: absolute;
   width: 5px;
@@ -6103,55 +6255,55 @@ footer .copyright {
   left: 22px;
   top: 9px;
 }
-/* line 747, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-quality .white-box-bg {
+/* line 762, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-quality .white-box-bg, .page-nvq .nvq-quality .white-box-bg, .page-nvq-landing .nvq-quality .white-box-bg {
   position: relative;
   margin-bottom: 83px;
 }
-/* line 755, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-quality .white-box p {
+/* line 770, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-quality .white-box p, .page-nvq .nvq-quality .white-box p, .page-nvq-landing .nvq-quality .white-box p {
   padding-left: 0;
   font-size: 17px;
   line-height: 1.41;
   letter-spacing: 2px;
   margin-bottom: 0;
 }
-/* line 765, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-quality .center {
+/* line 780, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-quality .center, .page-nvq .nvq-quality .center, .page-nvq-landing .nvq-quality .center {
   text-align: center;
   margin-top: 30px;
 }
 @media (min-width: 990px) {
-  /* line 765, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .nvq-quality .center {
+  /* line 780, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .nvq-quality .center, .page-nvq .nvq-quality .center, .page-nvq-landing .nvq-quality .center {
     margin-top: 50px;
   }
 }
-/* line 776, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-features {
+/* line 791, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-features, .page-nvq .nvq-features, .page-nvq-landing .nvq-features {
   padding: 60px 0 50px;
   border-bottom: 1px solid #e0e0e0;
 }
 @media (min-width: 990px) {
-  /* line 776, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .nvq-features {
+  /* line 791, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .nvq-features, .page-nvq .nvq-features, .page-nvq-landing .nvq-features {
     padding: 60px 0;
   }
 }
-/* line 784, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-features .subtitle {
+/* line 799, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-features .subtitle, .page-nvq .nvq-features .subtitle, .page-nvq-landing .nvq-features .subtitle {
   margin-bottom: 50px;
 }
-/* line 788, ../sass/pages/_training-programs-inner.scss */
-.page-training-programs-inner .nvq-features p {
+/* line 803, ../sass/pages/_training-programs-inner.scss */
+.page-apprenticeships .nvq-features p, .page-nvq .nvq-features p, .page-nvq-landing .nvq-features p {
   font-size: 17px;
   line-height: 1.41;
   letter-spacing: 1.2px;
   margin-bottom: 30px;
 }
 @media (min-width: 990px) {
-  /* line 788, ../sass/pages/_training-programs-inner.scss */
-  .page-training-programs-inner .nvq-features p {
+  /* line 803, ../sass/pages/_training-programs-inner.scss */
+  .page-apprenticeships .nvq-features p, .page-nvq .nvq-features p, .page-nvq-landing .nvq-features p {
     padding-right: 80px;
   }
 }
@@ -6346,7 +6498,7 @@ footer .copyright {
   }
 }
 /* line 181, ../sass/pages/_about-us.scss */
-.page-about-us .why-choose .green-box, .page-about-us .why-choose .page-training-programs-inner .purple-box, .page-training-programs-inner .page-about-us .why-choose .purple-box {
+.page-about-us .why-choose .green-box, .page-about-us .why-choose .page-apprenticeships .purple-box, .page-apprenticeships .page-about-us .why-choose .purple-box, .page-about-us .why-choose .page-nvq .purple-box, .page-nvq .page-about-us .why-choose .purple-box, .page-about-us .why-choose .page-nvq-landing .purple-box, .page-nvq-landing .page-about-us .why-choose .purple-box {
   background-color: #50c7ba;
   color: #FFFFFF;
   border-radius: 31px;
@@ -6357,27 +6509,27 @@ footer .copyright {
 }
 @media (min-width: 990px) {
   /* line 181, ../sass/pages/_about-us.scss */
-  .page-about-us .why-choose .green-box, .page-about-us .why-choose .page-training-programs-inner .purple-box, .page-training-programs-inner .page-about-us .why-choose .purple-box {
+  .page-about-us .why-choose .green-box, .page-about-us .why-choose .page-apprenticeships .purple-box, .page-apprenticeships .page-about-us .why-choose .purple-box, .page-about-us .why-choose .page-nvq .purple-box, .page-nvq .page-about-us .why-choose .purple-box, .page-about-us .why-choose .page-nvq-landing .purple-box, .page-nvq-landing .page-about-us .why-choose .purple-box {
     width: 90%;
     padding: 45px 60px;
   }
 }
 /* line 195, ../sass/pages/_about-us.scss */
-.page-about-us .why-choose .green-box .plus-info, .page-about-us .why-choose .page-training-programs-inner .purple-box .plus-info, .page-training-programs-inner .page-about-us .why-choose .purple-box .plus-info {
+.page-about-us .why-choose .green-box .plus-info, .page-about-us .why-choose .page-apprenticeships .purple-box .plus-info, .page-apprenticeships .page-about-us .why-choose .purple-box .plus-info, .page-about-us .why-choose .page-nvq .purple-box .plus-info, .page-nvq .page-about-us .why-choose .purple-box .plus-info, .page-about-us .why-choose .page-nvq-landing .purple-box .plus-info, .page-nvq-landing .page-about-us .why-choose .purple-box .plus-info {
   margin-bottom: 40px;
 }
 @media (min-width: 990px) {
   /* line 199, ../sass/pages/_about-us.scss */
-  .page-about-us .why-choose .green-box .plus-info:last-of-type, .page-about-us .why-choose .page-training-programs-inner .purple-box .plus-info:last-of-type, .page-training-programs-inner .page-about-us .why-choose .purple-box .plus-info:last-of-type {
+  .page-about-us .why-choose .green-box .plus-info:last-of-type, .page-about-us .why-choose .page-apprenticeships .purple-box .plus-info:last-of-type, .page-apprenticeships .page-about-us .why-choose .purple-box .plus-info:last-of-type, .page-about-us .why-choose .page-nvq .purple-box .plus-info:last-of-type, .page-nvq .page-about-us .why-choose .purple-box .plus-info:last-of-type, .page-about-us .why-choose .page-nvq-landing .purple-box .plus-info:last-of-type, .page-nvq-landing .page-about-us .why-choose .purple-box .plus-info:last-of-type {
     margin: 0;
   }
 }
 /* line 204, ../sass/pages/_about-us.scss */
-.page-about-us .why-choose .green-box .plus-info .small-subtitle, .page-about-us .why-choose .page-training-programs-inner .purple-box .plus-info .small-subtitle, .page-training-programs-inner .page-about-us .why-choose .purple-box .plus-info .small-subtitle {
+.page-about-us .why-choose .green-box .plus-info .small-subtitle, .page-about-us .why-choose .page-apprenticeships .purple-box .plus-info .small-subtitle, .page-apprenticeships .page-about-us .why-choose .purple-box .plus-info .small-subtitle, .page-about-us .why-choose .page-nvq .purple-box .plus-info .small-subtitle, .page-nvq .page-about-us .why-choose .purple-box .plus-info .small-subtitle, .page-about-us .why-choose .page-nvq-landing .purple-box .plus-info .small-subtitle, .page-nvq-landing .page-about-us .why-choose .purple-box .plus-info .small-subtitle {
   position: relative;
 }
 /* line 207, ../sass/pages/_about-us.scss */
-.page-about-us .why-choose .green-box .plus-info .small-subtitle:before, .page-about-us .why-choose .page-training-programs-inner .purple-box .plus-info .small-subtitle:before, .page-training-programs-inner .page-about-us .why-choose .purple-box .plus-info .small-subtitle:before {
+.page-about-us .why-choose .green-box .plus-info .small-subtitle:before, .page-about-us .why-choose .page-apprenticeships .purple-box .plus-info .small-subtitle:before, .page-apprenticeships .page-about-us .why-choose .purple-box .plus-info .small-subtitle:before, .page-about-us .why-choose .page-nvq .purple-box .plus-info .small-subtitle:before, .page-nvq .page-about-us .why-choose .purple-box .plus-info .small-subtitle:before, .page-about-us .why-choose .page-nvq-landing .purple-box .plus-info .small-subtitle:before, .page-nvq-landing .page-about-us .why-choose .purple-box .plus-info .small-subtitle:before {
   content: "";
   position: absolute;
   width: 5px;
@@ -6388,7 +6540,7 @@ footer .copyright {
   left: -22px;
 }
 /* line 220, ../sass/pages/_about-us.scss */
-.page-about-us .why-choose .green-box .plus-info p, .page-about-us .why-choose .page-training-programs-inner .purple-box .plus-info p, .page-training-programs-inner .page-about-us .why-choose .purple-box .plus-info p {
+.page-about-us .why-choose .green-box .plus-info p, .page-about-us .why-choose .page-apprenticeships .purple-box .plus-info p, .page-apprenticeships .page-about-us .why-choose .purple-box .plus-info p, .page-about-us .why-choose .page-nvq .purple-box .plus-info p, .page-nvq .page-about-us .why-choose .purple-box .plus-info p, .page-about-us .why-choose .page-nvq-landing .purple-box .plus-info p, .page-nvq-landing .page-about-us .why-choose .purple-box .plus-info p {
   font-size: 17px;
   line-height: 1.41;
   letter-spacing: 1.9px;
@@ -6602,6 +6754,153 @@ footer .copyright {
 /* line 101, ../sass/pages/_blog.scss */
 .page-blog .center {
   text-align: center;
+}
+
+/* line 3, ../sass/pages/_blog-post.scss */
+.page-blog-post .post {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 50px;
+}
+/* line 7, ../sass/pages/_blog-post.scss */
+.page-blog-post .post .post-header {
+  padding: 10px 0 70px;
+  overflow: hidden;
+}
+/* line 11, ../sass/pages/_blog-post.scss */
+.page-blog-post .post .post-header .post-title {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.13;
+  letter-spacing: 0.6px;
+  color: #50c7ba;
+  margin-top: 50px;
+  padding-right: 50px;
+  margin-bottom: 50px;
+}
+@media (min-width: 990px) {
+  /* line 11, ../sass/pages/_blog-post.scss */
+  .page-blog-post .post .post-header .post-title {
+    margin-bottom: 0;
+    margin-top: 115px;
+  }
+}
+/* line 31, ../sass/pages/_blog-post.scss */
+.page-blog-post .post .content .info {
+  margin-bottom: 25px;
+}
+/* line 34, ../sass/pages/_blog-post.scss */
+.page-blog-post .post .content .info a {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 2;
+  letter-spacing: 1.8px;
+  color: #50c7ba;
+  text-transform: uppercase;
+  border-right: 1px solid #50c7ba;
+  padding: 5px 15px;
+}
+/* line 44, ../sass/pages/_blog-post.scss */
+.page-blog-post .post .content .info a .fa {
+  font-size: 15px;
+}
+/* line 48, ../sass/pages/_blog-post.scss */
+.page-blog-post .post .content .info a:first-of-type {
+  padding-left: 0;
+}
+/* line 52, ../sass/pages/_blog-post.scss */
+.page-blog-post .post .content .info a:last-of-type {
+  border: none;
+}
+/* line 58, ../sass/pages/_blog-post.scss */
+.page-blog-post .post .content p {
+  font-size: 17px;
+  line-height: 1.41;
+  letter-spacing: 1.2px;
+  margin-bottom: 25px;
+}
+/* line 65, ../sass/pages/_blog-post.scss */
+.page-blog-post .post .content .small-subtitle {
+  margin-bottom: 25px;
+}
+/* line 73, ../sass/pages/_blog-post.scss */
+.page-blog-post .lets-talk {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 50px;
+}
+/* line 77, ../sass/pages/_blog-post.scss */
+.page-blog-post .lets-talk .extra-info {
+  margin-bottom: 30px;
+}
+/* line 81, ../sass/pages/_blog-post.scss */
+.page-blog-post .lets-talk .title {
+  margin-bottom: 10px;
+}
+/* line 85, ../sass/pages/_blog-post.scss */
+.page-blog-post .lets-talk p {
+  font-size: 24px;
+  line-height: 1.79;
+  letter-spacing: 4.7px;
+}
+/* line 90, ../sass/pages/_blog-post.scss */
+.page-blog-post .lets-talk p span {
+  color: #d0021b;
+}
+/* line 95, ../sass/pages/_blog-post.scss */
+.page-blog-post .lets-talk textarea.form-control, .page-blog-post .lets-talk textarea.wpcf7-form-control {
+  margin-bottom: 15px;
+}
+/* line 99, ../sass/pages/_blog-post.scss */
+.page-blog-post .lets-talk .btn {
+  margin-top: 40px;
+}
+/* line 103, ../sass/pages/_blog-post.scss */
+.page-blog-post .lets-talk .require {
+  position: relative;
+}
+/* line 106, ../sass/pages/_blog-post.scss */
+.page-blog-post .lets-talk .require:after {
+  content: "*";
+  color: #d0021b;
+  position: absolute;
+  top: 3px;
+  left: 11px;
+  font-size: 21px;
+}
+/* line 117, ../sass/pages/_blog-post.scss */
+.page-blog-post .related {
+  padding: 80px 0;
+}
+/* line 120, ../sass/pages/_blog-post.scss */
+.page-blog-post .related .title {
+  margin-bottom: 70px;
+}
+/* line 124, ../sass/pages/_blog-post.scss */
+.page-blog-post .related .posts {
+  margin-bottom: 50px;
+}
+@media (min-width: 990px) {
+  /* line 124, ../sass/pages/_blog-post.scss */
+  .page-blog-post .related .posts {
+    margin-bottom: 0;
+  }
+}
+/* line 132, ../sass/pages/_blog-post.scss */
+.page-blog-post .related .posts .box img {
+  height: 173px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* line 141, ../sass/pages/_blog-post.scss */
+.page-blog-post .related .posts:before {
+  content: "";
+  position: absolute;
+  width: 76%;
+  height: 99%;
+  background: url(../images/white-box-bg.png) bottom left;
+  bottom: -15px;
+  z-index: 0;
+  left: -5px;
 }
 
 /* line 3, ../sass/pages/_additional-courses.scss */

@@ -1,4 +1,4 @@
-<?php $page_name = "training-programs-inner" ?>
+<?php $page_name = "nvq-landing" ?>
 <?php include('header.php'); ?>
 
 <section class="hero">

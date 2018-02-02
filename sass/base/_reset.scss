@@ -8,6 +8,11 @@ html, body{
 }
 body {
     overflow-x: hidden;
+    padding-top: 71px;
+    
+    @include respond-to("medium"){
+        padding: 0;
+    }
 }
 a {
 	color: $gray;

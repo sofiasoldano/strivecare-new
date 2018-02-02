@@ -327,14 +327,7 @@
             }
 
             .box{
-                width: 100%;
-                overflow: hidden;
                 margin-top: 50px;
-                border-radius: 30px;
-                border-top-right-radius: 0;
-                background-color: $white;
-                box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
-                position: relative;
                 
                  @include respond-to("medium"){
                     width: 255px;
@@ -343,42 +336,6 @@
                     float: right;
                 }
                 
-                .inner-text{
-                    padding: 20px 30px;
-                    min-height: 160px;
-                    
-                    .heading{
-                        font-size: 14px;
-                        font-weight: bold;
-                        line-height: 1.57;
-                        letter-spacing: 2px;
-                        color: $green;
-                        margin-bottom: 20px;
-                    }
-                    
-                    .date{
-                        font-size: 12px;
-                        line-height: 2;
-                        letter-spacing: 1.8px;
-                        color: #6b7175;
-                        
-                        i{
-                            font-size: 17px;
-                            vertical-align: text-top;
-                            padding-right: 5px;
-                            color: #8d9295;
-                        }
-                    }
-                }
-                
-                .btn{
-                    width: 100%;
-                    border-radius: 0;
-                    font-size: 14px;
-                    letter-spacing: 2px;
-                    color: $white;
-                    padding: 12px 0;
-                }
                 
             }
             

@@ -1,4 +1,4 @@
-<?php $page_name = "training-programs-inner" ?>
+<?php $page_name = "apprenticeships" ?>
 <?php include('header.php'); ?>
 
 <section class="hero">
@@ -33,13 +33,13 @@
         <div class="row">
             <div class="col-md-12">
                 <ul class="menu">
-                    <li><a href="#whos-for">Who's it for</a></li>
-                    <li><a href="#org-benefits">Organisational benefits</a></li>
-                    <li><a href="#how-work">How does it work?</a></li>
-                    <li><a href="#how-long">How long is the training?</a></li>
-                    <li><a href="#how-much">How much does it cost?</a></li>
-                    <li><a href="#comparison">Full comparison</a></li>
-                    <li><a href="#faqs">Faqs</a></li>
+                    <li><a href="#" class="l-whos-for">Who's it for</a></li>
+                    <li><a href="#" class="l-org-benefits">Organisational benefits</a></li>
+                    <li><a href="#" class="l-how-work">How does it work?</a></li>
+                    <li><a href="#" class="l-how-long">How long is the training?</a></li>
+                    <li><a href="#" class="l-how-much">How much does it cost?</a></li>
+                    <li><a href="#" class="l-comparison">Full comparison</a></li>
+                    <li><a href="#" class="l-faqs">Faqs</a></li>
                 </ul>
             </div>
         </div>
