@@ -681,7 +681,7 @@ header .main-nav.open li:last-of-type {
 }
 /* line 78, ../sass/partials/_header.scss */
 header .main-nav.open li.logo-mobile {
-  padding: 10px 0;
+  padding: 10px 20px;
 }
 /* line 81, ../sass/partials/_header.scss */
 header .main-nav.open li.logo-mobile .close-nav {

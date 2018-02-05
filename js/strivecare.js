@@ -114,9 +114,9 @@ $(document).ready(function() {
     });
 
     function menuSelected(element, menu){
-        var top_of_object =  $(element).offset().top;
+        var top_of_object =  $(element).offset().top - 150;
         var top_of_window = $(window).scrollTop();
-        var bottom_of_object =  $(element).offset().top + $(element).outerHeight();
+        var bottom_of_object =  $(element).offset().top + $(element).outerHeight() - 150;
         $(menu).removeClass('selected');
         
         if( top_of_window > top_of_object){
