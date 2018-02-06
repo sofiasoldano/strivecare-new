@@ -7002,3 +7002,588 @@ footer .copyright {
   margin-bottom: 0;
   margin-top: 20px;
 }
+
+/* line 3, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing:after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #914691;
+  display: none;
+}
+@media (min-width: 990px) {
+  /* line 3, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing:after {
+    display: block;
+  }
+}
+/* line 18, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing header {
+  border-bottom: 2px solid #914691;
+}
+/* line 21, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing header .main-nav, .page-outstanding-landing header .open-nav {
+  display: none;
+}
+@media (min-width: 990px) {
+  /* line 18, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing header {
+    border: none;
+  }
+}
+/* line 31, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .phone-number {
+  position: fixed;
+  top: 40px;
+  right: 55px;
+  background: url(img/tel-icon-header.png) top left no-repeat;
+  padding-left: 37px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  z-index: 999999999999999;
+}
+@media (max-width: 440px) {
+  /* line 31, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .phone-number {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 31, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .phone-number {
+    top: 23px;
+    right: 20px;
+  }
+}
+@media (min-width: 990px) {
+  /* line 31, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .phone-number {
+    position: absolute;
+  }
+}
+/* line 54, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .phone-number a {
+  color: #914691;
+  font-weight: bold;
+}
+@media (max-width: 440px) {
+  /* line 54, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .phone-number a {
+    font-size: 12px;
+  }
+}
+/* line 62, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .phone-number a:hover {
+  color: #752475;
+}
+/* line 68, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding {
+  padding: 50px 0 100px;
+}
+@media (min-width: 768px) {
+  /* line 68, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding {
+    background: url(img/fill-16.png) right bottom no-repeat;
+    background-position-y: 35px;
+    padding: 120px 0 100px;
+  }
+}
+@media (max-width: 440px) {
+  /* line 78, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding .title {
+    font-size: 25px;
+  }
+}
+/* line 84, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .subtitle {
+  font-size: 24px;
+  font-family: "BrandonTextWeb-Bold";
+  line-height: 1.79;
+  letter-spacing: 3.5px;
+  color: #914691;
+}
+@media (max-width: 440px) {
+  /* line 84, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding .subtitle {
+    font-size: 18px;
+  }
+}
+/* line 96, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+/* line 103, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .practices {
+  margin-bottom: 70px;
+}
+/* line 106, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .practices .heading {
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  /* line 106, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding .practices .heading {
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 106, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding .practices .heading {
+    padding-right: 170px;
+  }
+}
+@media (min-width: 990px) {
+  /* line 106, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding .practices .heading {
+    padding-right: 72px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 106, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding .practices .heading {
+    padding-right: 152px;
+  }
+}
+/* line 127, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .practices .heading .title {
+  margin-bottom: 20px;
+}
+@media (min-width: 990px) {
+  /* line 127, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding .practices .heading .title {
+    margin-bottom: 0;
+  }
+}
+/* line 136, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .practices .heading:before {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 15px;
+  width: 100%;
+  height: 120%;
+  background: url(img/whitepaper-mockup.png) bottom right no-repeat;
+  background-position-y: 24px;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  /* line 136, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding .practices .heading:before {
+    bottom: 5px;
+    left: 10px;
+    background: url(img/whitepaper-mockup.png) bottom right no-repeat;
+    background-size: 100px;
+  }
+}
+@media (min-width: 990px) {
+  /* line 136, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding .practices .heading:before {
+    bottom: -38px;
+    left: 54px;
+    background-size: 148px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 136, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding .practices .heading:before {
+    bottom: 0;
+    left: 15px;
+    background-size: initial;
+  }
+}
+@media (max-width: 440px) {
+  /* line 136, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding .practices .heading:before {
+    display: none;
+  }
+}
+/* line 172, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .practices .heading:after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #50c7ba;
+}
+/* line 183, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .practices .heading.staff-retention:before {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 15px;
+  width: 100%;
+  height: 120%;
+  background: url(img/whitepaper-mockup-2.png) bottom right no-repeat;
+  background-position-y: 24px;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  /* line 183, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding .practices .heading.staff-retention:before {
+    bottom: 5px;
+    left: 10px;
+    background: url(img/whitepaper-mockup-2.png) bottom right no-repeat;
+    background-size: 100px;
+  }
+}
+@media (min-width: 990px) {
+  /* line 183, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding .practices .heading.staff-retention:before {
+    bottom: -38px;
+    left: 54px;
+    background-size: 148px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 183, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding .practices .heading.staff-retention:before {
+    bottom: 0;
+    left: 15px;
+    background-size: initial;
+  }
+}
+@media (max-width: 440px) {
+  /* line 183, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding .practices .heading.staff-retention:before {
+    display: none;
+  }
+}
+/* line 220, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .practices .heading.interview:before {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 15px;
+  width: 100%;
+  height: 120%;
+  background: url(img/whitepaper-mockup-3.png) bottom right no-repeat;
+  background-position-y: 24px;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  /* line 220, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding .practices .heading.interview:before {
+    bottom: 5px;
+    left: 10px;
+    background: url(img/whitepaper-mockup-3.png) bottom right no-repeat;
+    background-size: 100px;
+  }
+}
+@media (min-width: 990px) {
+  /* line 220, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding .practices .heading.interview:before {
+    bottom: -90px;
+    left: 54px;
+    background-size: 148px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 220, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding .practices .heading.interview:before {
+    bottom: -50px;
+    left: 15px;
+    background-size: initial;
+  }
+}
+@media (max-width: 440px) {
+  /* line 220, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding .practices .heading.interview:before {
+    display: none;
+  }
+}
+/* line 261, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .benefits ul {
+  list-style: none;
+  margin-top: 30px;
+  padding-left: 23px;
+}
+/* line 266, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .benefits ul li {
+  font-size: 16px;
+  line-height: 1.13;
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 5px;
+}
+/* line 273, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .benefits ul li:before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  top: 7px;
+  left: -20px;
+  background-color: #914691;
+}
+@media (min-width: 990px) {
+  /* line 290, ../sass/pages/_outstanding-landing.scss */
+  .page-outstanding-landing .outstanding .download {
+    width: 80%;
+    float: right;
+  }
+}
+/* line 297, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .download .subtitle {
+  margin-top: 50px;
+  padding-left: 80px;
+  margin-bottom: 15px;
+}
+/* line 303, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .download .white-box {
+  position: relative;
+  padding-top: 40px;
+}
+/* line 307, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .download .white-box:before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 10px;
+  width: 28px;
+  height: 120px;
+  background: url(img/arrow.png) bottom right no-repeat;
+  background-position-y: 24px;
+  z-index: 1;
+}
+/* line 321, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .download .white-box form .form-control, .page-outstanding-landing .outstanding .download .white-box form .wpcf7-form-control {
+  width: 100%;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  border: solid 1px #d5d5d5;
+  margin-bottom: 15px;
+  padding: 29px 28px;
+  font-size: 15px;
+  letter-spacing: 2.2px;
+  color: #6b7175;
+  box-shadow: none;
+}
+/* line 333, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .download .white-box form .form-control::placeholder, .page-outstanding-landing .outstanding .download .white-box form .wpcf7-form-control::placeholder {
+  font-size: 15px;
+  letter-spacing: 2.2px;
+  color: #6b7175;
+}
+/* line 341, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .download .white-box form .btn, .page-outstanding-landing .outstanding .download .white-box form .wpcf7-submit {
+  padding: 15px 35px;
+  border-radius: 75px;
+  color: #FFFFFF;
+  font-size: 17px;
+  font-family: "BrandonTextWeb-Bold";
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  background-color: #914691;
+  float: none;
+  margin: 40px 0;
+}
+/* line 354, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .download .white-box form .btn:hover, .page-outstanding-landing .outstanding .download .white-box form .wpcf7-submit:hover {
+  background-color: #753b75;
+}
+/* line 359, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .download .white-box form .checkboxes {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 2px;
+  font-weight: normal;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+/* line 368, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .download .white-box form .checkboxes:first-of-type {
+  position: relative;
+}
+/* line 371, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .download .white-box form .checkboxes:first-of-type:after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: -45px;
+  width: 32px;
+  height: 32px;
+  background: url(img/icon-smile.png) bottom right no-repeat;
+  z-index: 1;
+  background-size: 30px;
+}
+/* line 385, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .download .white-box form .checkboxes input {
+  position: relative;
+  z-index: -9999;
+}
+/* line 390, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .download .white-box form .checkboxes span {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+  position: absolute;
+  top: -3px;
+  left: 0;
+}
+/* line 401, ../sass/pages/_outstanding-landing.scss */
+.page-outstanding-landing .outstanding .download .white-box form .checkboxes input:checked + span {
+  background: url(img/tick.png) center no-repeat;
+  background-size: 20px;
+}
+
+/* line 3, ../sass/pages/_thank-you-outstanding.scss */
+.page-thank-you-outstanding:after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #914691;
+  display: none;
+}
+@media (min-width: 990px) {
+  /* line 3, ../sass/pages/_thank-you-outstanding.scss */
+  .page-thank-you-outstanding:after {
+    display: block;
+  }
+}
+/* line 18, ../sass/pages/_thank-you-outstanding.scss */
+.page-thank-you-outstanding header {
+  border-bottom: 2px solid #914691;
+}
+/* line 21, ../sass/pages/_thank-you-outstanding.scss */
+.page-thank-you-outstanding header .main-nav, .page-thank-you-outstanding header .open-nav {
+  display: none;
+}
+@media (min-width: 990px) {
+  /* line 18, ../sass/pages/_thank-you-outstanding.scss */
+  .page-thank-you-outstanding header {
+    border: none;
+  }
+}
+/* line 32, ../sass/pages/_thank-you-outstanding.scss */
+.page-thank-you-outstanding .phone-number {
+  position: fixed;
+  top: 40px;
+  right: 55px;
+  background: url(img/tel-icon-header.png) top left no-repeat;
+  padding-left: 37px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  z-index: 999999999999999;
+}
+@media (max-width: 440px) {
+  /* line 32, ../sass/pages/_thank-you-outstanding.scss */
+  .page-thank-you-outstanding .phone-number {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 32, ../sass/pages/_thank-you-outstanding.scss */
+  .page-thank-you-outstanding .phone-number {
+    top: 23px;
+    right: 20px;
+  }
+}
+@media (min-width: 990px) {
+  /* line 32, ../sass/pages/_thank-you-outstanding.scss */
+  .page-thank-you-outstanding .phone-number {
+    position: absolute;
+  }
+}
+/* line 55, ../sass/pages/_thank-you-outstanding.scss */
+.page-thank-you-outstanding .phone-number a {
+  color: #914691;
+  font-weight: bold;
+}
+@media (max-width: 440px) {
+  /* line 55, ../sass/pages/_thank-you-outstanding.scss */
+  .page-thank-you-outstanding .phone-number a {
+    font-size: 12px;
+  }
+}
+/* line 63, ../sass/pages/_thank-you-outstanding.scss */
+.page-thank-you-outstanding .phone-number a:hover {
+  color: #752475;
+}
+/* line 70, ../sass/pages/_thank-you-outstanding.scss */
+.page-thank-you-outstanding .hero .main {
+  padding-top: 80px;
+  background: url(img/hero-home-bg.png) bottom left no-repeat;
+  background-size: 619px;
+  background-position-x: 85%;
+}
+@media (min-width: 990px) {
+  /* line 70, ../sass/pages/_thank-you-outstanding.scss */
+  .page-thank-you-outstanding .hero .main {
+    background-size: 742px;
+    background-position-y: 60px;
+    background-position-x: 85%;
+  }
+}
+/* line 84, ../sass/pages/_thank-you-outstanding.scss */
+.page-thank-you-outstanding .hero .hero-title {
+  font-size: 24px;
+  line-height: 1.63;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+/* line 92, ../sass/pages/_thank-you-outstanding.scss */
+.page-thank-you-outstanding .hero .click-here {
+  font-size: 24px;
+  color: #50c7ba;
+  line-height: 1.63;
+  letter-spacing: 3.5px;
+}
+/* line 98, ../sass/pages/_thank-you-outstanding.scss */
+.page-thank-you-outstanding .hero .click-here a {
+  color: #914691;
+  text-decoration: underline;
+}
+/* line 105, ../sass/pages/_thank-you-outstanding.scss */
+.page-thank-you-outstanding .hero .hero-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2.1px;
+  margin: 10px 0;
+}
+/* line 112, ../sass/pages/_thank-you-outstanding.scss */
+.page-thank-you-outstanding .hero ul {
+  list-style: none;
+  padding-left: 20px;
+}
+/* line 116, ../sass/pages/_thank-you-outstanding.scss */
+.page-thank-you-outstanding .hero ul li {
+  font-size: 18px;
+  line-height: 2.17;
+  letter-spacing: 2.4px;
+  color: #50c7ba;
+  position: relative;
+}
+/* line 123, ../sass/pages/_thank-you-outstanding.scss */
+.page-thank-you-outstanding .hero ul li:before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -20px;
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background: #914691;
+}
+/* line 137, ../sass/pages/_thank-you-outstanding.scss */
+.page-thank-you-outstanding .hero .btn {
+  margin-bottom: 50px;
+}

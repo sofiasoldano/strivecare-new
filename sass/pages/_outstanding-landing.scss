@@ -1,0 +1,413 @@
+.page-outstanding-landing{
+    
+    &:after{
+        content: "";
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $purple;
+        display: none;
+        
+        @include respond-to("medium"){
+            display: block;
+        }
+    }
+
+    header{
+        border-bottom: 2px solid $purple;
+        
+        .main-nav, .open-nav{
+            display: none;
+        }
+        
+        @include respond-to("medium"){
+            border: none;
+        }
+    
+    }
+    
+    .phone-number{
+        position: fixed;
+        top: 40px;
+        right: 55px;
+        background: url(img/tel-icon-header.png) top left no-repeat;
+        padding-left: 37px;
+        padding-bottom: 2px;
+        padding-top: 2px;
+        z-index: 999999999999999;
+        
+        @include respond-to("xxsmall"){
+             padding-left: 30px;
+        }
+        
+        @include respond-to("xsmall"){
+            top: 23px;
+            right: 20px;
+        }
+        
+        @include respond-to("medium"){
+            position: absolute;
+        }
+        
+        a{
+            color: #914691;
+            font-weight: bold;
+            
+            @include respond-to("xxsmall"){
+                font-size: 12px;
+            }
+            
+            &:hover{
+                color: #752475;
+            }
+        }
+    }
+    
+    .outstanding{
+        padding: 50px 0 100px;
+        
+        @include respond-to("small"){
+            background: url(img/fill-16.png) right bottom no-repeat;
+            background-position-y: 35px;
+            padding: 120px 0 100px;
+        }
+        
+        
+        .title{
+            @include respond-to("xxsmall"){
+                font-size: 25px;
+            }
+        }
+        
+        .subtitle{
+            font-size: 24px;
+            font-family: $bold;
+            line-height: 1.79;
+            letter-spacing: 3.5px;
+            color: $purple;
+            
+            @include respond-to("xxsmall"){
+                font-size: 18px;
+            }
+        }
+        
+        p{
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+        }   
+        
+        .practices{
+            margin-bottom: 70px;
+        
+            .heading{
+                position: relative;
+                padding-bottom: 30px;
+                margin-bottom: 40px;
+                
+                @include respond-to("xsmall"){
+                    margin-bottom: 35px;
+                }
+                
+                @include respond-to("small"){
+                    padding-right: 170px;
+                }
+                
+                @include respond-to("medium"){
+                    padding-right: 72px;
+                }
+                
+                @include respond-to("large"){
+                    padding-right: 152px;
+                }
+                
+                .title{
+                    margin-bottom: 20px;
+                    
+                    @include respond-to("medium"){
+                        margin-bottom: 0;
+                    }
+                    
+                }
+
+                &:before{
+                    content: "";
+                    position: absolute;
+                    bottom: -25px;
+                    left: 15px;
+                    width: 100%;
+                    height: 120%;
+                    background: url(img/whitepaper-mockup.png) bottom right no-repeat;
+                    background-position-y: 24px;
+                    z-index: 1;
+                    
+                    @include respond-to("xsmall"){
+                        bottom: 5px;
+                        left: 10px;
+                        background: url(img/whitepaper-mockup.png) bottom right no-repeat;
+                        background-size: 100px;
+                    }
+                    
+                    @include respond-to("medium"){
+                        bottom: -38px;
+                        left: 54px;
+                        background-size: 148px;
+                    }
+                        
+                    @include respond-to("large"){
+                        bottom: 0;
+                        left: 15px;
+                        background-size: initial;
+                    }
+                    
+                    @include respond-to("xxsmall"){
+                        display: none;
+                    }
+                    
+                }
+
+                &:after{
+                    content: "";
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $green;
+                }
+                
+                &.staff-retention{
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        bottom: -25px;
+                        left: 15px;
+                        width: 100%;
+                        height: 120%;
+                        background: url(img/whitepaper-mockup-2.png) bottom right no-repeat;
+                        background-position-y: 24px;
+                        z-index: 1;
+
+                        @include respond-to("xsmall"){
+                            bottom: 5px;
+                            left: 10px;
+                            background: url(img/whitepaper-mockup-2.png) bottom right no-repeat;
+                            background-size: 100px;
+                        }
+
+                        @include respond-to("medium"){
+                            bottom: -38px;
+                            left: 54px;
+                            background-size: 148px;
+                        }
+
+                        @include respond-to("large"){
+                            bottom: 0;
+                            left: 15px;
+                            background-size: initial;
+                        }
+
+                        @include respond-to("xxsmall"){
+                            display: none;
+                        }
+                    }
+                }
+                
+                &.interview{
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        bottom: -25px;
+                        left: 15px;
+                        width: 100%;
+                        height: 120%;
+                        background: url(img/whitepaper-mockup-3.png) bottom right no-repeat;
+                        background-position-y: 24px;
+                        z-index: 1;
+
+                        @include respond-to("xsmall"){
+                            bottom: 5px;
+                            left: 10px;
+                            background: url(img/whitepaper-mockup-3.png) bottom right no-repeat;
+                            background-size: 100px;
+                        }
+
+                        @include respond-to("medium"){
+                            bottom: -90px;
+                            left: 54px;
+                            background-size: 148px;
+                        }
+
+                        @include respond-to("large"){
+                            bottom: -50px;
+                            left: 15px;
+                            background-size: initial;
+                        }
+
+                        @include respond-to("xxsmall"){
+                            display: none;
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+        
+        .benefits{
+            ul{
+                list-style: none;
+                margin-top: 30px;
+                padding-left: 23px;
+                
+                li{
+                    font-size: 16px;
+                    line-height: 1.13;
+                    letter-spacing: 2px;
+                    position: relative;
+                    margin-bottom: 5px;
+                    
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 6px;
+                        top: 7px;
+                        left: -20px;
+                        background-color: $purple;
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
+        .download{
+            
+            @include respond-to("medium"){
+                width: 80%;
+                float: right;
+            }
+            
+            .subtitle{
+                margin-top: 50px;
+                padding-left: 80px;
+                margin-bottom: 15px;
+            }
+            
+            .white-box{
+                position: relative;
+                padding-top: 40px;
+                
+                &:before{
+                    content: "";
+                    position: absolute;
+                    top: -60px;
+                    left: 10px;
+                    width: 28px;
+                    height: 120px;
+                    background: url(img/arrow.png) bottom right no-repeat;
+                    background-position-y: 24px;
+                    z-index: 1;
+                }
+                
+                form{
+
+                    .form-control, .wpcf7-form-control{
+                        width: 100%;
+                        border-radius: 4px;
+                        background-color: $white;
+                        border: solid 1px #d5d5d5;
+                        margin-bottom: 15px;
+                        padding: 29px 28px;
+                        font-size: 15px;
+                        letter-spacing: 2.2px;
+                        color: $gray;
+                        box-shadow: none;
+
+                        &::placeholder{
+                            font-size: 15px;
+                            letter-spacing: 2.2px;
+                            color: $gray;
+                        }
+
+                    }
+                    
+                    .btn, .wpcf7-submit{
+                        padding: 15px 35px;
+                        border-radius: 75px;
+                        color: #FFFFFF;
+                        font-size: 17px;
+                        font-family: "BrandonTextWeb-Bold";
+                        letter-spacing: 0.4px;
+                        text-transform: uppercase;
+                        transition: all 0.5s;
+                        background-color: $purple;
+                        float: none;
+                        margin: 40px 0;
+
+                        &:hover{
+                            background-color: #753b75;
+                        }
+                    }
+                    
+                    .checkboxes{
+                        font-size: 14px;
+                        line-height: 1.71;
+                        letter-spacing: 2px;
+                        font-weight: normal;
+                        position: relative;
+                        padding-left: 30px;
+                        margin-bottom: 20px;
+                        
+                        &:first-of-type{
+                            position: relative;
+                            
+                            &:after{
+                                content: "";
+                                position: absolute;
+                                top: -7px;
+                                right: -45px;
+                                width: 32px;
+                                height: 32px;
+                                background: url(img/icon-smile.png) bottom right no-repeat;
+                                z-index: 1;
+                                background-size: 30px;
+                            }
+                        }
+                    }
+
+                    .checkboxes input {
+                        position: relative;
+                        z-index: -9999;
+                    }
+
+                    .checkboxes  span {
+                        width: 30px;
+                        height: 30px;
+                        display: inline-block;
+                        border: 1px solid #d5d5d5;
+                        border-radius: 5px;
+                        position: absolute;
+                        top: -3px;
+                        left: 0;
+                    }
+
+                    .checkboxes input:checked + span {
+                            background: url(img/tick.png) center no-repeat;
+                            background-size: 20px;
+                    }
+
+                }
+                
+            }
+        }
+        
+    }
+    
+}

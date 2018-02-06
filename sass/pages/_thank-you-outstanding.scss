@@ -1,0 +1,142 @@
+.page-thank-you-outstanding{
+     
+    &:after{
+        content: "";
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $purple;
+        display: none;
+        
+        @include respond-to("medium"){
+            display: block;
+        }
+    }
+
+    header{
+        border-bottom: 2px solid $purple;
+        
+        .main-nav, .open-nav{
+            display: none;
+        }
+        
+        @include respond-to("medium"){
+            border: none;
+        }
+    
+    }
+    
+    
+    .phone-number{
+        position: fixed;
+        top: 40px;
+        right: 55px;
+        background: url(img/tel-icon-header.png) top left no-repeat;
+        padding-left: 37px;
+        padding-bottom: 2px;
+        padding-top: 2px;
+        z-index: 999999999999999;
+        
+        @include respond-to("xxsmall"){
+             padding-left: 30px;
+        }
+        
+        @include respond-to("xsmall"){
+            top: 23px;
+            right: 20px;
+        }
+        
+        @include respond-to("medium"){
+            position: absolute;
+        }
+        
+        a{
+            color: #914691;
+            font-weight: bold;
+            
+            @include respond-to("xxsmall"){
+                font-size: 12px;
+            }
+            
+            &:hover{
+                color: #752475;
+            }
+        }
+    }
+    
+    .hero{
+        .main{
+            padding-top: 80px;
+            background: url(img/hero-home-bg.png) bottom left no-repeat;          
+            background-size: 619px;
+            background-position-x: 85%;
+            
+            @include respond-to("medium"){
+                background-size: 742px;
+                background-position-y: 60px;
+                background-position-x: 85%;
+            }
+
+        }
+        
+        .hero-title{
+            font-size: 24px;
+            line-height: 1.63;
+            letter-spacing: 3.5px;
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+        
+        .click-here{
+            font-size: 24px;
+            color: $green;
+            line-height: 1.63;
+            letter-spacing: 3.5px;
+            
+            a{
+                color: $purple;
+                text-decoration: underline;
+            }
+            
+        }
+        
+        .hero-text{
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 2.1px;
+            margin: 10px 0;
+        }
+        
+        ul{
+            list-style: none;
+            padding-left: 20px;
+            
+            li{
+                font-size: 18px;
+                line-height: 2.17;
+                letter-spacing: 2.4px;
+                color: $green;
+                position: relative;
+                
+                &:before{
+                    content: "";
+                    position: absolute;
+                    top: 16px;
+                    left: -20px;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 6px;
+                    background: $purple;
+                }
+            }
+            
+        }
+        
+        .btn{
+            margin-bottom: 50px;
+        }
+    }
+
+}
