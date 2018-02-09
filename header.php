@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Strivecare</title>
-
+    
+    <link rel="shortcut icon" href="favicons/32x32.ico">
+      
     <!-- Style -->
     <link href="css/vendors/bootstrap.css" rel="stylesheet">
     <link href="css/vendors/flexslider.css" rel="stylesheet">  

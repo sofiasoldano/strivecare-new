@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-md-5">
                     <div class="hero-title">Thanks for the message!</div>
-                    <p class="hero-text">You’re now one step closer to upskilling your staffin the most efficient way possible. We’ll be in touch before you know it.</p>
+                    <p class="hero-text">You’re now one step closer to upskilling your staff in the most efficient way possible. We’ll be in touch before you know it.</p>
                     <a href="#" class="btn green">Learn more about us</a><br>
                     <a href="#" class="btn green">Read our blog</a>
                 </div>
